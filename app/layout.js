@@ -1,14 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bodoni_Moda } from "next/font/google";
 import "./globals.css";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bodoni = Bodoni_Moda({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-bodoni",
 });
 
 export const metadata = {
@@ -20,9 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bodoni.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main className="pt-44">{children}</main>
+        <Footer />
       </body>
     </html>
   );

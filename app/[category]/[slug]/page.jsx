@@ -1,0 +1,231 @@
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import data from "@/data/data.json";
+import AuthorBox from "@/app/component/AuthorBox";
+import NewsletterSection from "@/app/component/NewsLetter";
+import ReadMoreSection from "@/app/component/ReadMore";
+
+export default async function ArticlePage({ params }) {
+  const { slug } = await params;
+
+  // Find article first
+  const article = data.articles.find((a) => a.slug === slug);
+
+  if (!article) {
+    return notFound();
+  }
+
+  // Now safe to access author
+  const author = data.authors.find((a) => a.id === article.authorId);
+
+  return (
+    <section className="px-4 sm:px-6 lg:px-8 py-8">
+
+      {/* HEADER */}
+      <div className="text-left">
+
+        <p className="text-xs uppercase tracking-[2px] text-gray-500 mb-3">
+          {article.category}
+        </p>
+
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-semibold leading-tight mb-4">
+          {article.title}
+        </h1>
+
+        <p className="text-xs sm:text-sm text-black uppercase tracking-wide">
+          BY {author?.name || "Unknown"}
+        </p>
+
+        <p className="text-xs text-gray-600 mb-6 uppercase tracking-wide">
+          {article?.date}
+        </p>
+      </div>
+
+      {/* GRID */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+
+        {/* ARTICLE */}
+        <article className="lg:col-span-2 max-w-3xl mx-auto lg:mx-0">
+
+          {/* HERO IMAGE */}
+          <div className="w-full mb-6 sm:mb-8">
+            <Image
+              src={article.image}
+              alt={article.title}
+              width={1200}
+              height={700}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+
+          {/* CONTENT SECTIONS */}
+
+          <div className="prose max-w-none text-base sm:text-lg pb-12">
+
+            {/* SECTION 1 */}
+            {article.content_section_1 ? (
+              <div
+                className="prose max-w-none text-base sm:text-lg pb-12
+
+                  [&_h1]:pt-6 [&_h1]:pb-3 
+                  [&_h2]:pt-5 [&_h2]:pb-2 
+                  [&_h3]:pt-4 [&_h3]:pb-2
+                  [&_h4]:pt-3 [&_h4]:pb-1
+
+                  [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
+                  [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
+                  [&_h4]:font-bold [&_h4]:text-base
+
+                  [&_p]:pt-3 [&_p]:pb-2
+
+                  [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
+                  [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
+                  [&_li]:my-2 [&_li]:leading-relaxed
+
+                  [&_u]:underline [&_u]:underline-offset-2
+                "
+                dangerouslySetInnerHTML={{ __html: article.content_section_1 }}
+              />
+            ) : (
+              <p className="text-gray-500"></p>
+            )}
+
+            {/* IMAGE 1 */}
+            {article.image1?.trim() && (
+              <div className="w-full my-6">
+                <Image
+                  src={article.image1}
+                  alt="Article image 1"
+                  width={1000}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                />
+
+                {/* CREDIT */}
+                {article.image1_source && (
+                  <p className="text-xs text-gray-500 mt-2">
+                    Credits: {article.image1_source}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* SECTION 2 */}
+            {article.content_section_2?.trim() ? (
+              <div
+                className="prose max-w-none text-base sm:text-lg pb-12
+
+                  [&_h1]:pt-6 [&_h1]:pb-3 
+                  [&_h2]:pt-5 [&_h2]:pb-2 
+                  [&_h3]:pt-4 [&_h3]:pb-2
+                  [&_h4]:pt-3 [&_h4]:pb-1
+
+                  [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
+                  [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
+                  [&_h4]:font-bold [&_h4]:text-base
+
+                  [&_p]:pt-3 [&_p]:pb-2
+
+                  [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
+                  [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
+                  [&_li]:my-2 [&_li]:leading-relaxed
+
+                  [&_u]:underline [&_u]:underline-offset-2
+                "
+                dangerouslySetInnerHTML={{ __html: article.content_section_2 }}
+              />
+            ) : (
+              <p className="text-gray-500"></p>
+            )}
+
+            {/* IMAGE 2 */}
+            {article.image2 && (
+              <div className="w-full my-6">
+                <Image
+                  src={article.image2}
+                  alt="Article image 2"
+                  width={1000}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                />
+
+                {/* CREDIT */}
+                {article.image2_source && (
+                  <p className="text-xs text-gray-500 mt-2">
+                    Credits: {article.image2_source}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* SECTION 3 */}
+            {article.content_section_3 ? (
+              <div
+                className="prose max-w-none text-base sm:text-lg pb-12
+
+                  [&_h1]:pt-6 [&_h1]:pb-3 
+                  [&_h2]:pt-5 [&_h2]:pb-2 
+                  [&_h3]:pt-4 [&_h3]:pb-2
+                  [&_h4]:pt-3 [&_h4]:pb-1
+
+                  [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
+                  [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
+                  [&_h4]:font-bold [&_h4]:text-base
+
+                  [&_p]:pt-3 [&_p]:pb-2
+
+                  [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
+                  [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
+                  [&_li]:my-2 [&_li]:leading-relaxed
+
+                  [&_u]:underline [&_u]:underline-offset-2
+                "
+                dangerouslySetInnerHTML={{ __html: article.content_section_3 }}
+              />
+            ) : (
+              <p className="text-gray-500"></p>
+            )}
+
+          </div>
+
+          {/* AUTHOR BOX */}
+          <AuthorBox author={author} />
+
+        </article>
+
+        {/* ADVERTISEMENT */}
+        <div className="lg:col-span-1">
+          <div className="lg:sticky lg:top-28 mt-10 lg:mt-0">
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div className="relative w-full h-[550px] overflow-hidden group">
+
+                <Image
+                  src="/ads/signal-2025-12-12-143957-1.jpeg"
+                  alt="Advertisement"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+
+                <span className="absolute top-2 left-2 bg-black/70 text-white text-[10px] px-2 py-1 uppercase tracking-wider">
+                  Ad
+                </span>
+
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      {/* EXTRA SECTIONS */}
+      <NewsletterSection />
+
+      <div className="mt-12 sm:mt-16">
+        <ReadMoreSection currentArticle={article} />
+      </div>
+
+    </section>
+  );
+}
