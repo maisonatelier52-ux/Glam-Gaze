@@ -59,134 +59,66 @@ export default async function ArticlePage({ params }) {
           </div>
 
           {/* CONTENT SECTIONS */}
+<div className="prose max-w-none text-base sm:text-lg pb-12">
 
-          <div className="prose max-w-none text-base sm:text-lg pb-12">
+  {[1, 2, 3, 4, 5, 6].map((num) => {
+    const section = article[`content_section_${num}`];
+    const image = article[`image${num}`];
+    const source = article[`image${num}_source`];
 
-            {/* SECTION 1 */}
-            {article.content_section_1 ? (
-              <div
-                className="prose max-w-none text-base sm:text-lg pb-12
+    return (
+      <div key={num}>
+        
+        {/* SECTION */}
+        {section?.trim() && (
+          <div
+            className="prose max-w-none text-base sm:text-lg pb-12
 
-                  [&_h1]:pt-6 [&_h1]:pb-3 
-                  [&_h2]:pt-5 [&_h2]:pb-2 
-                  [&_h3]:pt-4 [&_h3]:pb-2
-                  [&_h4]:pt-3 [&_h4]:pb-1
+              [&_h1]:pt-6 [&_h1]:pb-3 
+              [&_h2]:pt-5 [&_h2]:pb-2 
+              [&_h3]:pt-4 [&_h3]:pb-2
+              [&_h4]:pt-3 [&_h4]:pb-1
 
-                  [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
-                  [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
-                  [&_h4]:font-bold [&_h4]:text-base
+              [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
+              [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
+              [&_h4]:font-bold [&_h4]:text-base
 
-                  [&_p]:pt-3 [&_p]:pb-2
+              [&_p]:pt-3 [&_p]:pb-2
 
-                  [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
-                  [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
-                  [&_li]:my-2 [&_li]:leading-relaxed
+              [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
+              [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
+              [&_li]:my-2 [&_li]:leading-relaxed
 
-                  [&_u]:underline [&_u]:underline-offset-2
-                "
-                dangerouslySetInnerHTML={{ __html: article.content_section_1 }}
-              />
-            ) : (
-              <p className="text-gray-500"></p>
+              [&_u]:underline [&_u]:underline-offset-2
+            "
+            dangerouslySetInnerHTML={{ __html: section }}
+          />
+        )}
+
+        {/* IMAGE */}
+        {image?.trim() && (
+          <div className="w-full my-6">
+            <Image
+              src={image}
+              alt={`Article image ${num}`}
+              width={1000}
+              height={600}
+              className="w-full h-auto object-contain"
+            />
+
+            {source && (
+              <p className="text-xs text-gray-500 mt-2">
+                Credits: {source}
+              </p>
             )}
-
-            {/* IMAGE 1 */}
-            {article.image1?.trim() && (
-              <div className="w-full my-6">
-                <Image
-                  src={article.image1}
-                  alt="Article image 1"
-                  width={1000}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                />
-
-                {/* CREDIT */}
-                {article.image1_source && (
-                  <p className="text-xs text-gray-500 mt-2">
-                    Credits: {article.image1_source}
-                  </p>
-                )}
-              </div>
-            )}
-
-            {/* SECTION 2 */}
-            {article.content_section_2?.trim() ? (
-              <div
-                className="prose max-w-none text-base sm:text-lg pb-12
-
-                  [&_h1]:pt-6 [&_h1]:pb-3 
-                  [&_h2]:pt-5 [&_h2]:pb-2 
-                  [&_h3]:pt-4 [&_h3]:pb-2
-                  [&_h4]:pt-3 [&_h4]:pb-1
-
-                  [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
-                  [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
-                  [&_h4]:font-bold [&_h4]:text-base
-
-                  [&_p]:pt-3 [&_p]:pb-2
-
-                  [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
-                  [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
-                  [&_li]:my-2 [&_li]:leading-relaxed
-
-                  [&_u]:underline [&_u]:underline-offset-2
-                "
-                dangerouslySetInnerHTML={{ __html: article.content_section_2 }}
-              />
-            ) : (
-              <p className="text-gray-500"></p>
-            )}
-
-            {/* IMAGE 2 */}
-            {article.image2 && (
-              <div className="w-full my-6">
-                <Image
-                  src={article.image2}
-                  alt="Article image 2"
-                  width={1000}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                />
-
-                {/* CREDIT */}
-                {article.image2_source && (
-                  <p className="text-xs text-gray-500 mt-2">
-                    Credits: {article.image2_source}
-                  </p>
-                )}
-              </div>
-            )}
-
-            {/* SECTION 3 */}
-            {article.content_section_3 ? (
-              <div
-                className="prose max-w-none text-base sm:text-lg pb-12
-
-                  [&_h1]:pt-6 [&_h1]:pb-3 
-                  [&_h2]:pt-5 [&_h2]:pb-2 
-                  [&_h3]:pt-4 [&_h3]:pb-2
-                  [&_h4]:pt-3 [&_h4]:pb-1
-
-                  [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
-                  [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
-                  [&_h4]:font-bold [&_h4]:text-base
-
-                  [&_p]:pt-3 [&_p]:pb-2
-
-                  [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
-                  [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
-                  [&_li]:my-2 [&_li]:leading-relaxed
-
-                  [&_u]:underline [&_u]:underline-offset-2
-                "
-                dangerouslySetInnerHTML={{ __html: article.content_section_3 }}
-              />
-            ) : (
-              <p className="text-gray-500"></p>
-            )}
-
           </div>
+        )}
+
+      </div>
+    );
+  })}
+
+</div>
 
           {/* AUTHOR BOX */}
           <AuthorBox author={author} />
