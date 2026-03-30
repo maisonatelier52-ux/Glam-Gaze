@@ -59,66 +59,66 @@ export default async function ArticlePage({ params }) {
           </div>
 
           {/* CONTENT SECTIONS */}
-<div className="prose max-w-none text-base sm:text-lg pb-12">
+          <div className="prose max-w-none text-base sm:text-lg pb-12">
 
-  {[1, 2, 3, 4, 5, 6].map((num) => {
-    const section = article[`content_section_${num}`];
-    const image = article[`image${num}`];
-    const source = article[`image${num}_source`];
+            {[1, 2, 3, 4, 5, 6].map((num) => {
+              const section = article[`content_section_${num}`];
+              const image = article[`image${num}`];
+              const source = article[`image${num}_source`];
 
-    return (
-      <div key={num}>
-        
-        {/* SECTION */}
-        {section?.trim() && (
-          <div
-            className="prose max-w-none text-base sm:text-lg pb-12
+              return (
+                <div key={num}>
+                  
+                  {/* SECTION */}
+                  {section?.trim() && (
+                    <div
+                      className="prose max-w-none text-base sm:text-lg 
 
-              [&_h1]:pt-6 [&_h1]:pb-3 
-              [&_h2]:pt-5 [&_h2]:pb-2 
-              [&_h3]:pt-4 [&_h3]:pb-2
-              [&_h4]:pt-3 [&_h4]:pb-1
+                        [&_h1]:pt-6 [&_h1]:pb-3 
+                        [&_h2]:pt-5 [&_h2]:pb-2 
+                        [&_h3]:pt-4 [&_h3]:pb-2
+                        [&_h4]:pt-3 [&_h4]:pb-1
 
-              [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
-              [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
-              [&_h4]:font-bold [&_h4]:text-base
+                        [&_h2]:font-bold [&_h2]:text-xl sm:[&_h2]:text-2xl
+                        [&_h3]:font-bold [&_h3]:text-lg sm:[&_h3]:text-xl
+                        [&_h4]:font-bold [&_h4]:text-base
 
-              [&_p]:pt-3 [&_p]:pb-2
+                        [&_p]:pt-3 [&_p]:pb-2
 
-              [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
-              [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
-              [&_li]:my-2 [&_li]:leading-relaxed
+                        [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:my-4
+                        [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:my-4
+                        [&_li]:my-2 [&_li]:leading-relaxed
 
-              [&_u]:underline [&_u]:underline-offset-2
-            "
-            dangerouslySetInnerHTML={{ __html: section }}
-          />
-        )}
+                        [&_u]:underline [&_u]:underline-offset-2
+                      "
+                      dangerouslySetInnerHTML={{ __html: section }}
+                    />
+                  )}
 
-        {/* IMAGE */}
-        {image?.trim() && (
-          <div className="w-full my-6">
-            <Image
-              src={image}
-              alt={`Article image ${num}`}
-              width={1000}
-              height={600}
-              className="w-full h-auto object-contain"
-            />
+                  {/* IMAGE */}
+                  {image?.trim() && (
+                    <div className="w-full my-6">
+                      <Image
+                        src={image}
+                        alt={`Article image ${num}`}
+                        width={1000}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                      />
 
-            {source && (
-              <p className="text-xs text-gray-500 mt-2">
-                Credits: {source}
-              </p>
-            )}
+                      {source && (
+                        <p className="text-xs text-gray-500 mt-2">
+                          Credits: {source}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
+                </div>
+              );
+            })}
+
           </div>
-        )}
-
-      </div>
-    );
-  })}
-
-</div>
 
           {/* AUTHOR BOX */}
           <AuthorBox author={author} />
