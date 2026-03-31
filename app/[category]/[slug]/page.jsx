@@ -59,7 +59,7 @@ export default async function ArticlePage({ params }) {
           </div>
 
           {/* CONTENT SECTIONS */}
-          <div className="prose max-w-none text-base sm:text-lg pb-12">
+          <div className="prose max-w-none text-base sm:text-lg">
 
             {[1, 2, 3, 4, 5, 6].map((num) => {
               const section = article[`content_section_${num}`];
