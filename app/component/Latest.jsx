@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/data.json";
 
-export default function Latest({ articles }) {
+export default function ReadMore({ articles }) {
   const authors = data.authors;
 
   const getAuthorName = (id) => {

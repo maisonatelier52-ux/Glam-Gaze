@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import CelebrityStyleSection from "../component/CelebrityStyle";
 import HomeGridCategory from "../component/HomeGridCategory";
-import Latest from "../component/Latest";
+import ReadMore from "../component/Latest";
 // import OscarsSection from "../component/OscarSection";
 import data from "@/data/data.json";
 
@@ -45,7 +45,7 @@ export default async function Category({ params }) {
       <HomeGridCategory articles={articles} />
       {/* <OscarsSection title={"Vogue’s Global Spa Guide"} articles={articles} /> */}
       <CelebrityStyleSection title={"LATEST STORIES"} articles={celebrity} />
-      <Latest articles={latest} />
+      {latest.length === 6 && <ReadMore articles={latest} />}
 
     </div>
   );

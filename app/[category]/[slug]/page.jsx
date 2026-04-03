@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }) {
               const source = article[`image${num}_source`];
 
               return (
-                <div key={num}>
+                <div key={num} className="pl-15 pr-5 max-w-3xl">
                   
                   {/* SECTION */}
                   {section?.trim() && (
