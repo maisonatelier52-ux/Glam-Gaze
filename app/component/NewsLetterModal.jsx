@@ -90,7 +90,7 @@ export default function NewsletterModal() {
     </div>
 
     {/* RIGHT: CONTENT */}
-    <div className="md:w-1/2 p-6 sm:p-8 flex flex-col justify-center bg-[#d65e13] text-white">
+    <div className="md:w-1/2 p-6 sm:p-8 flex flex-col justify-center bg-black text-white">
 
       {/* HEADING */}
       <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-6 uppercase">
@@ -135,7 +135,7 @@ export default function NewsletterModal() {
         <button
           type="submit"
           disabled={loading}
-          className="bg-[#cd8458] text-white py-3 text-sm uppercase tracking-wide hover:bg-[#cc7946] transition disabled:opacity-50 cursor-pointer"
+          className="bg-zinc-800 text-white py-3 text-sm uppercase tracking-wide hover:bg-zinc-600 transition disabled:opacity-50 cursor-pointer"
         >
           {loading ? "Submitting..." : "Subscribe"}
         </button>

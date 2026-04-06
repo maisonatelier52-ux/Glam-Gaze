@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/data.json";
 
-export default function MustRead({ title, articles }) {
+export default function MustRead({ articles }) {
   const authors = data.authors;
 
   const getAuthorName = (id) => {
@@ -13,45 +13,56 @@ export default function MustRead({ title, articles }) {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-6 pb-14 bg-gray-100">
+    <section className="max-w-7xl mx-auto px-6 py-8 bg-black text-white">
 
       {/* HEADER */}
-      <div className="text-center border-y border-gray-300 py-5 mb-10">
-        <h2 className="text-3xl font-bold tracking-wide">
-          MUST READ
+      <div className="flex items-center justify-center gap-4 mb-12">
+        <span className="h-px w-10 bg-gray-700"></span>
+
+        <h2 className="text-2xl md:text-3xl font-serif tracking-[0.25em] uppercase text-white">
+          {"Must Read"}
         </h2>
+
+        <span className="h-px w-10 bg-gray-700"></span>
       </div>
 
-      {/* 3 COLUMN GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* GRID */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
 
         {articles.map((item, index) => (
           <Link href={`/${item.category}/${item.slug}`} key={index}>
-            <article className="flex gap-4 group cursor-pointer">
+            <article className="flex gap-4 group cursor-pointer transition-all duration-300 pb-5 border-b border-gray-800 hover:border-gray-500">
 
               {/* IMAGE */}
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={160}
-                height={120}
-                className="w-32 h-28 object-cover flex-shrink-0"
-              />
+              <div className="overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={160}
+                  height={120}
+                  className="w-32 h-28 object-cover flex-shrink-0 
+                             transition-all duration-500 
+                             grayscale group-hover:grayscale-0 
+                             group-hover:scale-105"
+                />
+              </div>
 
               {/* TEXT */}
               <div className="flex flex-col justify-between">
-                
+
                 <div>
-                  <p className="text-[11px] font-bold uppercase tracking-wider text-gray-500">
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-gray-400">
                     {item.category}
                   </p>
 
-                  <h3 className="text-sm font-semibold mt-1 group-hover:underline leading-snug">
+                  <h3 className="text-sm md:text-base font-medium mt-1 leading-snug text-gray-200 
+                                 group-hover:text-white 
+                                 group-hover:underline decoration-2 underline-offset-4">
                     {item.title}
                   </h3>
                 </div>
 
-                <p className="text-[11px] uppercase text-gray-500 mt-2">
+                <p className="text-[10px] uppercase text-gray-500 mt-3 tracking-wider">
                   BY {getAuthorName(item.authorId)}
                 </p>
 
