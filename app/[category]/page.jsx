@@ -45,7 +45,7 @@ export default async function Category({ params }) {
       <HomeGridCategory articles={articles} />
       {/* <OscarsSection title={"Vogue’s Global Spa Guide"} articles={articles} /> */}
       <CelebrityStyleSection title={"LATEST STORIES"} articles={celebrity} />
-      { <ReadMore articles={latest} />}
+      { latest.length >= 6 && <ReadMore articles={latest} /> }
 
     </div>
   );

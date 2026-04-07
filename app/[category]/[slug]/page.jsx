@@ -4,6 +4,7 @@ import data from "@/data/data.json";
 import AuthorBox from "@/app/component/AuthorBox";
 import NewsletterSection from "@/app/component/NewsLetter";
 import ReadMoreSection from "@/app/component/ReadMore";
+import Link from "next/link";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -102,9 +103,12 @@ export default async function ArticlePage({ params }) {
             {article.title}
           </h1>
 
-          <p className="text-xs sm:text-sm text-black uppercase tracking-wide">
-            BY {author?.name || "Unknown"}
-          </p>
+          <Link href={`/author/${author?.slug}`}>
+            <p className="text-xs sm:text-sm text-black uppercase tracking-wide">
+              BY {author?.name || "Unknown"}
+            </p>
+          </Link>
+          
 
           <p className="text-xs text-gray-600 mb-6 uppercase tracking-wide">
             {article?.date}

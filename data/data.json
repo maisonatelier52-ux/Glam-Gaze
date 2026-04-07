@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Michael Thompson",
+      "slug": "michael-thompson",
       "photo": "/author/Michael-Thompson.webp",
       "bio": "Senior business and policy analyst examining how federal decisions influence U.S. industries and corporate regulation.",
       "twitter": "",
@@ -12,6 +13,7 @@
     {
       "id": 2,
       "name": "Sarah Williams",
+      "slug": "sarah-williams",
       "photo": "/author/Sarah-Williams.webp",
       "bio": "Travel and world-affairs journalist documenting global cultures, tourism trends, and human stories from around the world.",
       "twitter": "",
@@ -21,6 +23,7 @@
     {
       "id": 3,
       "name": "David Jose",
+      "slug": "david-jose",
       "photo": "/author/David-Jose.webp",
       "bio": "Tech-finance columnist exploring the intersection of emerging technologies, AI markets, and digital economy trends.",
       "twitter": "",
@@ -30,6 +33,7 @@
     {
       "id": 4,
       "name": "Emily Johnson",
+      "slug": "emily-johnson",
       "photo": "/author/Emily-Johnson.webp",
       "bio": "Lifestyle and culture writer exploring modern living, community stories, and shifting cultural trends.",
       "twitter": "",
@@ -39,6 +43,7 @@
     {
       "id": 5,
       "name": "John Hann",
+      "slug": "john-hann",
       "photo": "/author/John-Hann.webp",
       "bio": "Legal affairs correspondent analyzing court rulings, judicial policy, and the impact of federal decisions on public life.",
       "twitter": "",
@@ -48,6 +53,7 @@
     {
       "id": 6,
       "name": "Alex R.",
+      "slug": "alex-r",
       "photo": "/author/Alex-R.webp",
       "bio": "Travel security correspondent reporting on international safety, border policies, and geopolitical travel risks.",
       "twitter": "",
@@ -253,6 +259,36 @@
         "date": "2026-04-06",
         "image": "/barcelona-fashion-summit.webp",
         "authorId": 4
+    },
+    {
+        "slug": "aw26-fashion-quiet-sophistication-trends",
+        "title": "Embracing Simplicity: The 'Quiet' Elegance of the AW26 Season",
+        "excerpt": "Autumn/Winter 2026 fashion embraces restraint, craftsmanship, and refined minimalism, with trends like checks, everyday trains, and sculptural florals defining a quieter luxury.",
+        "content_section_1": "<p>The fall/winter period of 2026 turned out to be very unique compared to other seasons, since designers were much more concentrated on their work and less worried about making the press buzz. After experiencing all the changes that occurred in terms of creative directors and provocative launches, this year's fashion collections became calm and well-thought-out; they consisted only of flawless clothes made by skilled designers.</p><p>Everything was framed against the background of some important events happening around the world at the moment, such as the ongoing wars in Iran and the Middle East. Therefore, most fashion brands chose not to provoke anyone and opted for subtle elegance instead.</p>",
+        "content_section_2": "<p>Wearability became one of the dominating themes. However, despite seeming rather obvious, the designers managed to take the minimalistic approach to another level by adding subtle details and elevating simple pieces through textures, fabrics, and other elements. At the same time, many designers successfully merged classic evening wear elements with casual clothes, simplifying silhouettes while preserving their expressiveness.</p><p>Accessories had an important part to play in this shift as well, as decorative jewellery was used to complement even the plainest of looks. It was the perfect combination of simplicity and complexity that enabled people to make personal choices about how to interpret the collections.</p>",
+        "content_section_3": "<p>Of the new trends we saw during the Fall/Winter 2019 season, one that stood out was that of checks. The timeless motif found its way into several collections, and while brands like Burberry continued developing their unique check patterns, other designers such as Chloé and Rabanne gave it new meanings. Checks were able to be adapted and worn in numerous ways, ranging from simple blouses to elaborate combinations of layers.</p><p>The final trend of the season was that of “everyday trains,” which usually accompany formal outfits but were incorporated in modern looks by designers like Khaite, Prabal Gurung, and Sandy Liang.</p>",
+        "content_section_4": "<p>Floral brooches were another noteworthy detail, transcending the traditional uses of the motif and taking on a more sculptural and artistic appearance. The Chanel maison returned to its signature flower but with a softer and more delicate interpretation, while designers such as Dior and Simone Rocha worked with the motif itself, creating three-dimensional shapes. These small additions were in line with the emphasis on craftsmanship in the upcoming season.</p><p>All in all, the AW26 season is an indication of the industry’s development towards maturity, where integrity and innovation are valued more than spectacle.</p>",
+        "category": "fashion",
+        "date": "2026-04-07",
+        "image": "/aw26-fashion-overview.webp",
+        "image1": "/checks-trend-aw26.webp",
+        "image2": "/everyday-trains-fashion.webp",
+        "image3": "/floral-brooches-aw26.webp",
+        "authorId": 3
+    },
+    {
+        "slug": "va-dundee-catwalk-exhibition-fashion-show-history",
+        "title": "Celebrating Fashion’s Journey: V&A Dundee Explores the History of the Catwalk",
+        "excerpt": "The V&A Dundee’s ‘Catwalk’ exhibition traces over a century of fashion shows, from intimate salon presentations to today’s global, theatrical spectacles.",
+        "content_section_1": "<p>The V&A Dundee’s exhibition <em>Catwalk: The Art of the Fashion Show</em> explores more than a century of fashion show history, beginning with intimate 19th-century salon presentations and evolving into today’s global spectacles. Among its highlights is a story from 1971, when Manolo Blahnik designed shoes for Ossie Clark’s London show but भूलfully omitted steel pins in the heels, causing models to wobble down the runway—an accident later praised as a new style of walking. This anecdote captures the unpredictable creativity that has long defined the catwalk.</p><p>The display of more than 100 years of fashion history demonstrates the impact of catwalk fashion on mainstream fashion and consumer behavior. According to curator Leonie Bell, catwalk fashion dictates not only high fashion but also the clothes that people end up wearing and purchasing. In addition, the event also celebrates the contribution of Scotland to catwalk fashion, from early exhibitions in Glasgow to catwalk displays by Christian Dior and current catwalk shows in historical locations.</p>",
+        "content_section_2": "<p>Exploring the history of the catwalk, the exhibition starts with the development of \"living mannequins\" in the 1850s, which was used by fashion houses in the promotion of their clothes among wealthy clients. With time, fashion shows shifted from fashion salons to less traditional settings such as gardens and ocean liners, turning into powerful marketing instruments. In the mid-twentieth century, the rise of ready-to-wear clothes infused energy into fashion shows, with designers like Paco Rabanne and Mary Quant revolutionizing catwalk fashion with creative fabrics, music, and energetic performances.</p><p>This signaled an end to traditional static shows that were both restrictive and elitist. The catwalk show was no longer simply about displaying the clothes; it had also become a means of capturing changes in styles, identities, and trends within society.</p>",
+        "content_section_3": "<p>Fashion shows in the contemporary era have come a long way and now include elements of luxury marketing combined with advanced technology in creating a multi-dimensional experience. The exhibit is a testimony to this change through events like the Chanel rocket launch show by Karl Lagerfeld, along with theatrical performances involving famous models and stunning stage designs. The invitations themselves have now transcended their functional purpose and can even be considered works of art.</p><p>Beyond the glitz, Catwalk also showcases fashion's collaborative and democratic spirit. The exhibition's focus on behind-the-scenes essentials—makeup, wigs, and styling equipment—underscores the teamwork that goes into every show. It makes clear that fashion shows aren't just singular spectacles; they're cultural events that shape and mirror the world around us. From those in the front row to those watching from afar, the exhibition invites everyone to be part of this ongoing story.</p>",
+        "category": "fashion",
+        "date": "2026-04-06",
+        "image": "/va-dundee-catwalk.webp",
+        "image1": "/fashion-show-history.webp",
+        "image1_source": "A Paul Poiret fashion show in Paris in 1910",
+        "authorId": 3
     },
 
 
@@ -805,6 +841,20 @@
         "image1": "/selena-gomez-rare-beauty-event.webp",
         "authorId": 12
     },
+    {
+        "slug": "anne-hathaway-devil-wears-prada-2-fashion-supernova-joy",
+        "title": "Anne Hathaway’s 'Devil Wears Prada 2' Looks Inspired by 'Supernova Joy'",
+        "excerpt": "Anne Hathaway’s Devil Wears Prada 2 press tour wardrobe blends nostalgia, bold couture, and modern glamour—guided by stylist Erin Walsh’s vision of ‘supernova joy.’",
+        "content_section_1": "<p>Excitement is building for <em>The Devil Wears Prada 2</em>, the highly anticipated sequel to the 2006 fashion classic starring Anne Hathaway and Meryl Streep. At the film’s first Asia premiere in Tokyo, both stars delivered standout red carpet moments, with Hathaway wearing a strapless Valentino couture gown and Streep appearing in Chanel. For stylist Erin Walsh, who is curating Hathaway’s global press tour looks, the stakes are high—but so is the excitement. Drawing on her own history working at <em>Vogue</em> during the era of the original film, Walsh brings an authentic understanding of the fashion world that defines the franchise.</p><p>The relationship that Hathaway and Walsh have built since 2019 is one where they work together creatively through storytelling. It incorporates characteristics from both Hathaway’s own personality as well as her character, Andy Sachs, to create pieces that are reminiscent yet fresh for a new age. The idea is to use clothing that shows the growth of the actress and character over two decades.</p>",
+        "content_section_2": "<p>The tour began in Mexico City with two striking fashion moments that set the tone for what’s to come. Hathaway first appeared in a black fringed Schiaparelli dress with a sculptural gold belt, a look inspired by the idea of fashion as art and influenced by the surroundings of Frida Kahlo’s home. She then shifted into a red sequined Stella McCartney dress paired with leather thigh-high boots—an intentional nod to Andy Sachs’s iconic Chanel boot moment from the original film.</p><p>These looks highlight Walsh’s strategy of honoring the past while pushing forward into new territory. By experimenting with bold colors, textures, and silhouettes, the styling reflects how the character of Andy has matured while still retaining her fashion-forward sensibility. The balance between tribute and reinvention is central to the visual narrative of the press tour.</p>",
+        "content_section_3": "<p>As for the future, Walsh sees the main idea of Hathaway’s wardrobe as “supernova joy,” where boldness and expressiveness of fashion plays an important role as it motivates and empowers. Method dressing is no longer a priority; now the emphasis will be put on the creation of impressive, confidence-inducing looks. There will be some hints of the previous movie, such as cerulean blue, but there will be modern suiting as well because now Andy is a successful journalist.</p><p>Walsh also has to take into account the fact that at the same time she needs to style Hathaway for her second film, Mother Mary. In other words, the stylist has to create two completely different images within the same short period of time. Nevertheless, Walsh gladly accepts this challenge, stressing how joyful, creative and collaborative the process with Hathaway has become.</p>",
+        "category": "actress",
+        "date": "2026-04-07",
+        "image": "/anne-hathaway-valentino.webp",
+        "image1": "/dwp2-press-tour-looks.webp",
+        "image2": "/anne-hathaway-red-carpet-2026.webp",
+        "authorId": 4
+    },
 
 
 
@@ -947,7 +997,21 @@
         "image2_source": "FashionUnited",
         "authorId": 9
     },
-    
+    {
+        "slug": "streetwear-crop-tops-world-cup-fashion-2026",
+        "title": "World Cup Style Gets a Streetwear and Crop Top Makeover",
+        "excerpt": "From streetwear-inspired kits to cropped jerseys, World Cup 2026 fashion reflects a cultural shift blending sport, style, and self-expression.",
+        "content_section_1": "<p>However, this World Cup promises to be quite different when it comes to the presentation of new shirts. Sportswear titans Adidas and Nike have opted for collections that incorporate elements of streetwear into their designs. Football kit marketing campaigns are now being launched with the image of footballers wearing their jerseys along with cargo pants, jeans, and sneakers, allowing them to appeal to a broad audience of football fans.</p><p>Nike started off with a video commercial where players like Virgil van Dijk, William Saliba, and Cole Palmer are seen posing in their Nike shirts. On the other hand, Adidas took it up a notch and hosted its collection at an event held in Los Angeles, where the company was supported by celebrities like Kendall Jenner and Damson Idris.</p>",
+        "content_section_2": "<p>As football clothing trends go, their origins lie in the past decades when the casuals movement arose in the United Kingdom. The movement consisted of football supporters who stopped dressing in full kits worn on the field. Instead, they opted for a more fashionable look with brands like Fila, Lacoste, Stone Island, and Fred Perry being particularly popular.</p><p>The current collections continue the tradition but apply modern interpretations to traditional archival styles. The Adidas' Britcore Jersey and Nike's Jordan-Brazil collection serve as perfect examples of how past elements can be incorporated into contemporary fashion products for both fans and stylish individuals. They symbolize the fusion of sports, music, and streetwear that happens worldwide nowadays.</p>",
+        "content_section_3": "<p>The most interesting trend related to the 2026 World Cup will be represented by the introduction of the cropped football shirts. Having been first used by Adidas for the world's top clubs in 2025, they target predominantly women who are willing to get more individualized kits. Indeed, they were inspired by female fans who have created personalized modifications of the shirts.</p><p>This development underlines the significance of women for the football culture as Adidas' Sam Handy claims that companies should invest in female supporters to increase the number of fans worldwide. In her turn, Ellie-Ann Prendergast states that she considers styling match-day outfits to be a necessary element of the fan activity.</p>",
+        "content_section_4": "<p>Moreover, the rising trend of streetwear in football is also influenced by other aspects of cultural relevance, including sports such as the NBA and NFL that are native to America. Whereas some sports organizations in the past sought to curb streetwear through dress code regulations, athletes responded by finding a way to make room for fashion within the dress code. Fashion is one of the most effective means by which athletes can express their identity and build up their personal brand.</p><p>Like the NBA, football has not been left behind. This has been demonstrated by notable athletes who constantly interact with fashion. For example, Paris Saint-Germain’s cooperation with Jordan Brand, as well as Arsenal's collaboration with streetwear labels, has resulted in fashion brands being part of a football club. The relationship between football and fashion will become even closer in the coming years.</p>",
+        "category": "culture",
+        "date": "2026-04-06",
+        "image": "/world-cup-streetwear.webp",
+        "image1": "/cropped-football-shirts.webp",
+        "image3": "/football-fashion-collabs.webp",
+        "authorId": 21
+    },
 
 
 
@@ -1224,6 +1288,20 @@
         "date": "2026-04-03",
         "image": "/clear-fashion-scan-feature.webp",
         "authorId": 1
+    },
+    {
+        "slug": "easter-parade-bonnet-festival-2026-new-york",
+        "title": "Pastels and Pageantry Shine at the 2026 Easter Parade and Bonnet Festival",
+        "excerpt": "Despite gloomy skies, New York’s 2026 Easter Parade and Bonnet Festival dazzled with vibrant creativity, whimsical headpieces, and playful pastel fashion.",
+        "content_section_1": "<p>Despite overcast skies and light April rain in Midtown Manhattan, the 2026 Easter Parade and Easter Bonnet Festival brought a burst of color and creativity to the streets outside St. Patrick’s Cathedral. Along Fifth Avenue, from 49th to 57th Street, participants of all ages—and even their pets—paraded in imaginative headwear that ranged from classic Easter motifs like flowers, eggs, and bunny ears to highly original, custom designs.</p><p>The event showcased both whimsy and deeper messages, with some attendees using their bonnets as artistic statements. One participant wore a headpiece crafted from plastic waste to highlight environmental concerns, while another incorporated decommissioned MetroCards into a striking fashion ensemble. Captured through the lens of photographer Amir Hamja, the festival once again proved to be a joyful celebration of individuality, community, and the enduring charm of Easter traditions in New York City.</p>",
+        "category": "living",
+        "date": "2026-04-07",
+        "image": "/easter-parade-2026.webp",
+        "image1": "/easter-bonnets-nyc.webp",
+        "image2": "/creative-easter-hats.webp",
+        "image1_source": "Amir Hamja",
+        "image2_source": "Amir Hamja",
+        "authorId": 9
     }
   ]
 }

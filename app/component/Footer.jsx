@@ -21,114 +21,125 @@ export default function Footer() {
     { label: "Contact", href: "/contact" },
   ];
 
-  const legalLinks = [
-    { label: "User Agreement", href: "/user-agreement" },
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Your California Privacy Rights", href: "/california-privacy" },
-    { label: "Accessibility Help", href: "/accessibility" },
-    { label: "Masthead", href: "/masthead" },
-  ];
-
   return (
-    <footer className="bg-black text-white border-t border-gray-800">
+    <footer className="bg-[#0a0a0a] text-white border-t border-gray-800">
 
-      {/* TOP */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      {/* MASTHEAD */}
+      <div className="border-b border-gray-800 py-12">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col items-center gap-4 text-center">
 
-        {/* LEFT */}
-        <div className="space-y-4 md:col-span-2">
-          <Link href="/" className="block">
-            <span className="text-3xl sm:text-4xl font-bold tracking-wide">
-              FASHION
-            </span>
+          <span className="w-10 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+          <Link href="/">
+            <h2 className="font-serif text-3xl sm:text-5xl tracking-[0.3em] uppercase">
+              Glam <span className="text-gray-400">Gaze</span>
+            </h2>
           </Link>
 
-          <p className="text-sm text-gray-300 max-w-md">
-            The latest fashion news, celebrity style, fashion week updates, culture reviews, and videos on FASHION.com.
+          <span className="text-[10px] tracking-[0.35em] text-gray-400 uppercase">
+            Fashion · Beauty · Culture
+          </span>
+
+          <span className="w-10 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+
+          <p className="text-sm text-gray-300 max-w-md leading-relaxed">
+            The latest fashion news, celebrity style, fashion week updates, culture reviews, and videos on glam-gaze.com.
           </p>
 
           {/* SOCIAL */}
-          <div className="flex gap-5 pt-2">
-            {[
-              { Icon: FaTwitter, link: "#" },
-              { Icon: FaInstagram, link: "#" },
-              { Icon: FaTiktok, link: "#" },
-              { Icon: FaMedium, link: "#" },
-            ].map(({ Icon, link }, i) => (
+          <div className="flex gap-6 mt-3">
+            {[FaTwitter, FaInstagram, FaTiktok, FaMedium].map((Icon, i) => (
               <Link
                 key={i}
-                href={link}
+                href="#"
                 target="_blank"
-                className="text-gray-300 hover:text-white hover:scale-110 transition"
+                className="text-gray-400 hover:text-white transition hover:scale-110"
               >
-                <Icon size={20} />
+                <Icon size={18} />
               </Link>
             ))}
           </div>
-        </div>
-
-        {/* RIGHT LINKS */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-8 md:col-span-2">
-
-          {/* COLUMN 1 */}
-          <div>
-            <h3 className="text-sm font-semibold mb-3 tracking-wide">
-              MORE FROM FASHION
-            </h3>
-            <ul className="space-y-2 uppercase text-[11px] font-semibold">
-              {moreFromFashion.map(({ label, href }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-gray-300 hover:text-white transition"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* COLUMN 2 */}
-          <div>
-            <h3 className="text-sm font-semibold mb-3 tracking-wide">
-              SEE MORE STORIES
-            </h3>
-            <ul className="space-y-2 uppercase text-[11px] font-semibold">
-              {seeMoreStories.map(({ label, href }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-gray-300 hover:text-white transition"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
         </div>
       </div>
 
-      {/* DIVIDER */}
-      <div className="h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
+      {/* NAV */}
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center sm:text-left">
 
-      {/* LEGAL */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap justify-center gap-4 sm:gap-6 text-xs text-gray-400 text-center">
-        {legalLinks.map(({ label, href }) => (
-          <Link key={label} href={href} className="hover:text-white transition">
-            {label}
-          </Link>
-        ))}
+        {/* VIEW MORE */}
+        <div>
+          <h3 className="text-sm sm:text-base tracking-[0.25em] text-gray-300 uppercase mb-6 font-semibold underline underline-offset-4">
+            View More
+          </h3>
+
+          <ul className="space-y-3">
+            {moreFromFashion.map(({ label, href }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="text-sm tracking-wide uppercase text-gray-300 hover:text-white transition"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* PAGES */}
+        <div>
+          <h3 className="text-sm sm:text-base tracking-[0.25em] text-gray-300 uppercase mb-6 font-semibold underline underline-offset-4">
+            Pages
+          </h3>
+
+          <ul className="space-y-3">
+            {seeMoreStories.map(({ label, href }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="text-sm tracking-wide uppercase text-gray-300 hover:text-white transition"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* NEWSLETTER */}
+        <div className="max-w-xs mx-auto sm:mx-0">
+          <h3 className="text-sm sm:text-base tracking-[0.25em] text-gray-300 uppercase mb-6 font-semibold underline underline-offset-4">
+            Newsletter
+          </h3>
+
+          <p className="text-sm text-gray-300 mb-5">
+            Weekly style edits, straight to your inbox.
+          </p>
+
+          <div className="flex flex-col gap-3">
+            <input
+              type="email"
+              placeholder="your@email.com"
+              className="bg-transparent border border-gray-600 px-4 py-3 text-sm focus:outline-none focus:border-white placeholder:text-gray-500"
+            />
+
+            <button
+              className="bg-white text-black py-3 text-xs uppercase tracking-[0.25em] hover:bg-black hover:text-white hover:border hover:border-white transition"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
       </div>
 
       {/* BOTTOM */}
-      <div className="max-w-4xl mx-auto px-5 sm:px-8 pb-8 text-center text-xs sm:text-sm text-gray-400 space-y-3">
-        <p className="text-white">
+      <div className="border-t border-gray-800 py-6 text-center">
+        <p className="text-xs tracking-[0.2em] text-gray-400 uppercase">
           © {new Date().getFullYear()} Glam Gaze. All rights reserved.
         </p>
       </div>
+
     </footer>
   );
 }
