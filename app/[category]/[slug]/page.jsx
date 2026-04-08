@@ -19,31 +19,53 @@ export async function generateMetadata({ params }) {
 
   const author = data.authors.find((a) => a.id === article.authorId);
 
+  const SITE_URL = "https://theglamgaze.com";
+
+  const imageUrl = `${SITE_URL}/${article.image}`;
+
   return {
+    metadataBase: new URL(SITE_URL),
+
     title: article.title,
     description: article.excerpt,
+
+    alternates: {
+      canonical: `${SITE_URL}/news/${slug}`,
+    },
+
     keywords: [article.category, "news", "latest news"],
+
+    robots: {
+      index: true,
+      follow: true,
+    },
 
     openGraph: {
       title: article.title,
       description: article.excerpt,
-      images: [
-        {
-          url: article.image,
-          width: 1200,
-          height: 630,
-        },
-      ],
+      url: `${SITE_URL}/news/${slug}`,
       type: "article",
+      siteName: "GLAM GAZE",
+      locale: "en_US",
       publishedTime: article.date,
       authors: [author?.name || "Unknown"],
+      section: article.category,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
     },
 
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.excerpt,
-      images: [article.image],
+      images: [imageUrl],
+      creator: "@yourhandle",
     },
   };
 }

@@ -3,16 +3,43 @@ import HomeGrid from "./component/HomeGrid";
 import MustRead from "./component/MustRead";
 import OscarsSection from "./component/OscarSection";
 import data from "@/data/data.json";
-// import ShopSection from "./component/ShopSection";
 import Latest from "./component/Latest";
 import NewsletterModal from "./component/NewsLetterModal";
+
+export async function generateMetadata() {
+  const title = "GLAM GAZE | Latest Fashion, Style, Business News";
+  const description =
+    "Discover the latest trends in fashion, celebrity style, business and living. Stay updated with fresh stories and insights.";
+
+  return {
+    title,
+    description,
+    keywords: [
+      "fashion news",
+      "celebrity style",
+      "business trends",
+      "culture",
+      "lifestyle",
+    ],
+    openGraph: {
+      title,
+      description,
+      url: "https://yourdomain.com",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
 
 export default function Home() {
   const sortedDate = [...data.articles].sort(
     (a, b) => new Date(b.date) - new Date(a.date)
   );
 
-  // Track used articles (to avoid repetition)
   const used = new Set();
 
   const getArticles = (filterFn, limit) => {
@@ -29,34 +56,55 @@ export default function Home() {
     return result;
   };
 
-  // SECTIONS
-
   const homeGrid = getArticles(() => true, 7);
-
   const fashionStyle = getArticles(
     (a) => ["fashion", "style"].includes(a.category),
     8
   );
-
-  const celebrity = getArticles(
-    (a) => a.category === "actress",
-    4
-  );
-
+  const celebrity = getArticles((a) => a.category === "actress", 4);
   const trendingNow = getArticles(() => true, 6);
-
   const mustRead = getArticles(() => true, 3);
-
-  const nextGen = getArticles((a) => a.category === "teen",6);
-
-  const businessSection = getArticles((a) => a.category === "business",6);
-
-  const cultureLiving = getArticles((a) => ["culture", "living"].includes(a.category),9);
-
+  const nextGen = getArticles((a) => a.category === "teen", 6);
+  const businessSection = getArticles(
+    (a) => a.category === "business",
+    6
+  );
+  const cultureLiving = getArticles(
+    (a) => ["culture", "living"].includes(a.category),
+    9
+  );
   const latestStories = sortedDate.slice(30, 39);
+
+  // JSON-LD
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Your Website Name",
+    url: "https://yourdomain.com",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://yourdomain.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: sortedDate.slice(0, 10).map((article, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `https://yourdomain.com/${article.category}/${article.slug}`,
+        name: article.title,
+      })),
+    },
+  };
 
   return (
     <div className="px-8">
+      {/* ✅ JSON-LD Script */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <NewsletterModal />
 
       <HomeGrid articles={homeGrid} />
@@ -85,41 +133,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-// import CelebrityStyleSection from "./component/CelebrityStyle";
-// import HomeGrid from "./component/HomeGrid";
-// import MustRead from "./component/MustRead";
-// import OscarsSection from "./component/OscarSection";
-// import data from "@/data/data.json";
-// // import ShopSection from "./component/ShopSection";
-// import Latest from "./component/Latest";
-// import NewsletterModal from "./component/NewsLetterModal";
-
-// export default function Home() {
-//   const sortedDate = data.articles.sort ((a,b) => new Date(b.date) - new Date(a.date));
-//   const homeGrid = sortedDate.slice(0,7)
-//   const articles = sortedDate.slice(7,15);
-//   const celebrity = sortedDate.slice(15,19);
-//   const style = sortedDate.slice(19,24);
-//   const mustRead = sortedDate.slice(24,27);
-//   const articles1 = sortedDate.slice(26,32);
-//   const latestStories = sortedDate.slice(32,41)
-
-//   return (
-//     <div className="px-8">
-//       <NewsletterModal />
-//       <HomeGrid articles={homeGrid} />
-//       <OscarsSection title={"FASHION & STYLE"} articles={articles} />
-//       <CelebrityStyleSection title={"CELEBRITY STYLE"} articles={celebrity} />
-//       <OscarsSection title={"TRENDING NOW"} articles={style} />
-//       <MustRead articles={mustRead} />
-//       <OscarsSection title={"Next Gen"} articles={ articles1 } />
-//       {/* <ShopSection title={"SHOP THE EDITS"} articles={articles} />
-//       <ShopSection title={"Editor Wish Lists"} articles={articles} />
-//       <ShopSection title={"Latest Videos"} articles={articles} /> */}
-//       <Latest articles={latestStories} />
-//     </div>
-//   );
-// }

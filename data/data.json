@@ -2,60 +2,70 @@
   "authors": [
     {
       "id": 1,
-      "name": "Michael Thompson",
-      "slug": "michael-thompson",
-      "photo": "/author/Michael-Thompson.webp",
-      "bio": "Senior business and policy analyst examining how federal decisions influence U.S. industries and corporate regulation.",
+      "name": "Sophia Rodriguez",
+      "slug": "sophia-rodriguez",
+      "photo": "/author/Sophia-Rodriguez.webp",
+      "bio": "Sophia Rodriguez is a senior fashion editor at GLAM GAZE, known for her sharp eye on global runway trends and emerging designers. With a background in fashion journalism and styling, she blends editorial storytelling with real-world influence, decoding high fashion for modern audiences. Her work spans fashion weeks in Paris, Milan, and New York, bringing insider perspectives to readers. Sophia is passionate about sustainability and often highlights ethical brands shaping the future of style. At GLAM GAZE, she leads fashion coverage with a refined voice, balancing luxury aesthetics with accessible inspiration for everyday fashion enthusiasts worldwide.",
       "twitter": "",
       "facebook": "",
       "instagram": ""
     },
     {
       "id": 2,
-      "name": "Sarah Williams",
-      "slug": "sarah-williams",
-      "photo": "/author/Sarah-Williams.webp",
-      "bio": "Travel and world-affairs journalist documenting global cultures, tourism trends, and human stories from around the world.",
+      "name": "Ava Miller",
+      "slug": "ava-miller",
+      "photo": "/author/Ava-Miller.webp",
+      "bio": "Ava Miller is a youth culture writer at GLAM GAZE, focusing on Gen Z trends, digital fashion, and social media influence. She captures the evolving voice of young audiences, covering everything from viral aesthetics to emerging creators redefining style norms. With a deep understanding of online culture, Ava connects fashion with identity, self-expression, and community. Her writing is fresh, relatable, and forward-thinking, making her a key voice for the next generation. At GLAM GAZE, she curates stories that resonate with young readers, spotlighting innovation, inclusivity, and the ever-changing landscape of teen fashion and lifestyle worldwide.",
       "twitter": "",
       "facebook": "",
       "instagram": ""
     },
     {
       "id": 3,
-      "name": "David Jose",
-      "slug": "david-jose",
-      "photo": "/author/David-Jose.webp",
-      "bio": "Tech-finance columnist exploring the intersection of emerging technologies, AI markets, and digital economy trends.",
+      "name": "Elizabeth Carter",
+      "slug": "elizabeth-carter",
+      "photo": "/author/Elizabeth-Carter.webp",
+      "bio": "Elizabeth Carter is a style editor at GLAM GAZE, specializing in timeless elegance and modern wardrobe essentials. With years of experience in fashion publishing, she curates sophisticated looks that bridge classic and contemporary aesthetics. Her expertise lies in personal styling, trend forecasting, and luxury fashion insights. Elizabeth’s writing empowers readers to refine their personal style with confidence and intention. She believes style is an extension of individuality and focuses on creating versatile, wearable inspiration. At GLAM GAZE, she delivers polished, insightful content that helps readers navigate fashion with clarity, confidence, and a strong sense of identity.",
       "twitter": "",
       "facebook": "",
       "instagram": ""
     },
     {
       "id": 4,
-      "name": "Emily Johnson",
-      "slug": "emily-johnson",
-      "photo": "/author/Emily-Johnson.webp",
-      "bio": "Lifestyle and culture writer exploring modern living, community stories, and shifting cultural trends.",
+      "name": "Scarlett Hayes",
+      "slug": "scarlett-hayes",
+      "photo": "/author/Scarlett-Hayes.webp",
+      "bio": "Scarlett Hayes is a business and fashion industry analyst at GLAM GAZE, covering market trends, brand strategies, and the evolving global retail landscape. With a background in business journalism, she provides in-depth insights into mergers, acquisitions, and the financial forces shaping fashion. Scarlett translates complex industry developments into clear, engaging stories for readers. She is particularly interested in innovation, sustainability, and the future of digital commerce. At GLAM GAZE, her work bridges fashion and business, offering a strategic perspective on how creativity and commerce intersect in today’s fast-changing industry environment.",
       "twitter": "",
       "facebook": "",
       "instagram": ""
     },
     {
       "id": 5,
-      "name": "John Hann",
-      "slug": "john-hann",
-      "photo": "/author/John-Hann.webp",
-      "bio": "Legal affairs correspondent analyzing court rulings, judicial policy, and the impact of federal decisions on public life.",
+      "name": "Eleanor Vance",
+      "slug": "eleanor-vance",
+      "photo": "/author/Eleanor-Vance.webp",
+      "bio": "Eleanor Vance is a celebrity style writer at GLAM GAZE, known for her coverage of red carpet moments and iconic fashion statements. She closely follows Hollywood and global entertainment, analyzing how celebrities influence trends and shape public perception of style. With a passion for storytelling, Eleanor blends fashion critique with cultural context, offering readers a deeper understanding of celebrity aesthetics. Her work highlights both established stars and rising talents. At GLAM GAZE, she brings glamour, insight, and a keen editorial voice to celebrity fashion, making high-profile style accessible and inspiring for audiences worldwide.",
       "twitter": "",
       "facebook": "",
       "instagram": ""
     },
     {
       "id": 6,
-      "name": "Alex R.",
-      "slug": "alex-r",
-      "photo": "/author/Alex-R.webp",
-      "bio": "Travel security correspondent reporting on international safety, border policies, and geopolitical travel risks.",
+      "name": "Isabella Rossi",
+      "slug": "isabella-rossi",
+      "photo": "/author/Isabella-Rossi.webp",
+      "bio": "Isabella Rossi is a culture editor at GLAM GAZE, exploring the intersection of fashion, art, and global society. With an international perspective, she covers cultural movements, creative industries, and the stories shaping modern identity. Isabella’s work dives into how fashion reflects social change, diversity, and innovation across different communities. She brings depth and nuance to every story, connecting trends with meaningful cultural narratives. At GLAM GAZE, she creates thought-provoking content that goes beyond aesthetics, offering readers a broader understanding of fashion’s role within art, history, and contemporary culture worldwide.",
+      "twitter": "",
+      "facebook": "",
+      "instagram": ""
+    },
+    {
+      "id": 7,
+      "name": "Lily Adam",
+      "slug": "lily-adam",
+      "photo": "/author/Lily-Adam.webp",
+      "bio": "Lily Adam is a lifestyle writer at GLAM GAZE, focusing on modern living, wellness, and luxury experiences. Her work blends fashion with everyday life, covering topics such as home aesthetics, travel, and mindful living. Lily believes that style extends beyond clothing into how people live and express themselves daily. Her writing is warm, aspirational, and practical, offering readers inspiration they can incorporate into their routines. At GLAM GAZE, she curates lifestyle content that reflects balance, beauty, and intentional living, helping readers elevate their personal spaces and experiences with a refined, modern touch.",
       "twitter": "",
       "facebook": "",
       "instagram": ""
@@ -65,7 +75,7 @@
     {
         "slug": "zara-willy-chavarria-vatisimo-collection-launch",
         "title": "Zara Unveils ‘Vatisimo’ Collaboration with Willy Chavarria",
-        "excerpt": "Zara partners with designer Willy Chavarria to launch ‘Vatisimo,’ a culturally inspired collection celebrating identity, community, and contemporary fashion on a global scale.",
+        "excerpt": "Zara collaborates with designer Willy Chavarria on 'Vatisimo,' a collection celebrating cultural identity, community, and global contemporary fashion.",
         "content_section_1": "<p><strong>Zara</strong>, a Spanish clothing store that is part of Inditex, has teamed up with New York-based designer Willy Chavarria. The name of the collection is \"Vatisimo,\" and it has to do with culture, identity, and the influence of fashion around the world. The name comes from the superlative form of \"vato,\" which is a word that Chicanos use to talk about close friends and family. It means unity, friendship, and connection.</p><p>The collection is deeply rooted in Chavarria’s heritage and aims to bring his cultural perspective to a broader international audience while maintaining authenticity and creative integrity.</p>",
         "content_section_2": "<p>The <strong>ready-to-wear collection</strong> features apparel, footwear, accessories, and jewelry designed for everyone. It showcases Chavarria's distinctive aesthetic, characterized by striking tailoring, defined silhouettes, and premium materials. These include Italian fabrics, leather, cupro, denim, knits, and jerseys.</p><p>Structured pencil skirts, wide-leg shorts with precise lines, and relaxed tailoring are key elements. Also, consider denim shirt dresses, floral blouses, and silk slip dresses.The collection also includes graphic T-shirts, hoodies, and leather items like belts and bags that tell stories about different cultures through fashion.</p>",
         "content_section_3": "<p>Zara says that \"Vatisimo\" is a celebration of dignity, visibility, and individuality that shows a modern take on Chicano identity through fashion. The designs also take ideas from American workwear and vintage leisurewear, making a one-of-a-kind mix of old and new styles.</p><p>On March 26, the collection will be available in some stores and online around the world. This partnership comes after Zara announced a two-year creative partnership with designer John Galliano. His first collection for the brand is set to come out in September 2026. This will make Zara even more involved in high-concept fashion collaborations.</p>",
@@ -76,12 +86,12 @@
         "image1_source": "Zara",
         "image2": "/zara-willy-chavarria-2.webp",
         "image2_source": "Zara",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "chloe-reners-its-contest-trieste-award",
         "title": "Chloë Reners Receives Special Jury Mention at ITS Contest in Trieste",
-        "excerpt": "Belgian designer Chloë Reners earns special jury recognition at the 24th ITS Contest in Trieste, highlighting her creative vision and growing influence in the fashion industry.",
+        "excerpt": "Belgian designer Chloë Reners receives special jury mention at the 24th ITS Contest in Trieste, showcasing her creative vision and rising influence in fashion.",
         "content_section_1": "<p>The 24th ITS Contest, which took place on March 20 in Trieste, Italy, gave Belgian designer <strong>Chloë Reners</strong> the special jury mention. The award shows how creative she is and how she sees the future of fashion around the world.</p><p>The organizers said that the award is more than just a recognition; it also includes personalized support that fits Reners' creative goals. It shows that the ITS Foundation is committed for the long term. This includes mentoring, networking with professionals, and access to important industry platforms.</p>",
         "content_section_2": "<p>The jury praised Reners for being able to mix her knowledge with a clear and confident creative direction. In their statement, they said that her contribution was important because she was a strong female voice in a fashion industry that is still mostly male.</p><p>They praised her calmness, patience, and dedication, saying that she could one day run a fashion house. Andrea Rosso, Barbara Franchin, Carlo Capasa, Maximilian Raynor, and Sara Sozzani Maino were all well-known people in the industry who were on the jury. They all agreed that she had a unique style and good leadership skills.</p>",
         "content_section_3": "<p>Ten finalists from all over the world were also honored with Reners. Designers from France, the UK, Belgium, China, and the US took part, showing how global the competition was.</p><p>The finalists received a full prize package that included a ten-day creative residency in Trieste with help from industry experts. They also got to show off their work for ten months in the \"Rise and Shine\" exhibition at ITS Arcademy, the Museum of Art in Fashion. Each finalist also got a 10,000 euro grant to help them with their creative growth.</p>",
@@ -92,12 +102,12 @@
         "image2": "/chloe-reners-its-2.webp",
         "image1_source": "Its Contest",
         "image2_source": "Its Contest",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "weekend-max-mara-sebago-ss2026-capsule",
         "title": "Weekend Max Mara and Sebago Launch Final SS2026 Capsule Collection",
-        "excerpt": "Weekend Max Mara and Sebago unveil the final edition of their collaborative capsule for Spring/Summer 2026, reimagining the iconic Docksides boat shoe with modern detailing.",
+        "excerpt": "Weekend Max Mara and Sebago release their final Spring/Summer 2026 capsule, reimagining the classic Docksides boat shoe with updated modern details.",
         "content_section_1": "<p><strong>Weekend Max Mara</strong> and <strong>Sebago</strong> have launched the third and final installment in their joint capsule collection, dubbed “A Weekend with Sebago,” for the Spring/Summer 2026 collection. The collection consists of a renewed version of Sebago’s legendary Docksides boat shoe, combining heritage and modern looks.</p><p>This concluding chapter of the partnership highlights both brands’ shared commitment to craftsmanship and timeless casual style, marking the end of a successful collaboration.</p>",
         "content_section_2": "<p>The renewed Docksides are distinguished by a clean white sole and are available in four colorways, ranging from leather in white and brown to soft suede in blue and khaki. A notable feature in the shoe’s design are braided laces in contrasting colors running along the sides and tied at the front.</p><p>The shoes are further enhanced by oversized tassels on the upper, which can be removed to provide a range of styling possibilities. Finally, co-branded elements are featured on the shoes, bringing together the two brands. This collection retails at 319 euros. It is currently available in store and online. </p>",
         "content_section_3": "<p>Weekend Max Mara was originally established in 1983. What was once a casual wear brand has developed into a worldwide lifestyle brand. Max Mara’s heritage is based in Italian style. On the other hand, Sebago, a heritage footwear brand, is part of the BasicNet Group. This group consists of brands such as Kappa, Superga, K-Way, Woolrich, and many more. </p>",
@@ -108,12 +118,12 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "ukrainian-fashion-week-aw26-27-cultural-continuity",
         "title": "Ukrainian Fashion Week AW26/27 Highlights Cultural Continuity Amid Challenges",
-        "excerpt": "Despite ongoing disruptions, Ukrainian Fashion Week AW26/27 in Kyiv underscores fashion’s role as a symbol of resilience, identity, and sustainability.",
+        "excerpt": "Amid challenges, Ukrainian Fashion Week AW26/27 in Kyiv highlights fashion as a symbol of resilience, cultural identity, and sustainable practices.",
         "content_section_1": "<p><strong>Ukrainian Fashion Week</strong> returned with its Autumn/Winter 2026/27 edition in Kyiv, taking place from March 12 to 15 under challenging conditions. Ongoing attacks on energy infrastructure and resulting disruptions to power and heating impacted the event, yet it continued to assert its presence as a key cultural platform.</p><p>Since its comeback in September 2024, the event has been taking place in an atmosphere of global unease, but it has proved to be a symbol of resilience, showing that fashion is beyond aesthetics. It is a cultural and economic phenomenon, deeply embedded in the fabric of Ukrainian culture.</p><p>Founder and CEO <strong>Iryna Danylevska</strong> emphasized that this season would be marked not by obstacles, but by the unshakable faith in Ukrainian fashion and its philosophy.</p>",
         "content_section_2": "<p>The theme of identity, whether it be national, individual, or brand, has become one of the key ideas in the event. In addition to this, another important theme has been sustainability and textile innovations.</p><p>Under the title “Art of Fashion,” there has also been an exhibition that has included innovations in terms of artistic techniques, sustainability, and innovations in materials. Designers like Bevza, J’aemme, Kseniaschnaider, Litkovska, Nadya Dzyak, and many others have showcased their works that reflect a forward-thinking but also deeply rooted philosophy.</p><p>These projects showed how Ukrainian designers are blending tradition and innovation, redefining fashion as a means of storytelling and cultural preservation.</p>",
         "content_section_3": "<p>The theme of sustainability was not just limited to an idea but was reflected in several design philosophies. For example, brands like Upslowuse and St. Mariia reflected themes like upcycling and zero waste as part of their design philosophies. This reflects the role of materials as carriers of cultural and historical significance.</p><p>The themes of design included transformation, layering, reinterpretation, where clothing was used to convey themes like time and self. For example, the Upslowuse collection, titled \"Liminal,\" incorporated influences from Ukrainian folklore and demonology to give the designs more conceptual significance, emphasizing concepts like transition and tension.</p><p>Ukrainian Fashion Week, through these concepts, not only addressed the idea of sustainability as an environmental practice but as a cultural and philosophical one, emphasizing the role of fashion as something that is evolving and changing with the times.</p>",
@@ -124,12 +134,12 @@
         "image2": "/ukrainian-fashion-week-aw26-2.webp",
         "image1_source": "Ukrainian Fashion Week / fashionweek.ua",
         "image2_source": "Ukrainian Fashion Week / fashionweek.ua",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "king-louie-circular-fashion-textile-waste-circulose",
         "title": "King Louie Advances Circular Fashion with Textile Waste Collection",
-        "excerpt": "King Louie introduces a new collection made from textile waste using CIRCULOSE®, marking a major step toward circular fashion and sustainable production.",
+        "excerpt": "King Louie launches a collection from textile waste using CIRCULOSE®, advancing circular fashion and sustainable manufacturing practices.",
         "content_section_1": "<h2>New Step Towards Circularity</h2><p><strong>King Louie</strong> a clothing brand, is making a big step toward a more sustainable future by releasing a new line made from old clothes. Almost 99 percent of the world's textile waste ends up in landfills or is destroyed every year. The brand wants to break this cycle by turning these useless materials into useful clothing.</p><p>The Spring/Summer 2026 collection from King Louie has new materials that cut down on waste and damage to the environment. The brand is still working toward a more sustainable future by using circularity, repair, and rental. The brand has been working toward a more sustainable future for two years, and now it is releasing new materials that will help cut down on waste and damage to the environment.</p>",
         "content_section_2": "<h2>What is CIRCULOSE®?</h2><p>King Louie's new collection includes the release of a new material called <strong>CIRCULOSE®</strong>. This material is made by recycling old clothes and leftover materials from production. This new material turns textile waste into a raw material, which cuts down on waste and harm to the environment.</p><p>King Louie joins the growing movement in the fashion industry to make new materials and use environmentally friendly production methods by recycling textiles into textiles. This method makes it less necessary to use new materials while still making new materials in a way that is good for the environment.</p>",
         "content_section_3": "<h2>Comfort Without Compromise & Future Ambitions</h2><p>The collection's main features are comfort and versatility, along with style and sustainability. King Louie uses CIRCULOSE® with certain fibers to make sure the recycled yarns are strong enough to last and be of high quality.</p><p>King Louie's plans for the future include a fully circular product chain in which clothes are made entirely from textile waste, so no new raw materials are needed. The company's goal is for 25% of the collection to be circular by 2030. The launch of CIRCULOSE® is an important step toward this goal.</p>",
@@ -140,7 +150,7 @@
         "image2": "/king-louie-ss2026-collection.webp",
         "image1_source": "King Louie",
         "image2_source": "King Louie",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "zara-galliano-collaboration-inditex-power-move-analysis",
@@ -156,7 +166,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "radiant-earth-2028-colour-trend-runway",
@@ -172,7 +182,7 @@
         "image2": "/radiant-earth-colour-trend-2.webp",
         "image1_source": "©Launchmetrics/spotlight",
         "image2_source": "©Launchmetrics/spotlight",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "valentino-rome-show-80s-baroque-aw26-27",
@@ -188,7 +198,7 @@
         "image2": "/valentino-rome-show-2.webp",
         "image1_source": "Valentino / Runway Presentation",
         "image2_source": "Valentino / Finale Look",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "wrangler-dr-scholls-collaboration-collection",
@@ -203,7 +213,7 @@
         "image2": "",
         "image1_source": "Wrangler",
         "image2_source": "",
-        "authorId": 4
+        "authorId": 1
     },
     {
         "slug": "fw26-peplum-trend-sculpted-silhouette-runway",
@@ -225,7 +235,7 @@
         "image2_source": "Launchmetrics/spotlight ",
         "image3_source": "Launchmetrics/spotlight ",
         "image4_source": "Launchmetrics/spotlight ",
-        "authorId": 9
+        "authorId": 1
     },
     {
         "slug": "farfetch-2026-wearable-luxury-trends",
@@ -235,7 +245,7 @@
         "category": "fashion",
         "date": "2026-04-01",
         "image": "/farfetch-wearable-luxury.webp",
-        "authorId": 12
+        "authorId": 1
     },
     {
         "slug": "gabriela-hearst-adam-pendleton-nina-bag-collaboration",
@@ -247,7 +257,7 @@
         "date": "2026-04-05",
         "image": "/nina-bag-art-collaboration.webp",
         "image1": "/gabriela-hearst-nina-bag.webp",
-        "authorId": 5
+        "authorId": 1
     },
     {
         "slug": "barcelona-european-designer-fashion-summit-2026",
@@ -258,7 +268,7 @@
         "category": "fashion",
         "date": "2026-04-06",
         "image": "/barcelona-fashion-summit.webp",
-        "authorId": 4
+        "authorId": 1
     },
     {
         "slug": "aw26-fashion-quiet-sophistication-trends",
@@ -274,7 +284,7 @@
         "image1": "/checks-trend-aw26.webp",
         "image2": "/everyday-trains-fashion.webp",
         "image3": "/floral-brooches-aw26.webp",
-        "authorId": 3
+        "authorId": 1
     },
     {
         "slug": "va-dundee-catwalk-exhibition-fashion-show-history",
@@ -288,7 +298,7 @@
         "image": "/va-dundee-catwalk.webp",
         "image1": "/fashion-show-history.webp",
         "image1_source": "A Paul Poiret fashion show in Paris in 1910",
-        "authorId": 3
+        "authorId": 1
     },
 
 
@@ -307,7 +317,7 @@
         "image2": "/polka-dots-fashion.webp",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 3
+        "authorId": 2
     },
     {
         "slug": "mckenna-grace-princess-pink-nails-oscars-2026",
@@ -323,7 +333,7 @@
         "image2": "/princess-pink-nails-trend.webp",
         "image1_source": "",
         "image2_source": "John Nacion/Getty Images",
-        "authorId": 3
+        "authorId": 2
     },
     {
         "slug": "bebe-betty-boop-collaboration-launch",
@@ -342,7 +352,7 @@
         "image1_source": "Bebe",
         "image2_source": "Bebe",
         "image3_source": "Bebe",
-        "authorId": 4
+        "authorId": 2
     },
     {
         "slug": "alysa-liu-two-toned-lbd-iheartradio-2026",
@@ -355,7 +365,7 @@
         "image": "/alysa-liu-iheartradio-2026.webp",
         "image1": "/alysa-liu-lbd-detail.webp",
         "image1_source": "Alysa Liu at iHeartRadio Music Awards 2026",
-        "authorId": 9
+        "authorId": 2
     },
     {
         "slug": "kidsuper-colm-dillane-advice-young-designers",
@@ -370,7 +380,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 2
     },
     {
         "slug": "portuguese-designers-craftsmanship-global-fashion-rise",
@@ -388,7 +398,7 @@
         "image2": "/lisbon-fashion-week-designers.webp",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 2
     },
     {
         "slug": "exaggerated-lower-eyeliner-trend-spring-2026",
@@ -405,7 +415,7 @@
         "image2": "/mod-60s-eyeliner-look.webp",
         "image1_source": "Red Carpet Beauty",
         "image2_source": "Vintage Inspiration",
-        "authorId": 9
+        "authorId": 2
     },
     {
         "slug": "best-prom-makeup-ideas-tips-2026",
@@ -425,7 +435,7 @@
         "image3": "/pop-of-gold-makeup-look.webp",
         "image4": "/bronze-makeup-look.webp",
         "image5": "/cat-eye-makeup-look.webp",
-        "authorId": 9
+        "authorId": 2
     },
     {
         "slug": "graduation-quotes-follow-dreams",
@@ -439,7 +449,7 @@
         "category": "teen",
         "date": "2026-05-15",
         "image": "/graduation-quotes-dreams.webp",
-        "authorId": 1
+        "authorId": 2
     },
     {
         "slug": "gen-z-shopping-myths-reality",
@@ -450,7 +460,7 @@
         "category": "teen",
         "date": "2026-04-03",
         "image": "/genz-shopping-trends.webp",
-        "authorId": 3
+        "authorId": 2
     },
 
 
@@ -510,7 +520,7 @@
         "image3_source": "",
         "image4_source": "",
         "image5_source": "Pinterest",
-        "authorId": 4
+        "authorId": 3
     },
     {
         "slug": "paris-fashion-week-easy-breezy-trends-2026",
@@ -523,7 +533,7 @@
         "image": "/paris-fashion-week-2026.webp",
         "image1": "/silk-scarves-trend.webp",
         "image1_source": "Paris Street Style",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "gen-z-astrology-jewelry-zodiac-trend",
@@ -538,7 +548,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "white-skinny-jeans-shoes-spring-2026",
@@ -558,7 +568,7 @@
         "image1_source": "",
         "image2_source": "",
         "image3_source": "",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "ballet-leotards-spring-2026-trend-rosalia",
@@ -574,7 +584,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "cobalt-blue-fashion-trend-2026",
@@ -590,7 +600,7 @@
         "image2": "/cobalt-blue-street-style.webp",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "skin-tone-hair-trend-spring-2026",
@@ -609,7 +619,7 @@
         "image2_source": "Getty Images /     Zendaya",
         "image3_source": "Getty Images /     Jessica Alba",
         "image4_source": "Wire Image /      Sabrina Carpenter",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "celebrity-approved-lob-haircuts-2026",
@@ -624,7 +634,7 @@
         "image3": "/victoria-beckham.webp",
         "image4": "/hailey-bieber.webp",
         "image5": "/kim-kardashian.webp",
-        "authorId": 9
+        "authorId": 3
     },
     {
         "slug": "belfast-linen-industry-new-identity",
@@ -636,7 +646,7 @@
         "date": "2026-04-04",
         "image": "/belfast-linen-industry.webp",
         "image1": "/belfast-linen-textiles.webp",
-        "authorId": 4
+        "authorId": 3
     },
     {
         "slug": "zendaya-bridal-beauty-blue-eyeshadow-trend-2026",
@@ -648,7 +658,7 @@
         "date": "2026-04-05",
         "image": "/zendaya-blue-eyeshadow.webp",
         "image1": "/zendaya-bridal-glam.webp",
-        "authorId": 4
+        "authorId": 3
     },
 
 
@@ -667,7 +677,7 @@
         "image2": "/jenna-ortega-late-show.webp",
         "image1_source": "",
         "image2_source": "The Late Show With Stephen Colbert",
-        "authorId": 3
+        "authorId": 5
     },
     {
         "slug": "oscars-2026-red-carpet-fashion-highlights",
@@ -683,7 +693,7 @@
         "image2": "/oscars-2026-black-white-looks.webp",
         "image1_source": "©A.M.P.A.S. Etienne Laurent / The Academy",
         "image2_source": "©A.M.P.A.S. Etienne Laurent / The Academy",
-        "authorId": 3
+        "authorId": 5
     },
     {
         "slug": "zendaya-bixie-cut-oscars-2026-hair-trend",
@@ -699,7 +709,7 @@
         "image2": "/zendaya-bixie-curly-style.webp",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 3
+        "authorId": 5
     },
     {
         "slug": "zendaya-the-drama-paris-premiere-louis-vuitton",
@@ -715,7 +725,7 @@
         "image2": "/zendaya-black-bow.webp",
         "image1_source": "Getty Images",
         "image2_source": "Getty Images",
-        "authorId": 4
+        "authorId": 5
     },
     {
         "slug": "taylor-swift-artist-of-year-iheartradio-2026",
@@ -729,7 +739,7 @@
         "image": "/taylor-swift-iheartradio-2026.webp",
         "image1": "/taylor-swift.webp",
         "image1_source": "Travis Kelce and Taylor Swift at the iHeartRadio Music Awards in Los Angeles on March 26, 2026. Christopher Polk/Billboard via Getty",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "miley-cyrus-hannah-montana-iheartradio-2026-look",
@@ -745,7 +755,7 @@
         "image2": "",
         "image1_source": "Getty Images",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "selena-gomez-petal-pink-nude-manicure-trend",
@@ -760,7 +770,7 @@
         "image2": "",
         "image1_source": "Tom Bachik",
         "image2_source": "Rare Beauty",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "barbie-ferreira-oscars-gap-shirt-gown-2026",
@@ -775,7 +785,7 @@
         "image1": "/barbie-ferreira-oscars-gown.webp",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "devil-wears-prada-2-premiere-fashion-2026",
@@ -788,7 +798,7 @@
         "image": "/devil-wears-prada-2-premiere.webp",
         "image1": "/meryl-streep-red-suit.webp",
         "image1_source": "Anne Hathaway in Schiaparelli and Meryl Streep in Dolce & Gabbana",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "zendaya-statement-skirt-erdem-fall-2026",
@@ -801,7 +811,7 @@
         "image": "/zendaya-erdem-statement-skirt.webp",
         "image1": "/zendaya-feather-skirt-look.webp",
         "image1_source": "Getty Images",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "zendaya-something-blue-couture-ballgown",
@@ -813,7 +823,7 @@
         "date": "2026-04-03",
         "image": "/zendaya-blue-ballgown-main.webp",
         "image1": "/zendaya-blue-ballgown.webp",
-        "authorId": 9
+        "authorId": 5
     },
     {
         "slug": "lily-allen-west-end-girl-tour-healing",
@@ -827,7 +837,7 @@
         "image": "/lily-allen-west-end-tour.webp",
         "image1": "/lily-allen-tour-fashion.webp",
         "image2": "/lily-allen-fashion.webp",
-        "authorId": 12
+        "authorId": 5
     },
     {
         "slug": "selena-gomez-pop-of-pink-trend-2026",
@@ -839,7 +849,7 @@
         "date": "2026-04-05",
         "image": "/selena-gomez-pink-prada.webp",
         "image1": "/selena-gomez-rare-beauty-event.webp",
-        "authorId": 12
+        "authorId": 5
     },
     {
         "slug": "anne-hathaway-devil-wears-prada-2-fashion-supernova-joy",
@@ -853,7 +863,7 @@
         "image": "/anne-hathaway-valentino.webp",
         "image1": "/dwp2-press-tour-looks.webp",
         "image2": "/anne-hathaway-red-carpet-2026.webp",
-        "authorId": 4
+        "authorId": 5
     },
 
 
@@ -872,7 +882,7 @@
         "image2": "/Sparxell-Patrick-McDowell.webp",
         "image1_source": "Research",
         "image2_source": "Sparxell",
-        "authorId": 3
+        "authorId": 6
     },
     {
         "slug": "yves-saint-laurent-onstage-exhibition-marrakech",
@@ -888,7 +898,7 @@
         "image2": "",
         "image1_source": "Musée Yves Saint Laurent Marrakech",
         "image2_source": "",
-        "authorId": 3
+        "authorId": 6
     },
     {
         "slug": "bad-bunny-zara-super-bowl-2026-halftime",
@@ -904,7 +914,7 @@
         "image2": "",
         "image1_source": "Super Bowl Halftime Show",
         "image2_source": "Zara / Inditex",
-        "authorId": 3
+        "authorId": 6
     },
     {
         "slug": "charlie-puth-dad-music-era-whatevers-clever-album",
@@ -920,7 +930,7 @@
         "image2": "/charlie-puth-studio.webp",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 3
+        "authorId": 6
     },
     {
         "slug": "va-schiaparelli-fashion-becomes-art-exhibition",
@@ -936,7 +946,7 @@
         "image2": "/schiaparelli-modern-designs.webp",
         "image1_source": "V&A",
         "image2_source": "V&A",
-        "authorId": 4
+        "authorId": 6
     },
     {
         "slug": "shanghai-fashion-art-scene-2026",
@@ -951,7 +961,7 @@
         "image2": "",
         "image1_source": "Laopu Gold, Plaza 66 Shanghai",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 6
     },
     {
         "slug": "misty-copeland-oscars-2026-firebird-performance",
@@ -966,7 +976,7 @@
         "image2": "",
         "image1_source": "Copeland backstage at the Dolby Theatre.",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 6
     },
     {
         "slug": "jayma-cardoso-guide-to-aspen-snow-lodge",
@@ -977,7 +987,7 @@
         "category": "culture",
         "date": "2026-03-31",
         "image": "/aspen-snow-mountain.webp",
-        "authorId": 9
+        "authorId": 6
     },
     {
         "slug": "antwerp-six-40-years-fashion-legacy",
@@ -995,7 +1005,7 @@
         "image2": "/pitti-florence-campervans.webp",
         "image1_source": "FashionUnited",
         "image2_source": "FashionUnited",
-        "authorId": 9
+        "authorId": 6
     },
     {
         "slug": "streetwear-crop-tops-world-cup-fashion-2026",
@@ -1010,7 +1020,7 @@
         "image": "/world-cup-streetwear.webp",
         "image1": "/cropped-football-shirts.webp",
         "image3": "/football-fashion-collabs.webp",
-        "authorId": 21
+        "authorId": 6
     },
 
 
@@ -1029,7 +1039,7 @@
         "image2": "",
         "image1_source": "H&M Retail",
         "image2_source": "H&M Corporate",
-        "authorId": 3
+        "authorId": 4
     },
     {
         "slug": "global-rise-of-second-hand-fashion",
@@ -1060,7 +1070,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 7
+        "authorId": 4
     },
     {
         "slug": "fine-gold-necklaces-market-trends-2026",
@@ -1080,7 +1090,7 @@
         "image1_source": "",
         "image2_source": "",
         "image3_source": "",
-        "authorId": 7
+        "authorId": 4
     },
     {
         "slug": "marks-and-spencer-us-launch-nordstrom-partnership",
@@ -1095,7 +1105,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "Nordstrom",
-        "authorId": 9
+        "authorId": 4
     },
     {
         "slug": "guess-jeans-hysteric-glamour-ss26-collaboration",
@@ -1111,7 +1121,7 @@
         "image2": "/ss26-campaign-la-motel.webp",
         "image1_source": "Guess Jeans",
         "image2_source": "Guess Jeans",
-        "authorId": 9
+        "authorId": 4
     },
     {
         "slug": "pandora-canada-distribution-centre-mississauga",
@@ -1121,7 +1131,7 @@
         "category": "business",
         "date": "2026-04-02",
         "image": "/pandora-store-canada.webp",
-        "authorId": 9
+        "authorId": 4
     },
     {
         "slug": "groupe-dynamite-strong-outlook-shares-jump-2026",
@@ -1134,7 +1144,7 @@
         "image": "/groupe-dynamite-store.webp",
         "image1": "/garage-brand-store.webp",
         "image1_source": "Retail Store",
-        "authorId": 9
+        "authorId": 4
     },
     {
         "slug": "sessun-international-expansion-30-years",
@@ -1146,7 +1156,7 @@
         "date": "2026-04-03",
         "image": "/sessun-international-expansion.webp",
         "image1": "/sessun-boutique-interior.webp",
-        "authorId": 1
+        "authorId": 4
     },
     {
         "slug": "gucci-memoria-demna-exhibition-milan-design-week-2026",
@@ -1157,7 +1167,7 @@
         "category": "business",
         "date": "2026-04-03",
         "image": "/gucci-memoria-exhibition.webp",
-        "authorId": 2
+        "authorId": 4
     },
 
 
@@ -1173,7 +1183,7 @@
         "image": "/chanel-charles-finch-dinner.webp",
         "image1": "/jessie-buckley-oscars-dinner.webp",
         "image1_source": "",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "alejandra-loaiza-mecato-colombian-food-photography",
@@ -1188,7 +1198,7 @@
         "image2": "",
         "image1_source": "Alejandra Loaiza",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "kate-middleton-squashed-bag-trend-2026",
@@ -1203,7 +1213,7 @@
         "image2": "",
         "image1_source": "",
         "image2_source": "",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "meghan-markle-ralph-lauren-dress-princess-diana-watch",
@@ -1214,7 +1224,7 @@
         "category": "living",
         "date": "2026-03-24",
         "image": "/meghan-markle-ralph-lauren.webp",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "cymbiotika-wellness-party-la-ulta-launch",
@@ -1227,7 +1237,7 @@
         "image": "/cymbiotika-party-la.webp",
         "image1": "/wellness-event-glow-room.webp",
         "image1_source": "",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "april-pink-full-moon-libra-2026-meaning-effects",
@@ -1240,7 +1250,7 @@
         "image": "/pink-full-moon-april.webp",
         "image1": "/spring-moon-phlox-flower.webp",
         "image1_source": "",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "paralympic-village-accessible-cities-milano-cortina-2026",
@@ -1251,7 +1261,7 @@
         "category": "living",
         "date": "2026-03-31",
         "image": "/paralympic-village-milan.webp",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "child-free-pubs-uk-debate-readers-views",
@@ -1264,7 +1274,7 @@
         "date": "2026-04-02",
         "image": "/uk-pub-interior.webp",
         "image2": "/adult-only-pub.webp",
-        "authorId": 9
+        "authorId": 7
     },
     {
         "slug": "eating-dinner-earlier-benefits-sleep-energy",
@@ -1277,7 +1287,7 @@
         "category": "living",
         "date": "2026-04-03",
         "image": "/early-dinner-health.webp",
-        "authorId": 10
+        "authorId": 7
     },
     {
         "slug": "clear-fashion-scan-feature-27000-products",
@@ -1287,7 +1297,7 @@
         "category": "living",
         "date": "2026-04-03",
         "image": "/clear-fashion-scan-feature.webp",
-        "authorId": 1
+        "authorId": 7
     },
     {
         "slug": "easter-parade-bonnet-festival-2026-new-york",
@@ -1301,7 +1311,7 @@
         "image2": "/creative-easter-hats.webp",
         "image1_source": "Amir Hamja",
         "image2_source": "Amir Hamja",
-        "authorId": 9
+        "authorId": 7
     }
   ]
 }

@@ -3,91 +3,141 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/data.json";
 
-export default async function AuthorPage({ params }) {
-  const { slug } = await params;  
+// Metadata (fixed bug)
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
 
   const author = data.authors.find((a) => a.slug === slug);
 
+  if (!author) return {};
+
+  return {
+    title: `${author.name} - GLAM GAZE`,
+    description:
+      author.bio ||
+      `Read articles and insights by ${author.name} on GLAM GAZE.`,
+    openGraph: {
+      title: author.name,
+      description: author.bio,
+      url: `https://yourdomain.com/author/${slug}`,
+      type: "profile",
+    },
+  };
+}
+
+export default async function AuthorPage({ params }) {
+  const { slug } = await params;
+
+  const author = data.authors.find((a) => a.slug === slug);
   if (!author) return notFound();
 
   const articles = data.articles
     .filter((a) => a.authorId === author.id)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
+  // ✅ JSON-LD
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: author.name,
+    description: author.bio,
+    url: `https://yourdomain.com/author/${slug}`,
+  };
+
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-10 max-w-6xl mx-auto">
+    <main className="bg-white text-black">
 
-      {/* AUTHOR HEADER */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-12 border-b pb-8">
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
-        <Image
-          src={author.photo || "/author.jpg"}
-          alt={author.name}
-          width={120}
-          height={120}
-          className="w-28 h-28 rounded-full object-cover"
-        />
+      {/* 🔥 HERO (Editorial Style) */}
+      <section className="border-b border-black/10 py-16 text-center px-4">
+        <div className="max-w-3xl mx-auto">
 
-        <div className="text-center sm:text-left">
-          <h1 className="text-3xl sm:text-4xl font-serif font-semibold mb-2">
+          <Image
+            src={author.photo || "/author.jpg"}
+            alt={author.name}
+            width={140}
+            height={140}
+            className="mx-auto w-28 h-28 rounded-full object-cover mb-6"
+          />
+
+          <h1 className="text-4xl sm:text-5xl font-serif font-semibold tracking-tight mb-4">
             {author.name}
           </h1>
 
-          <p className="text-gray-600 text-sm sm:text-base max-w-xl">
-            {author.bio || "Fashion writer at Glam Gaze."}
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            {author.bio || "Writer at GLAM GAZE covering fashion and culture."}
           </p>
 
-          <p className="text-xs uppercase tracking-wide text-gray-500 mt-2">
+          <p className="mt-4 text-xs tracking-[0.2em] uppercase text-gray-500">
             {articles.length} Articles
           </p>
         </div>
+      </section>
+
+      {/* SECTION TITLE */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 mb-10">
+        <h2 className="text-lg tracking-[0.3em] uppercase text-gray-500">
+          Latest Articles
+        </h2>
       </div>
 
-      {/* ARTICLES GRID */}
+      {/* 🔥 ARTICLES GRID */}
       {articles.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 
-          {articles.map((article) => (
-            <Link
-              key={article.slug}
-              href={`/${article.category}/${article.slug}`}
-            >
-              <article className="group cursor-pointer">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                <div className="overflow-hidden">
-                  <Image
-                    src={article.image}
-                    alt={article.title}
-                    width={500}
-                    height={300}
-                    className="w-full h-[220px] object-cover group-hover:scale-105 transition duration-300"
-                  />
-                </div>
+            {articles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/${article.category}/${article.slug}`}
+                className="group"
+              >
+                <article>
 
-                <div className="mt-3">
-                  <p className="text-[10px] uppercase text-gray-500 mb-1">
-                    {article.category}
-                  </p>
+                  {/* IMAGE */}
+                  <div className="overflow-hidden bg-black">
+                    <Image
+                      src={article.image}
+                      alt={article.title}
+                      width={500}
+                      height={300}
+                      className="w-full h-[240px] object-cover group-hover:scale-105 transition duration-500"
+                    />
+                  </div>
 
-                  <h3 className="text-base sm:text-lg font-semibold group-hover:underline leading-tight">
-                    {article.title}
-                  </h3>
+                  {/* TEXT */}
+                  <div className="mt-4">
 
-                  <p className="text-xs text-gray-500 mt-1">
-                    {article.date}
-                  </p>
-                </div>
+                    <p className="text-[10px] tracking-[0.2em] uppercase text-gray-500 mb-2">
+                      {article.category}
+                    </p>
 
-              </article>
-            </Link>
-          ))}
+                    <h3 className="text-lg font-medium leading-snug group-hover:underline">
+                      {article.title}
+                    </h3>
 
-        </div>
+                    <p className="text-xs text-gray-400 mt-2">
+                      {article.date}
+                    </p>
+
+                  </div>
+                </article>
+              </Link>
+            ))}
+
+          </div>
+        </section>
       ) : (
-        <p className="text-gray-500 text-center mt-10">
+        <p className="text-center text-gray-400 py-20">
           No articles published yet.
         </p>
       )}
-    </section>
+    </main>
   );
 }
