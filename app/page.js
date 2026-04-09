@@ -59,12 +59,12 @@ export default function Home() {
   const homeGrid = getArticles(() => true, 7);
   const fashionStyle = getArticles(
     (a) => ["fashion", "style"].includes(a.category),
-    8
+    4
   );
   const celebrity = getArticles((a) => a.category === "actress", 4);
   const trendingNow = getArticles(() => true, 6);
   const mustRead = getArticles(() => true, 3);
-  const nextGen = getArticles((a) => a.category === "teen", 6);
+  const nextGen = getArticles((a) => a.category === "teen", 4);
   const businessSection = getArticles(
     (a) => a.category === "business",
     6
@@ -122,25 +122,22 @@ export default function Home() {
 
       <HomeGrid articles={homeGrid} />
 
-      {/* <OscarsSection title={"FASHION & STYLE"} articles={fashionStyle} /> */}
+      <OscarsSection title={"FASHION & STYLE"} articles={fashionStyle} />
 
       <CelebrityStyleSection
         title={"CELEBRITY STYLE"}
         articles={celebrity}
       />
 
-      {/* <OscarsSection title={"TRENDING NOW"} articles={trendingNow} /> */}
+      <OscarsSection title={"TRENDING NOW"} articles={trendingNow} />
 
       <MustRead title={"MUST READ"} articles={mustRead} />
 
-      {/* <OscarsSection title={"NEXT GEN"} articles={nextGen} /> */}
+      <OscarsSection title={"NEXT GEN"} articles={nextGen} />
 
-      {/* <OscarsSection title={"BUSINESS & POWER"} articles={businessSection} /> */}
+      <OscarsSection title={"BUSINESS & POWER"} articles={businessSection} />
 
-      {/* <OscarsSection
-        title={"CULTURE & LIVING"}
-        articles={cultureLiving}
-      /> */}
+      <OscarsSection title={"CULTURE & LIVING"} articles={cultureLiving} />
 
       <Latest articles={latestStories} />
       <NewsletterModal />
