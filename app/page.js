@@ -122,20 +122,20 @@ export default function Home() {
 
       <HomeGrid articles={homeGrid} />
 
-      <OscarsSection title={"FASHION & STYLE"} articles={fashionStyle} />
+      {/* <OscarsSection title={"FASHION & STYLE"} articles={fashionStyle} /> */}
 
       <CelebrityStyleSection
         title={"CELEBRITY STYLE"}
         articles={celebrity}
       />
 
-      <OscarsSection title={"TRENDING NOW"} articles={trendingNow} />
+      {/* <OscarsSection title={"TRENDING NOW"} articles={trendingNow} /> */}
 
       <MustRead title={"MUST READ"} articles={mustRead} />
 
-      <OscarsSection title={"NEXT GEN"} articles={nextGen} />
+      {/* <OscarsSection title={"NEXT GEN"} articles={nextGen} /> */}
 
-      <OscarsSection title={"BUSINESS & POWER"} articles={businessSection} />
+      {/* <OscarsSection title={"BUSINESS & POWER"} articles={businessSection} /> */}
 
       {/* <OscarsSection
         title={"CULTURE & LIVING"}
