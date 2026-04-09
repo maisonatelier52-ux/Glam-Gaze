@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
 
   const author = data.authors.find((a) => a.id === article.authorId);
 
-  const SITE_URL = "https://theglamgaze.com";
+  const SITE_URL = "https://www.theglamgaze.com";
 
   const imageUrl = `${SITE_URL}/${article.image}`;
 

@@ -107,6 +107,20 @@ export default function Home() {
 
       <NewsletterModal />
 
+      {/* ✅ SEO INTRO */}
+      <section className="sr-only mx-auto max-w-4xl py-10 text-center">
+        <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">
+          Latest Fashion, Celebrity Style & Business News
+        </h1>
+
+        <p className="mt-4 text-base leading-7 text-slate-600">
+          Stay ahead with <strong>GLAM GAZE</strong>, your go-to destination for the
+          latest in fashion trends, celebrity style, business insights, and modern
+          lifestyle. Explore curated stories covering runway highlights, industry
+          movements, cultural shifts, and next-gen trends shaping the future.
+        </p>
+      </section>
+
       <HomeGrid articles={homeGrid} />
 
       <OscarsSection title={"FASHION & STYLE"} articles={fashionStyle} />

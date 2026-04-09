@@ -65,7 +65,7 @@ export default function Header() {
                     background: "linear-gradient(to right, transparent, #b08d6e, transparent)",
                   }}
                 />
-                <h1
+                <div
                   className="tracking-widest uppercase"
                   style={{
                     fontFamily: "Georgia, 'Times New Roman', serif",
@@ -77,7 +77,7 @@ export default function Header() {
                 >
                   Glam{" "}
                   <span style={{ color: "#b08d6e" }}>Gaze</span>
-                </h1>
+                </div>
                 {/* Tagline */}
                 <span
                   className="tracking-widest uppercase"
