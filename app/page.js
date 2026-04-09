@@ -137,10 +137,10 @@ export default function Home() {
 
       <OscarsSection title={"BUSINESS & POWER"} articles={businessSection} />
 
-      <OscarsSection
+      {/* <OscarsSection
         title={"CULTURE & LIVING"}
         articles={cultureLiving}
-      />
+      /> */}
 
       <Latest articles={latestStories} />
       <NewsletterModal />
