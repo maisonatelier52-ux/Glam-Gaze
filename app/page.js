@@ -105,7 +105,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <NewsletterModal />
 
       {/* ✅ SEO INTRO */}
       <section className="sr-only mx-auto max-w-4xl py-10 text-center">
@@ -144,6 +143,8 @@ export default function Home() {
       />
 
       <Latest articles={latestStories} />
+      <NewsletterModal />
+
     </div>
   );
 }

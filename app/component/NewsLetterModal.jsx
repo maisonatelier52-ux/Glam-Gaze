@@ -20,7 +20,7 @@ export default function NewsletterModal() {
       setOpen(true);
 
       localStorage.setItem("newsletter_shown", "true");
-    }, 2000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
