@@ -17,10 +17,10 @@ const menuItems = [
 ];
 
 const socials = [
-  { Icon: FaTwitter, link: "#" },
-  { Icon: FaInstagram, link: "#" },
-  { Icon: FaTiktok, link: "#" },
-  { Icon: FaMedium, link: "#" },
+  { Icon: FaTwitter, link: "#", name: "Twitter" },
+  { Icon: FaInstagram, link: "#", name: "Instagram" },
+  { Icon: FaTiktok, link: "#", name: "TikTok" },
+  { Icon: FaMedium, link: "#", name: "Medium" },
 ];
 
 export default function MenuSidebar({ open, setOpen }) {
@@ -226,11 +226,11 @@ export default function MenuSidebar({ open, setOpen }) {
             Follow Us
           </span>
           <div style={{ display: "flex", gap: "20px" }}>
-            {socials.map(({ Icon, link }, i) => (
+            {socials.map(({ Icon, link, name }, i) => (
               <Link
                 key={i}
                 href={link}
-                title={`Follow us on ${Icon.displayName.replace("Fa", "")}`}
+                title={`Follow us on ${name}`}
                 target="_blank"
                 style={{ color: "#444", transition: "color 0.2s" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#fff"}

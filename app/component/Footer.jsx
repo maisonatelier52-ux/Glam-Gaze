@@ -54,7 +54,7 @@ export default function Footer() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                title={`Follow us on ${Icon.displayName.replace("Fa", "")}`}
+                title={`Follow us on Social Media`}
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
                 <Icon size={18} />
