@@ -34,6 +34,7 @@ export default function HomeGrid({ articles = [] }) {
                   <Image
                     src={article.image}
                     alt={article.title}
+                    loading="lazy"
                     width={500}
                     height={300}
                     className="w-full h-[180px] sm:h-[220px] object-cover group-hover:scale-105 transition-transform duration-300"
@@ -63,6 +64,7 @@ export default function HomeGrid({ articles = [] }) {
                     alt={centerArticle.title}
                     width={900}
                     height={500}
+                    priority
                     className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -112,6 +114,7 @@ export default function HomeGrid({ articles = [] }) {
                     alt={article.title}
                     width={300}
                     height={300}
+                    loading="lazy"
                     className="w-24 h-36 sm:w-28 sm:h-36 object-cover flex-shrink-0 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

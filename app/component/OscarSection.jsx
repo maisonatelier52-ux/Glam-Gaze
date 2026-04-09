@@ -139,6 +139,7 @@ export default function OscarsSection({ title, articles }) {
                 alt={item.title}
                 width={400}
                 height={400}
+                loading="lazy"
                 className="w-full h-56 sm:h-60 lg:h-64 object-cover"
               />
 

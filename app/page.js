@@ -143,7 +143,7 @@ export default function Home() {
       />
 
       <Latest articles={latestStories} />
-      {/* <NewsletterModal /> */}
+      <NewsletterModal />
 
     </div>
   );

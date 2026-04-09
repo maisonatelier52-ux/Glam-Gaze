@@ -35,6 +35,7 @@ export default function CelebrityStyleSection({ title, articles }) {
                 alt={item.title}
                 width={400}
                 height={400}
+                loading="lazy"
                 className="w-full h-48 object-cover"
               />
 
