@@ -30,7 +30,7 @@ export default function Footer() {
 
           <span className="w-10 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent" />
 
-          <Link href="/">
+          <Link href="/" title="Glam Gaze - Home">
             <h2 className="font-serif text-3xl sm:text-5xl tracking-[0.3em] uppercase">
               Glam <span className="text-gray-400">Gaze</span>
             </h2>
@@ -53,6 +53,8 @@ export default function Footer() {
                 key={i}
                 href="#"
                 target="_blank"
+                rel="noopener noreferrer"
+                title={`Follow us on ${Icon.displayName.replace("Fa", "")}`}
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
                 <Icon size={18} />
@@ -77,6 +79,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
+                  title={`View ${label} articles`}
                   className="text-sm tracking-wide uppercase text-gray-300 hover:text-white transition"
                 >
                   {label}
@@ -97,6 +100,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
+                  title={`View ${label} page`}
                   className="text-sm tracking-wide uppercase text-gray-300 hover:text-white transition"
                 >
                   {label}

@@ -26,7 +26,7 @@ export default function HomeGridCategory({ articles = [] }) {
         {/* LEFT COLUMN (1) */}
         <div className="lg:col-span-1 flex flex-col justify-between h-full">
             {leftArticles.map((article) => (
-                <Link key={article.slug} href={`/${article.category}/${article.slug}`}>
+                <Link key={article.slug} href={`/${article.category}/${article.slug}`} title={`View ${article.title}`}>
                 <article className="group cursor-pointer">
                     <Image
                     src={article.image}
@@ -55,7 +55,7 @@ export default function HomeGridCategory({ articles = [] }) {
         {/* CENTER COLUMN (2) */}
         <div className="lg:col-span-2">
         {centerArticle && (
-            <Link href={`/${centerArticle.category}/${centerArticle.slug}`}>
+            <Link href={`/${centerArticle.category}/${centerArticle.slug}`} title={`View ${centerArticle.title}`}>
             <article className="group cursor-pointer">
                 <Image
                 src={centerArticle.image}
@@ -81,7 +81,7 @@ export default function HomeGridCategory({ articles = [] }) {
         {/* RIGHT COLUMN (3) */}
         <div className="lg:col-span-1 flex flex-col justify-between h-full">
             {rightArticles.map((article) => (
-                <Link key={article.slug} href={`/${article.category}/${article.slug}`}>
+                <Link key={article.slug} href={`/${article.category}/${article.slug}`} title={`View ${article.title}`}>
                 <article className="group cursor-pointer">
                     <Image
                     src={article.image}

@@ -123,6 +123,7 @@ export default function OscarsSection({ title, articles }) {
         {articles.map((item, index) => (
           <Link
             href={`/${item.category}/${item.slug}`}
+            title={`View ${item.title}`}
             key={index}
             className={`
               snap-start flex-shrink-0 px-3

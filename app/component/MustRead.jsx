@@ -30,7 +30,7 @@ export default function MustRead({ articles }) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
 
         {articles.map((item, index) => (
-          <Link href={`/${item.category}/${item.slug}`} key={index}>
+          <Link href={`/${item.category}/${item.slug}`} key={index} title={`View ${item.title}`}>
             <article className="flex gap-4 group cursor-pointer transition-all duration-300 pb-5 border-b border-gray-800 hover:border-gray-500">
 
               {/* IMAGE */}

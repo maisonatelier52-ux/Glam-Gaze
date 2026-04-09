@@ -112,7 +112,7 @@ export default function ShopSection({ title, articles }) {
         className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4"
       >
         {articles.map((item, index) => (
-          <Link href="#" key={index}>
+          <Link href="#" key={index} title={`View ${item.title}`}>
             <article className="min-w-[340px] max-w-[340px] snap-start group cursor-pointer">
               
               <Image

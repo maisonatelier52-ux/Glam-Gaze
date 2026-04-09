@@ -35,7 +35,7 @@ export default function ReadMoreSection({ currentArticle }) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {relatedArticles.map((item, index) => (
-          <Link href={`/${item.category}/${item.slug}`} key={index}>
+          <Link href={`/${item.category}/${item.slug}`} key={index} title={`View ${item.title}`}>
             <article className="relative group cursor-pointer overflow-hidden">
 
               {/* IMAGE */}

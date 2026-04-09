@@ -125,7 +125,7 @@ export default async function ArticlePage({ params }) {
             {article.title}
           </h1>
 
-          <Link href={`/author/${author?.slug}`}>
+          <Link href={`/author/${author?.slug}`} title={`View ${author?.name || "Unknown"}`}>
             <p className="text-xs sm:text-sm text-black uppercase tracking-wide">
               BY {author?.name || "Unknown"}
             </p>
@@ -225,7 +225,7 @@ export default async function ArticlePage({ params }) {
           <div className="lg:col-span-1">
             <div className="lg:sticky lg:top-28 mt-10 lg:mt-0">
 
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link href="#" target="_blank" rel="noopener noreferrer" title="Advertisement">
                 <div className="relative w-full h-[550px] overflow-hidden group">
 
                   <Image
@@ -240,7 +240,7 @@ export default async function ArticlePage({ params }) {
                   </span>
 
                 </div>
-              </a>
+              </Link>
 
             </div>
           </div>

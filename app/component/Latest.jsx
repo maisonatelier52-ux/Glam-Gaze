@@ -30,7 +30,7 @@ export default function ReadMore({ articles }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             
             {articles.map((item, index) => (
-              <Link href={`/${item.category}/${item.slug}`} key={index}>
+              <Link href={`/${item.category}/${item.slug}`} key={index} title={`View ${item.title}`}>
                 <article className="group cursor-pointer">
 
                   {/* IMAGE */}
@@ -66,10 +66,11 @@ export default function ReadMore({ articles }) {
         <div className="lg:col-span-1">
             <div className="sticky top-24">
 
-                <a
+                <Link
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="View Advertisement"
                 className="block group"
                 >
                     <div className="relative w-full h-[600px] overflow-hidden border border-gray-300">
@@ -88,7 +89,7 @@ export default function ReadMore({ articles }) {
                         </span>
 
                     </div>
-                </a>
+                </Link>
 
             </div>
         </div>

@@ -122,6 +122,7 @@ export default function MenuSidebar({ open, setOpen }) {
               {!item.children ? (
                 <Link
                   href={item.link}
+                  title={`View ${item.name} articles`}
                   onClick={() => setOpen(false)}
                   style={{
                     display: "flex",
@@ -182,6 +183,7 @@ export default function MenuSidebar({ open, setOpen }) {
                         <Link
                           key={child.name}
                           href={child.link}
+                          title={`View ${child.name} articles`}
                           onClick={() => setOpen(false)}
                           style={{
                             display: "block",
@@ -228,6 +230,7 @@ export default function MenuSidebar({ open, setOpen }) {
               <Link
                 key={i}
                 href={link}
+                title={`Follow us on ${Icon.displayName.replace("Fa", "")}`}
                 target="_blank"
                 style={{ color: "#444", transition: "color 0.2s" }}
                 onMouseEnter={e => e.currentTarget.style.color = "#fff"}

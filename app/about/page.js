@@ -111,7 +111,7 @@ export default function AboutPage() {
               key={i}
               className="group p-6 rounded-xl border border-gray-200 hover:shadow-xl transition duration-300 bg-white"
             >
-              <Link href={`/${item.toLowerCase()}`}>
+              <Link href={`/${item.toLowerCase()}`} title={`View ${item} articles`}>
               <h3 className="font-semibold text-lg mb-2 group-hover:underline">
                 {item}
               </h3>

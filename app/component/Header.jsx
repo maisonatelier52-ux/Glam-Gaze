@@ -55,7 +55,7 @@ export default function Header() {
 
             {/* CENTER — LOGO */}
             <div className="flex flex-col items-center leading-none">
-              <Link href="/" className="group flex flex-col items-center no-underline">
+              <Link href="/" title="Glam Gaze - Home" className="group flex flex-col items-center no-underline">
                 {/* Decorative rule above logo */}
                 <span
                   className="block mb-1"
@@ -143,6 +143,7 @@ export default function Header() {
               <Link
                 key={item}
                 href={`/${item}`}
+                title={`View ${item} articles`}
                 className="relative group"
               >
                 {item}

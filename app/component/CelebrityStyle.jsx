@@ -27,7 +27,7 @@ export default function CelebrityStyleSection({ title, articles }) {
       {/* GRID (4 columns) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {articles.slice(0, 4).map((item, index) => (
-          <Link href={`/${item.category}/${item.slug}`} key={index}>
+          <Link href={`/${item.category}/${item.slug}`} key={index} title={`View ${item.title}`}>
             <article className="group cursor-pointer">
               
               <Image

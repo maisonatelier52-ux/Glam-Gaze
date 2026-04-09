@@ -96,6 +96,7 @@ export default async function AuthorPage({ params }) {
               <Link
                 key={article.slug}
                 href={`/${article.category}/${article.slug}`}
+                title={`Read "${article.title}"`}
                 className="group"
               >
                 <article>

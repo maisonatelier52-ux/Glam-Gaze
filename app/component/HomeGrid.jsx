@@ -26,6 +26,7 @@ export default function HomeGrid({ articles = [] }) {
             <Link
               key={article.slug}
               href={`/${article.category}/${article.slug}`}
+              title={`View ${article.title}`}
             >
               <article className="group cursor-pointer">
                 
@@ -39,9 +40,9 @@ export default function HomeGrid({ articles = [] }) {
                   />
                 </div>
 
-                <h3 className="mt-3 text-base sm:text-lg font-semibold group-hover:underline">
+                <p className="mt-3 text-base sm:text-lg font-semibold group-hover:underline">
                   {article.title}
-                </h3>
+                </p>
               </article>
             </Link>
           ))}
@@ -52,6 +53,7 @@ export default function HomeGrid({ articles = [] }) {
           {centerArticle && (
             <Link
               href={`/${centerArticle.category}/${centerArticle.slug}`}
+              title={`View ${centerArticle.title}`}
             >
               <article className="group cursor-pointer text-center">
                 
@@ -83,6 +85,7 @@ export default function HomeGrid({ articles = [] }) {
             <Link
               key={article.slug}
               href={`/${article.category}/${article.slug}`}
+              title={`View ${article.title}`}
               className="py-3 first:pt-0 last:pb-0"
             >
               <article className="flex gap-2 items-start group cursor-pointer">
@@ -93,9 +96,9 @@ export default function HomeGrid({ articles = [] }) {
                     {article.category}
                   </p>
 
-                  <h4 className="text-sm sm:text-base font-semibold leading-tight group-hover:underline pb-2">
+                  <p className="text-sm sm:text-base font-semibold leading-tight group-hover:underline pb-2">
                     {article.title}
-                  </h4>
+                  </p>
 
                   <p className="text-[10px] sm:text-[11px] font-semibold uppercase">
                     BY {getAuthorName(article.authorId)}
