@@ -7,13 +7,19 @@ import Latest from "./component/Latest";
 import NewsletterModal from "./component/NewsLetterModal";
 
 export async function generateMetadata() {
+  const SITE_URL = "https://www.theglamgaze.com";
+
   const title = "GLAM GAZE | Latest Fashion, Style, Business News";
   const description =
     "Discover the latest trends in fashion, celebrity style, business and living. Stay updated with fresh stories and insights.";
 
+  const image = `${SITE_URL}/og-image.jpg`;
+
   return {
+    metadataBase: new URL(SITE_URL),
     title,
     description,
+
     keywords: [
       "fashion news",
       "celebrity style",
@@ -21,16 +27,38 @@ export async function generateMetadata() {
       "culture",
       "lifestyle",
     ],
+
+    alternates: {
+      canonical: SITE_URL,
+    },
+
     openGraph: {
       title,
       description,
-      url: "https://yourdomain.com",
+      url: SITE_URL,
+      siteName: "GLAM GAZE",
       type: "website",
+      locale: "en_US",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: "GLAM GAZE - Fashion & Lifestyle News",
+        },
+      ],
     },
+
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [image],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
