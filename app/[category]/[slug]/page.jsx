@@ -49,7 +49,6 @@ export async function generateMetadata({ params }) {
       locale: "en_US",
       publishedTime: article.date,
       authors: [author?.name || "Unknown"],
-      section: article.category,
       images: [
         {
           url: imageUrl,
@@ -65,7 +64,6 @@ export async function generateMetadata({ params }) {
       title: article.title,
       description: article.excerpt,
       images: [imageUrl],
-      creator: "@yourhandle",
     },
   };
 }

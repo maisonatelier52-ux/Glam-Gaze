@@ -57,9 +57,9 @@ export default function ReadMoreSection({ currentArticle }) {
                   {item.category}
                 </p>
 
-                <h3 className="text-lg font-semibold leading-snug group-hover:underline">
+                <p className="text-lg font-semibold leading-snug group-hover:underline">
                   {item.title}
-                </h3>
+                </p>
 
                 <p className="text-[11px] uppercase mt-2 opacity-80">
                   BY {getAuthorName(item.authorId)}

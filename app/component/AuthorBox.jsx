@@ -23,9 +23,9 @@ export default function AuthorBox({ author }) {
             Written By
           </p>
 
-          <h3 className="text-lg font-semibold">
+          <p className="text-lg font-semibold">
             {author.name}
-          </h3>
+          </p>
 
           <p className="text-sm text-gray-600 mt-2 leading-relaxed max-w-xl">
             {author.bio}
