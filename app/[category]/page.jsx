@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
   const { category } = await params;
 
   const SITE_URL = "https://www.theglamgaze.com";
-  const image = `${SITE_URL}/og-image.jpg`;
+  const image = `${SITE_URL}/glam_gaze.png`;
 
   const validCategories = [
     "fashion",

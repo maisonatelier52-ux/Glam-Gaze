@@ -13,7 +13,7 @@ export async function generateMetadata() {
   const description =
     "Discover the latest trends in fashion, celebrity style, business and living. Stay updated with fresh stories and insights.";
 
-  const image = `${SITE_URL}/og-image.jpg`;
+  const image = `${SITE_URL}/glam_gaze.png`;
 
   return {
     metadataBase: new URL(SITE_URL),
