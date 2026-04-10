@@ -99,7 +99,7 @@ export default function Home() {
   );
   const cultureLiving = getArticles(
     (a) => ["culture", "living"].includes(a.category),
-    9
+    4
   );
   const latestStories = sortedDate.slice(30, 39);
 

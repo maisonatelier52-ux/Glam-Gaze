@@ -102,9 +102,9 @@ export default function OscarsSection({ title, articles }) {
                 </div>
                 {/* TEXT */}
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold leading-snug group-hover:underline underline-offset-2 line-clamp-3">
+                  <div className="text-lg font-semibold leading-snug group-hover:underline underline-offset-2 line-clamp-3">
                     {item.title}
-                  </h4>
+                  </div>
 
                   <p className="text-xs text-gray-400 uppercase tracking-wide mt-2">
                     By {getAuthorName(item.authorId)}

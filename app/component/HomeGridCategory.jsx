@@ -39,10 +39,10 @@ export default function HomeGridCategory({ articles = [] }) {
                     <div className="text-center">
                         <p className="text-md font-semibold uppercase text-gray-500 pt-2">{article.category}</p>
 
-                        <h3 className="mt-1 text-lg font-semibold hover:underline">
+                        <p className="mt-1 text-lg font-semibold hover:underline">
                         {article.title}
 
-                        </h3>
+                        </p>
                         <p className=" text-xs py-2 font-semibold uppercase tracking-wide text-center">
                             {getAuthorName(article.authorId)}
                         </p>
