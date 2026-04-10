@@ -20,7 +20,6 @@ export async function generateMetadata({ params }) {
   const author = data.authors.find((a) => a.id === article.authorId);
 
   const SITE_URL = "https://www.theglamgaze.com";
-
   const imageUrl = `${SITE_URL}/${article.image}`;
 
   return {
@@ -33,7 +32,12 @@ export async function generateMetadata({ params }) {
       canonical: `${SITE_URL}/news/${slug}`,
     },
 
-    keywords: [article.category, "news", "latest news"],
+    keywords: [
+      article.category,
+      `${article.category} news`,
+      `${article.category} trends`,
+      "latest news",
+    ],
 
     robots: {
       index: true,
@@ -81,25 +85,67 @@ export default async function ArticlePage({ params }) {
   // Now safe to access author
   const author = data.authors.find((a) => a.id === article.authorId);
 
+  const SITE_URL = "https://www.theglamgaze.com";
+  const imageUrl = `${SITE_URL}/${article.image}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/news/${article.slug}`,
+    },
+
     headline: article.title,
     description: article.excerpt,
-    image: [article.image],
+
+    image: [imageUrl],
+
     datePublished: article.date,
+    dateModified: article.date,
+
     author: {
       "@type": "Person",
       name: author?.name || "Unknown",
+      url: `${SITE_URL}/author/${author?.slug}`,
     },
+
     publisher: {
       "@type": "Organization",
-      name: "Your Website Name",
+      name: "GLAM GAZE",
       logo: {
         "@type": "ImageObject",
-        url: "/logo.png",
+        url: `${SITE_URL}/glam_gaze.png`,
       },
     },
+
+    articleSection: article.category,
+  };
+
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: article.category,
+        item: `${SITE_URL}/${article.category}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: `${SITE_URL}/news/${article.slug}`,
+      },
+    ],
   };
 
   return (
@@ -108,6 +154,10 @@ export default async function ArticlePage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
   
       <section className="px-4 sm:px-6 lg:px-8 py-8">
