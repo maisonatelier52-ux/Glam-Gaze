@@ -14,11 +14,11 @@ export async function generateMetadata({ params }) {
   return {
     title: `${author.name} - GLAM GAZE`,
     description:
-      author.bio ||
+      author.meta_description ||
       `Read articles and insights by ${author.name} on GLAM GAZE.`,
     openGraph: {
       title: author.name,
-      description: author.bio,
+      description: author.meta_description,
       url: `https://yourdomain.com/author/${slug}`,
       type: "profile",
     },
@@ -40,7 +40,7 @@ export default async function AuthorPage({ params }) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: author.name,
-    description: author.bio,
+    description: author.meta_description,
     url: `https://yourdomain.com/author/${slug}`,
   };
 

@@ -28,7 +28,7 @@ export default function AuthorBox({ author }) {
           </p>
 
           <p className="text-sm text-gray-600 mt-2 leading-relaxed max-w-xl">
-            {author.bio}
+            {author.meta_description || author.bio || "Writer at GLAM GAZE covering fashion and culture."}
           </p>
         </div>
 
