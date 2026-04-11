@@ -1,4 +1,3 @@
-// ✅ SEO Metadata
 export async function generateMetadata() {
   return {
     title: "Terms of Use",
@@ -23,7 +22,7 @@ export default function TermsOfUse() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
-      {/* ✅ JSON-LD */}
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

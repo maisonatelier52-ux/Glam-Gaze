@@ -86,7 +86,7 @@ export default async function ArticlePage({ params }) {
   const author = data.authors.find((a) => a.id === article.authorId);
 
   const SITE_URL = "https://www.theglamgaze.com";
-  const imageUrl = `${SITE_URL}/${article.image}`;
+  const imageUrl = `${SITE_URL}${article.image}`;
 
   const jsonLd = {
     "@context": "https://schema.org",

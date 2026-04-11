@@ -35,7 +35,7 @@ export default async function AuthorPage({ params }) {
     .filter((a) => a.authorId === author.id)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // ✅ JSON-LD
+  // JSON-LD
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -53,7 +53,7 @@ export default async function AuthorPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* 🔥 HERO (Editorial Style) */}
+      {/* HERO (Editorial Style) */}
       <section className="border-b border-black/10 py-16 text-center px-4">
         <div className="max-w-3xl mx-auto">
 
@@ -86,7 +86,7 @@ export default async function AuthorPage({ params }) {
         </h2>
       </div>
 
-      {/* 🔥 ARTICLES GRID */}
+      {/* ARTICLES GRID */}
       {articles.length > 0 ? (
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 

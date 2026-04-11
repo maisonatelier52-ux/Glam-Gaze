@@ -5,7 +5,7 @@ import { FiX } from "react-icons/fi";
 
 export default function NewsletterModal() {
   const [open, setOpen] = useState(false);
-  const [email, setEmail] = useState(""); // ✅ missing state
+  const [email, setEmail] = useState(""); // missing state
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -42,7 +42,7 @@ export default function NewsletterModal() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json", // ✅ important
+          "Content-Type": "application/json", // important
         },
         body: JSON.stringify({ email }),
       });

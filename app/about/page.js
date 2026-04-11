@@ -33,13 +33,13 @@ export default function AboutPage() {
   return (
     <main className="px-4 sm:px-6 lg:px-8 py-12 max-w-6xl mx-auto">
 
-      {/* ✅ JSON-LD */}
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* 🔥 HERO (Modern with overlay) */}
+      {/* HERO (Modern with overlay) */}
       <section className="relative mb-20 rounded-2xl overflow-hidden">
         <Image
           src="/about.webp"
@@ -59,7 +59,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 🔥 INTRO CARD (Glass Effect) */}
+      {/* INTRO CARD (Glass Effect) */}
       <section className="mb-20 -mt-28 relative z-10">
         <div className="bg-white/80 backdrop-blur-md shadow-xl rounded-2xl p-6 sm:p-10 max-w-3xl mx-auto text-center">
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
@@ -71,7 +71,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 🔥 OUR STORY (Better layout) */}
+      {/* OUR STORY (Better layout) */}
       <section className="grid lg:grid-cols-2 gap-12 items-center mb-24">
         <div>
           <h2 className="text-3xl sm:text-4xl font-semibold mb-6">
@@ -99,7 +99,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 🔥 WHAT WE COVER (Modern Cards) */}
+      {/* WHAT WE COVER (Modern Cards) */}
       <section className="mb-24">
         <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-12">
           What We Cover

@@ -127,14 +127,14 @@ export default function Home() {
 
   return (
     <div className="px-8">
-      {/* ✅ JSON-LD Script */}
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
 
-      {/* ✅ SEO INTRO */}
+      {/* SEO INTRO */}
       <section className="sr-only mx-auto max-w-4xl py-10 text-center">
         <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">
           Latest Fashion, Celebrity Style & Business News

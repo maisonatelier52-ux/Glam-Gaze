@@ -124,7 +124,7 @@ export default async function Category({ params }) {
   return (
     <div className="px-4 sm:px-6 lg:px-8">
 
-      {/* JSON-LD Script */}
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
