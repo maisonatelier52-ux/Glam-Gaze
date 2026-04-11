@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/data.json";
 
-// Metadata (fixed bug)
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
@@ -16,11 +15,28 @@ export async function generateMetadata({ params }) {
     description:
       author.meta_description ||
       `Read articles and insights by ${author.name} on GLAM GAZE.`,
+
     openGraph: {
       title: author.name,
       description: author.meta_description,
       url: `https://yourdomain.com/author/${slug}`,
       type: "profile",
+      siteName: "GLAM GAZE",
+      images: [
+        {
+          url: `https://yourdomain.com${author.photo || "/author.jpg"}`,
+          width: 800,
+          height: 800,
+          alt: author.name,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: author.name,
+      description: author.meta_description,
+      images: [`https://yourdomain.com${author.photo || "/author.jpg"}`],
     },
   };
 }
@@ -42,6 +58,17 @@ export default async function AuthorPage({ params }) {
     name: author.name,
     description: author.meta_description,
     url: `https://yourdomain.com/author/${slug}`,
+    image: `https://yourdomain.com${author.photo || "/author.jpg"}`,
+    sameAs: [
+      author.twitter,
+      author.instagram,
+      author.facebook,
+    ].filter(Boolean),
+    worksFor: {
+      "@type": "Organization",
+      name: "GLAM GAZE",
+      url: "https://yourdomain.com",
+    },
   };
 
   return (
