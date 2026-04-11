@@ -15,7 +15,7 @@ export default function TermsOfUse() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Terms of Use",
-    url: "https://yourdomain.com/terms",
+    url: "https://www.theglamgaze.com/terms",
     description:
       "Terms and conditions governing the use of this website and its content.",
   };

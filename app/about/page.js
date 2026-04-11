@@ -2,14 +2,14 @@
 // SEO Metadata
 export async function generateMetadata() {
   return {
-    title: "About Us - Your Brand",
+    title: "About Us - Glam Gaze",
     description:
       "Learn more about our mission, vision, and the stories shaping fashion, culture, and modern lifestyle.",
     openGraph: {
-      title: "About Us - Your Brand",
+      title: "About Us - Glam Gaze",
       description:
         "Explore our story, values, and what we cover across fashion, culture, and lifestyle.",
-      url: "https://yourdomain.com/about",
+      url: "https://www.theglamgaze.com/about",
       type: "website",
     },
   };
@@ -25,7 +25,7 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Us",
-    url: "https://yourdomain.com/about",
+    url: "https://www.theglamgaze.com/about",
     description:
       "Learn about our platform, our mission, and what we cover in fashion, culture, and lifestyle.",
   };
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold mb-4">
-            About Us
+            About Glam Gaze
           </h1>
           <p className="text-gray-200 max-w-2xl text-sm sm:text-base lg:text-lg">
             A global destination for fashion, culture, and modern storytelling.

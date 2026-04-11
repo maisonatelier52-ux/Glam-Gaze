@@ -19,12 +19,12 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: author.name,
       description: author.meta_description,
-      url: `https://yourdomain.com/author/${slug}`,
+      url: `https://www.theglamgaze.com/author/${slug}`,
       type: "profile",
       siteName: "GLAM GAZE",
       images: [
         {
-          url: `https://yourdomain.com${author.photo || "/author.jpg"}`,
+          url: `https://www.theglamgaze.com${author.photo || "/author.jpg"}`,
           width: 800,
           height: 800,
           alt: author.name,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: author.name,
       description: author.meta_description,
-      images: [`https://yourdomain.com${author.photo || "/author.jpg"}`],
+      images: [`https://www.theglamgaze.com${author.photo || "/author.jpg"}`],
     },
   };
 }
@@ -57,8 +57,8 @@ export default async function AuthorPage({ params }) {
     "@type": "Person",
     name: author.name,
     description: author.meta_description,
-    url: `https://yourdomain.com/author/${slug}`,
-    image: `https://yourdomain.com${author.photo || "/author.jpg"}`,
+    url: `https://www.theglamgaze.com/author/${slug}`,
+    image: `https://www.theglamgaze.com${author.photo || "/author.jpg"}`,
     sameAs: [
       author.twitter,
       author.instagram,
@@ -67,7 +67,7 @@ export default async function AuthorPage({ params }) {
     worksFor: {
       "@type": "Organization",
       name: "GLAM GAZE",
-      url: "https://yourdomain.com",
+      url: "https://www.theglamgaze.com",
     },
   };
 

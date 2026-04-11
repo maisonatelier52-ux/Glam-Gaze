@@ -109,13 +109,13 @@ export default async function Category({ params }) {
     "@type": "CollectionPage",
     name: `${category} News`,
     description: `Latest updates and stories in ${category}`,
-    url: `https://yourdomain.com/${category}`,
+    url: `https://www.theglamgaze.com/${category}`,
     mainEntity: {
       "@type": "ItemList",
       itemListElement: filteredArticles.slice(0, 10).map((article, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        url: `https://yourdomain.com/${category}/${article.slug}`,
+        url: `https://www.theglamgaze.com/${category}/${article.slug}`,
         name: article.title,
       })),
     },

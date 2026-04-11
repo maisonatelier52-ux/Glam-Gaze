@@ -107,11 +107,11 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Your Website Name",
-    url: "https://yourdomain.com",
+    name: "Glam Glaze",
+    url: "https://www.theglamgaze.com",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://yourdomain.com/search?q={search_term_string}",
+      target: "https://www.theglamgaze.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
     mainEntity: {
@@ -119,7 +119,7 @@ export default function Home() {
       itemListElement: sortedDate.slice(0, 10).map((article, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        url: `https://yourdomain.com/${article.category}/${article.slug}`,
+        url: `https://www.theglamgaze.com/${article.category}/${article.slug}`,
         name: article.title,
       })),
     },

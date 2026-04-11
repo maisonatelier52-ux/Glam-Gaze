@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Privacy Policy",
-    url: "https://yourdomain.com/privacy",
+    url: "https://www.theglamgaze.com/privacy",
     description:
       "Details about how user data is collected, used, and protected on this website.",
   };
