@@ -82,6 +82,7 @@ export default function TermsOfUse() {
             1. Acceptance of Terms
           </h2>
           <p>
+            Welcome to <strong>Glam Gaze</strong> (“we,” “us,” or “our”).
             By accessing and using this website, you agree to comply with
             and be bound by these Terms of Use. If you do not agree,
             please do not use our website.
