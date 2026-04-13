@@ -1,16 +1,38 @@
 
 // SEO Metadata
 export async function generateMetadata() {
+  const url = "https://www.theglamgaze.com/about";
+  const title = "About Us - Glam Gaze";
+  const description =
+    "Learn more about our mission, vision, and the stories shaping fashion, culture, and modern lifestyle.";
+  const image = "https://www.theglamgaze.com/glam_gaze.png";
+
   return {
-    title: "About Us - Glam Gaze",
-    description:
-      "Learn more about our mission, vision, and the stories shaping fashion, culture, and modern lifestyle.",
+    title,
+    description,
+
     openGraph: {
-      title: "About Us - Glam Gaze",
-      description:
-        "Explore our story, values, and what we cover across fashion, culture, and lifestyle.",
-      url: "https://www.theglamgaze.com/about",
+      title,
+      description,
+      url,
       type: "website",
+      siteName: "Glam Gaze",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: "About Glam Gaze",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      site: "@theglamgaze",
+      title,
+      description,
+      images: [image],
     },
   };
 }

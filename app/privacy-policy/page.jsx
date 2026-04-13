@@ -1,12 +1,46 @@
 // SEO Metadata
 export async function generateMetadata() {
+  const url = "https://www.theglamgaze.com/privacy";
+  const title = "Privacy Policy - Glam Gaze";
+  const description =
+    "Learn how we collect, use, and protect your personal information when using Glam Gaze.";
+  const image = "https://www.theglamgaze.com/glam_gaze.png";
+
   return {
-    title: "Privacy Policy",
-    description:
-      "Learn how we collect, use, and protect your personal information when you use our website.",
+    title,
+    description,
+
     robots: {
       index: true,
       follow: true,
+    },
+
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      siteName: "Glam Gaze",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: "Privacy Policy - Glam Gaze",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      site: "@theglamgaze", // replace with actual handle
+      title,
+      description,
+      images: [image],
     },
   };
 }
@@ -18,7 +52,12 @@ export default function PrivacyPolicy() {
     name: "Privacy Policy",
     url: "https://www.theglamgaze.com/privacy",
     description:
-      "Details about how user data is collected, used, and protected on this website.",
+      "Learn how Glam Gaze collects, uses, and protects your personal information.",
+    publisher: {
+      "@type": "Organization",
+      name: "Glam Gaze",
+      url: "https://www.theglamgaze.com",
+    },
   };
 
   return (

@@ -1,11 +1,45 @@
 export async function generateMetadata() {
+  const url = "https://www.theglamgaze.com/terms";
+  const title = "Terms of Use - Glam Gaze";
+  const description =
+    "Read the Terms of Use for accessing Glam Gaze, including content usage, responsibilities, and legal policies.";
+  const image = "https://www.theglamgaze.com/glam_gaze.png";
+
   return {
-    title: "Terms of Use",
-    description:
-      "Read the Terms of Use for accessing and using our website, including content usage, responsibilities, and legal terms.",
+    title,
+    description,
+
     robots: {
       index: true,
       follow: true,
+    },
+
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      siteName: "Glam Gaze",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: "Terms of Use - Glam Gaze",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      site: "@theglamgaze", // replace with your real handle
+      title,
+      description,
+      images: [image],
     },
   };
 }
@@ -17,7 +51,12 @@ export default function TermsOfUse() {
     name: "Terms of Use",
     url: "https://www.theglamgaze.com/terms",
     description:
-      "Terms and conditions governing the use of this website and its content.",
+      "Terms and conditions for using Glam Gaze, including content use, responsibilities, and legal guidelines.",
+    publisher: {
+      "@type": "Organization",
+      name: "Glam Gaze",
+      url: "https://www.theglamgaze.com",
+    },
   };
 
   return (
