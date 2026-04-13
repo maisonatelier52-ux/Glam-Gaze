@@ -13,7 +13,7 @@ const menuItems = [
   { name: "Actress", link: "/actress" },
   { name: "Culture", link: "/culture" },
   { name: "Living", link: "/living" },
-  { name: "About", link: "/about-glam-gaze" },
+  { name: "About", link: "/about" },
 ];
 
 const socials = [
