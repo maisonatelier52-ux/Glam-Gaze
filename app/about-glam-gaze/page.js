@@ -1,7 +1,7 @@
 
 // SEO Metadata
 export async function generateMetadata() {
-  const url = "https://www.theglamgaze.com/about";
+  const url = "https://www.theglamgaze.com/about-glam-gaze";
   const title = "About Us - Glam Gaze";
   const description =
     "Learn more about our mission, vision, and the stories shaping fashion, culture, and modern lifestyle.";
@@ -47,7 +47,7 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Us",
-    url: "https://www.theglamgaze.com/about",
+    url: "https://www.theglamgaze.com/about-glam-gaze",
     description:
       "Learn about our platform, our mission, and what we cover in fashion, culture, and lifestyle.",
   };
