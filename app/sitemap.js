@@ -56,7 +56,7 @@ export default function sitemap() {
     .map(article => {
 
       return {
-        url: `${SITE_URL}/news/${article.slug}`,
+        url: `${SITE_URL}/${article.category.toLowerCase().replace(/\s+/g, "-")}/${article.slug}`,
         lastModified: article.date ? new Date(article.date) : now,
         changeFrequency: "weekly",
         priority: 0.8,
