@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { FaTwitter, FaInstagram, FaTiktok, FaMedium } from "react-icons/fa";
 
@@ -20,6 +18,29 @@ export default function Footer() {
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Contact", href: "/contact" },
   ];
+
+  const socialLinks = [
+    {
+      icon: FaTwitter,
+      href: "",
+      label: "Twitter",
+    },
+    {
+      icon: FaInstagram,
+      href: "https://www.instagram.com/the_glamgaze/",
+      label: "Instagram",
+    },
+    {
+      icon: FaTiktok,
+      href: "",
+      label: "TikTok",
+    },
+    {
+      icon: FaMedium,
+      href: "",
+      label: "Medium",
+    },
+  ]
 
   return (
     <footer className="bg-[#0a0a0a] text-white border-t border-gray-800">
@@ -48,13 +69,13 @@ export default function Footer() {
 
           {/* SOCIAL */}
           <div className="flex gap-6 mt-3">
-            {[FaTwitter, FaInstagram, FaTiktok, FaMedium].map((Icon, i) => (
+            {socialLinks.map(({ icon: Icon, href, label }, i) => (
               <Link
                 key={i}
-                href="#"
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                title={`Follow us on Social Media`}
+                title={`Follow us on ${label}`}
                 className="text-gray-400 hover:text-white transition hover:scale-110"
               >
                 <Icon size={18} />

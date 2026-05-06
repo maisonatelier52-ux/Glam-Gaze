@@ -17,10 +17,10 @@ const menuItems = [
 ];
 
 const socials = [
-  { Icon: FaTwitter, link: "#", name: "Twitter" },
-  { Icon: FaInstagram, link: "#", name: "Instagram" },
-  { Icon: FaTiktok, link: "#", name: "TikTok" },
-  { Icon: FaMedium, link: "#", name: "Medium" },
+  { Icon: FaTwitter, link: "", name: "Twitter" },
+  { Icon: FaInstagram, link: "https://www.instagram.com/the_glamgaze/", name: "Instagram" },
+  { Icon: FaTiktok, link: "", name: "TikTok" },
+  { Icon: FaMedium, link: "", name: "Medium" },
 ];
 
 export default function MenuSidebar({ open, setOpen }) {
