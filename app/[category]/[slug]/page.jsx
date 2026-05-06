@@ -5,6 +5,7 @@ import AuthorBox from "@/app/component/AuthorBox";
 import NewsletterSection from "@/app/component/NewsLetter";
 import ReadMoreSection from "@/app/component/ReadMore";
 import Link from "next/link";
+import MoreFromCategory from "@/app/component/MoreFromCategory";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -268,30 +269,8 @@ export default async function ArticlePage({ params }) {
             <AuthorBox author={author} />
 
           </article>
-
-          {/* ADVERTISEMENT */}
-          <div className="lg:col-span-1">
-            <div className="lg:sticky lg:top-28 mt-10 lg:mt-0">
-
-              <Link href="#" target="_blank" rel="noopener noreferrer" title="Advertisement">
-                <div className="relative w-full h-[550px] overflow-hidden group">
-
-                  <Image
-                    src="/ads/signal-2025-12-12-143957-1.jpeg"
-                    alt="Advertisement"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-
-                  <span className="absolute top-2 left-2 bg-black/70 text-white text-[10px] px-2 py-1 uppercase tracking-wider">
-                    Ad
-                  </span>
-
-                </div>
-              </Link>
-
-            </div>
-          </div>
+          
+          <MoreFromCategory currentArticle={article} />
 
         </div>
 

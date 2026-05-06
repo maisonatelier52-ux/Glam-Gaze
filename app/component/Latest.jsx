@@ -4,24 +4,12 @@ import data from "@/data/data.json";
 
 const fashionQuotes = [
   {
-    text: "Fashion is the armor to survive the reality of everyday life.",
-    author: "Bill Cunningham",
-  },
-  {
-    text: "Elegance is not about being noticed, it's about being remembered.",
-    author: "Giorgio Armani",
-  },
-  {
-    text: "Style is a way to say who you are without having to speak.",
+    text: "Style is a way to say who you are without having to speak",
     author: "Rachel Zoe",
   },
   {
-    text: "Fashions fade, style is eternal.",
-    author: "Yves Saint Laurent",
-  },
-  {
-    text: "The beauty of dressing is to find what works for you and then own it completely.",
-    author: "Diane von Furstenberg",
+    text: "FASHION HAS TO REFLECT WHO YOU ARE, what you feel at the moment. where you ' re going",
+    author: "Pharrell Williams",
   },
 ];
 
