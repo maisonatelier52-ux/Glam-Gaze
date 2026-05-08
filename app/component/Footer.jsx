@@ -16,7 +16,6 @@ export default function Footer() {
     { label: "About Us", href: "/about" },
     { label: "Terms of Use", href: "/terms-of-use" },
     { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
