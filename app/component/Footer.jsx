@@ -16,23 +16,19 @@ export default function Footer() {
     { label: "About Us", href: "/about" },
     { label: "Terms of Use", href: "/terms-of-use" },
     { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
     {
       icon: FaTwitter,
-      href: "",
+      href: "https://x.com/omelet81720",
       label: "Twitter",
     },
     {
       icon: FaInstagram,
       href: "https://www.instagram.com/the_glamgaze/",
       label: "Instagram",
-    },
-    {
-      icon: FaTiktok,
-      href: "",
-      label: "TikTok",
     },
     {
       icon: FaMedium,
