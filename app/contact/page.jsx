@@ -593,34 +593,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── Bottom Strip ── */}
-      <section
-        className="border-t"
-        style={{ borderColor: "#e8ded4", background: "var(--brand-tint)" }}
-      >
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 text-center sm:flex-row sm:text-left lg:px-8">
-          <p
-            className="display text-lg font-light italic"
-            style={{ color: "var(--ink)" }}
-          >
-            The Glam Gaze
-          </p>
-          <p
-            className="text-xs font-light uppercase tracking-widest"
-            style={{ color: "var(--ink-muted)" }}
-          >
-            Beauty · Style · Culture
-          </p>
-          <a
-            href="mailto:orbitingomelet@gmail.com"
-            className="ghost-btn text-xs"
-            style={{ color: "var(--brand)" }}
-          >
-            orbitingomelet@gmail.com
-            <FaArrowRight className="h-2.5 w-2.5" />
-          </a>
-        </div>
-      </section>
     </main>
   );
 }
