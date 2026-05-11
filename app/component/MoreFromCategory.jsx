@@ -62,6 +62,7 @@ export default function MoreFromCategory({ currentArticle }) {
       <Link
         href={`/${currentArticle.category}`}
         className="mt-6 flex items-center justify-between w-full border border-black px-4 py-3 group hover:bg-black hover:text-white transition-colors duration-200"
+        title={`View All ${currentArticle.category}`}
       >
         <span className="text-[11px] uppercase tracking-[2px] font-semibold">
           View All {currentArticle.category}
@@ -70,6 +71,16 @@ export default function MoreFromCategory({ currentArticle }) {
           →
         </span>
       </Link>
+
+      <div className="w-full sticky top-30 mt-10 px-5">
+        <Image
+          src="/quote_0.jpeg"
+          alt="Sidebar promotional image"
+          width={500}
+          height={700}
+          className="w-full rounded-lg object-cover"
+        />
+      </div>
     </aside>
   );
 }

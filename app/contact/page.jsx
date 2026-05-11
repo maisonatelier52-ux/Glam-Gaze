@@ -450,6 +450,7 @@ export default function ContactPage() {
                     href="https://www.theglamgaze.com/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Visit The Glam Gaze Website"
                     className="mt-2 inline-block text-base font-light transition hover:underline"
                     style={{ color: "var(--ink)", textDecorationColor: "var(--brand)" }}
                   >
@@ -581,6 +582,7 @@ export default function ContactPage() {
                   href="https://www.theglamgaze.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Visit The Glam Gaze Website"
                   className="ghost-btn"
                   style={{ color: "var(--brand-light)", borderBottomColor: "rgba(176,141,110,0.3)" }}
                 >

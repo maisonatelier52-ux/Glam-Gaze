@@ -26,7 +26,7 @@ export default function OscarsSection({ title, articles }) {
         <div className="grid md:grid-cols-2 gap-10">
 
           {/* LEFT — featured */}
-          <Link href={`/${articles[0].category}/${articles[0].slug}`} className="group">
+          <Link href={`/${articles[0].category}/${articles[0].slug}`} className="group" title={`View ${articles[0].title}`}>
             <div className="relative h-[400px] overflow-hidden rounded-lg bg-gray-100">
               <Image
                 src={articles[0].image}
@@ -53,6 +53,7 @@ export default function OscarsSection({ title, articles }) {
               <Link
                 key={i}
                 href={`/${item.category}/${item.slug}`}
+                title={`View ${item.title}`}
                 className="flex gap-4 py-4 group"
               >
                 <div className="relative w-40 h-28 flex-shrink-0 overflow-hidden rounded-md bg-gray-100">
@@ -87,6 +88,7 @@ export default function OscarsSection({ title, articles }) {
               <Link
                 key={i}
                 href={`/${item.category}/${item.slug}`}
+                title={`View ${item.title}`}
                 className="flex items-start gap-4 py-4 group"
               >
                 {/* IMAGE */}
@@ -119,6 +121,7 @@ export default function OscarsSection({ title, articles }) {
           <Link
             href={`/${articles[0].category}/${articles[0].slug}`}
             className="lg:col-span-2 group"
+            title={`View ${articles[0].title}`}
           >
             <div className="relative h-[420px] overflow-hidden rounded-lg bg-gray-100">
               <Image
@@ -145,7 +148,7 @@ export default function OscarsSection({ title, articles }) {
           {/* BOTTOM GRID */}
           <div className="grid grid-cols-2 gap-6 lg:col-span-3 pt-2 border-t border-gray-100">
             {articles.slice(4).map((item, i) => (
-              <Link key={i} href={`/${item.category}/${item.slug}`} className="group">
+              <Link key={i} href={`/${item.category}/${item.slug}`} className="group" title={`View ${item.title}`}>
                 <div className="relative h-44 overflow-hidden rounded-lg bg-gray-100">
                   <Image
                     src={item.image}
@@ -171,7 +174,7 @@ export default function OscarsSection({ title, articles }) {
       {articles.length !== 4 && articles.length !== 6 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((item, index) => (
-            <Link key={index} href={`/${item.category}/${item.slug}`} className="group">
+            <Link key={index} href={`/${item.category}/${item.slug}`} className="group" title={`View ${item.title}`}>
               <div className="relative h-56 overflow-hidden rounded-lg bg-gray-100">
                 <Image
                   src={item.image}

@@ -130,6 +130,7 @@ export default function OscarsSection({ title, articles }) {
               sm:w-1/2
               lg:w-1/3
             `}
+            title={`View ${item.title}`}
           >
             <article className="group cursor-pointer">
 
