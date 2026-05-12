@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/data.json";
 
+import {
+  FaReddit,
+  FaMedium,
+  FaQuora,
+} from "react-icons/fa";
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
@@ -60,9 +66,9 @@ export default async function AuthorPage({ params }) {
     url: `https://www.theglamgaze.com/author/${slug}`,
     image: `https://www.theglamgaze.com${author.photo || "/author.jpg"}`,
     sameAs: [
-      author.twitter,
-      author.instagram,
-      author.facebook,
+      author.reddit,
+      author.medium,
+      author.quora,
     ].filter(Boolean),
     worksFor: {
       "@type": "Organization",
@@ -100,7 +106,48 @@ export default async function AuthorPage({ params }) {
             {author.bio || "Writer at GLAM GAZE covering fashion and culture."}
           </p>
 
-          <p className="mt-4 text-xs tracking-[0.2em] uppercase text-gray-500">
+          {/* SOCIAL MEDIA */}
+          <div className="flex items-center justify-center gap-5 mt-6">
+
+            {author.reddit && (
+              <Link
+                href={author.reddit}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${author.name} Reddit`}
+                className="text-gray-500 hover:text-black transition"
+              >
+                <FaReddit className="w-5 h-5" />
+              </Link>
+            )}
+
+            {author.medium && (
+              <Link
+                href={author.medium}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${author.name} Medium`}
+                className="text-gray-500 hover:text-black transition"
+              >
+                <FaMedium className="w-5 h-5" />
+              </Link>
+            )}
+
+            {author.quora && (
+              <Link
+                href={author.quora}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${author.name} Quora`}
+                className="text-gray-500 hover:text-black transition"
+              >
+                <FaQuora className="w-5 h-5" />
+              </Link>
+            )}
+
+          </div>
+
+          <p className="mt-6 text-xs tracking-[0.2em] uppercase text-gray-500">
             {articles.length} Articles
           </p>
         </div>
