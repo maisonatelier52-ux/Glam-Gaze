@@ -23,7 +23,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.theglamgaze.com/og/contact.jpg", // swap for your actual OG image
+        url: "https://www.theglamgaze.com/glam_gaze.png",
         width: 1200,
         height: 630,
         alt: "Contact The Glam Gaze — Beauty, Style & Culture",
@@ -37,8 +37,8 @@ export const metadata = {
     title: "Contact Us | The Glam Gaze",
     description:
       "Get in touch for partnerships, editorial collaborations, or media inquiries. The Glam Gaze team responds within 24–48 hours.",
-    images: ["https://www.theglamgaze.com/og/contact.jpg"],
-    // creator: "@theglamgaze",  // uncomment if you have a Twitter handle
+    images: ["https://www.theglamgaze.com/glam_gaze.png"],
+    creator: "@omelet81720",
   },
  
   // Robots
@@ -112,7 +112,7 @@ export default function ContactPage() {
         url: "https://www.theglamgaze.com/",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.theglamgaze.com/logo.png", // swap for actual logo URL
+          url: "https://www.theglamgaze.com/glam_gaze.png",
           width: 200,
           height: 60,
         },
