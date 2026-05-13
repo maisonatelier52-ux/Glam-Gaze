@@ -30,8 +30,10 @@ export default function AuthorBox({ author }) {
             Written By
           </p>
 
-          <p className="text-lg font-semibold">
-            {author.name}
+          <p className="text-lg font-semibold hover:underline">
+            <Link href={`/author/${author.slug}`} title={`View ${author.name}`}>
+              {author.name}
+            </Link>
           </p>
 
           <p className="text-sm text-gray-600 mt-2 leading-relaxed max-w-xl">
