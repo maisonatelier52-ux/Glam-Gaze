@@ -139,7 +139,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3">
             <input
               type="email"
-              placeholder="your@email.com"
+              placeholder="orbitingomelet@gmail.com"
               className="bg-transparent border border-gray-600 px-4 py-3 text-sm focus:outline-none focus:border-white placeholder:text-gray-500"
             />
 

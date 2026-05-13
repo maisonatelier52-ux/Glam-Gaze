@@ -170,7 +170,7 @@ export default function PrivacyPolicy() {
           </h2>
           <p>
             If you have questions about this Privacy Policy, contact us
-            at: <span className="font-medium">your@email.com</span>
+            at: <span className="font-medium">orbitingomelet@gmail.com</span>
           </p>
         </section>
 

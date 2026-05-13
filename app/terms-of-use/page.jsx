@@ -160,7 +160,7 @@ export default function TermsOfUse() {
           </h2>
           <p>
             If you have any questions about these Terms, please contact
-            us at: <span className="font-medium">your@email.com</span>
+            us at: <span className="font-medium">orbitingomelet@gmail.com</span>
           </p>
         </section>
 
