@@ -7,7 +7,7 @@
       "photo": "/author/Sophia-Rodriguez.webp",
       "bio": "Sophia Rodriguez is a senior fashion editor at GLAM GAZE, known for her sharp eye on global runway trends and emerging designers. With a background in fashion journalism and styling, she blends editorial storytelling with real-world influence, decoding high fashion for modern audiences. Her work spans fashion weeks in Paris, Milan, and New York, bringing insider perspectives to readers. Sophia is passionate about sustainability and often highlights ethical brands shaping the future of style. At GLAM GAZE, she leads fashion coverage with a refined voice, balancing luxury aesthetics with accessible inspiration for everyday fashion enthusiasts worldwide.",
       "meta_description": "Sophia Rodriguez covers global runway trends, emerging designers, and sustainable fashion with expert insight and refined editorial storytelling.",
-      "reddit": "",
+      "reddit": "https://www.reddit.com/user/sophia_rodriguez_85/",
       "medium": "https://medium.com/@sophia.rodriguez_89144",
       "quora": "https://www.quora.com/profile/Sophia-Rodriguez-741"
     },
@@ -29,9 +29,10 @@
       "photo": "/author/Elizabeth-Carter.webp",
       "bio": "Elizabeth Carter is a style editor at GLAM GAZE, specializing in timeless elegance and modern wardrobe essentials. With years of experience in fashion publishing, she curates sophisticated looks that bridge classic and contemporary aesthetics. Her expertise lies in personal styling, trend forecasting, and luxury fashion insights. Elizabeth’s writing empowers readers to refine their personal style with confidence and intention. She believes style is an extension of individuality and focuses on creating versatile, wearable inspiration. At GLAM GAZE, she delivers polished, insightful content that helps readers navigate fashion with clarity, confidence, and a strong sense of identity.",
       "meta_description": "Elizabeth Carter shares timeless style advice, wardrobe essentials, and luxury fashion insights for confident, modern dressing.",
-      "reddit": "",
+      "reddit": "https://www.reddit.com/user/elizabeth-carter90/",
       "medium": "https://medium.com/@elizabeth.carter_45842",
-      "quora": "https://www.quora.com/profile/Elizabeth-Carter-1076"
+      "quora": "https://www.quora.com/profile/Elizabeth-Carter-1076",
+      "pinterest": "https://www.pinterest.com/elizabethcarter1761/"
     },
     {
       "id": 4,
@@ -42,7 +43,8 @@
       "meta_description": "Scarlett Hayes analyzes fashion business trends, brand strategy, and global retail insights shaping the industry’s future.",
       "reddit": "",
       "medium": "https://medium.com/@scarlett.hayes",
-      "quora": "https://www.quora.com/profile/Scarlett-Hayes-54"
+      "quora": "https://www.quora.com/profile/Scarlett-Hayes-54",
+      "pinterest": "https://www.pinterest.com/scarletthayes0322/"
     },
     {
       "id": 5,
@@ -53,7 +55,8 @@
       "meta_description": "Eleanor Vance covers celebrity style, red carpet fashion, and Hollywood trends with insightful and engaging storytelling.",
       "reddit": "",
       "medium": "https://medium.com/@eleanor.vance",
-      "quora": "https://www.quora.com/profile/Eleanor-Vance-4"
+      "quora": "https://www.quora.com/profile/Eleanor-Vance-4",
+      "pinterest": "https://pin.it/3aVb07NCx"
     },
     {
       "id": 6,
@@ -64,7 +67,8 @@
       "meta_description": "Isabella Rossi explores fashion, art, and culture, connecting global trends with deeper social and creative narratives.",
       "reddit": "",
       "medium": "https://medium.com/@isabella.rossi",
-      "quora": "https://www.quora.com/profile/Isabella-Rossi-152"
+      "quora": "https://www.quora.com/profile/Isabella-Rossi-152",
+      "pinterest": "https://pin.it/5vgKDNn3t"
     },
     {
       "id": 7,
@@ -75,7 +79,8 @@
       "meta_description": "Lily Adam shares lifestyle, wellness, and modern living inspiration, blending fashion with travel, home, and mindful experiences.",
       "reddit": "",
       "medium": "https://medium.com/@lily.adam",
-      "quora": "https://www.quora.com/profile/Lily-Adam-43"
+      "quora": "https://www.quora.com/profile/Lily-Adam-43",
+      "pinterest": "https://pin.it/68FJyR7gs"
     }
   ],
   "articles": [
@@ -354,6 +359,19 @@
         "date": "2026-05-11",
         "authorId": 1
     },
+    {
+        "slug": "swaia-native-fashion-week-santa-fe-2026",
+        "title": "SWAIA Native Fashion Week Brings Indigenous Style to the Spotlight in Santa Fe",
+        "excerpt": "The 2026 SWAIA Native Fashion Week gala transformed downtown Santa Fe into a showcase of contemporary Indigenous fashion, featuring visionary designers blending heritage craftsmanship with modern design.",
+        "content_section_1": "<h2>Santa Fe Celebrates Indigenous Fashion Excellence</h2><p>Last Saturday night, the historic Eldorado Hotel in downtown Santa Fe transformed into a vibrant street style scene, rivaling any major fashion capital. Guests dressed in stunning Indigenous-made designs and jewelry, including jaw-dropping turquoise squash-blossom necklaces, arrived in droves for the 2026 SWAIA Native Fashion Week gala and runway show. The event showcased the work of five leading contemporary Indigenous designers: Jamie Okuma, Pamela Baker, Patricia Michaels, Jontay Kahm, and Lauren Good Day.</p><p>Santa Fe’s reputation as a Native fashion hub is well-established, with the annual Santa Fe Indian Market drawing over a thousand artists from more than 200 tribal nations. This weekend’s event, however, injected fresh energy into the city’s quieter months, spotlighting trailblazing artists who blend traditional crafts like beadwork, leatherwork, and textile arts with modern design.</p>",
+        "content_section_2": "<h2>Designers Blend Tradition With Contemporary Vision</h2><p>Each designer presented five looks reflecting their unique visions. Jontay Kahm, a rising Plains Cree talent, crafted sculptural, feather-inspired garments from organza. Patricia Michaels showcased silk dresses with her signature brushstroke prints, inspired by natural elements. Pamela Baker paid homage to the Northwest Coast with elegant gowns featuring totemic designs, using traditional materials. Lauren Good Day brought vibrant ribbon skirts and accessories, emphasizing Native excellence and future generations.</p>",
+        "image": "/swaia-native-fashion-week-main.webp",
+        "image1": "/swaia-runway-indigenous-fashion.webp",
+        "image_source": "SWAIA Native Fashion Week",
+        "category": "fashion",
+        "date": "2026-05-11",
+        "authorId": 1
+        },
     
 
 

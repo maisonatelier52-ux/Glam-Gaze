@@ -20,9 +20,9 @@ export default function MoreFromCategory({ currentArticle }) {
         <p className="text-[10px] uppercase tracking-[3px] text-gray-400 mb-0.5">
           More From
         </p>
-        <h3 className="text-base font-bold uppercase tracking-widest">
+        <div className="text-base font-bold uppercase tracking-widest">
           {currentArticle.category}
-        </h3>
+        </div>
       </div>
 
       {/* Article List */}
@@ -46,9 +46,9 @@ export default function MoreFromCategory({ currentArticle }) {
 
               {/* Text */}
               <div className="flex-1 min-w-0">
-                <h4 className="text-sm font-semibold leading-snug group-hover:underline line-clamp-3">
+                <div className="text-sm font-semibold leading-snug group-hover:underline line-clamp-3">
                   {item.title}
-                </h4>
+                </div>
                 <p className="text-[10px] uppercase tracking-wider text-gray-400 mt-2">
                   {item.date}
                 </p>

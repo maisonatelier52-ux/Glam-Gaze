@@ -7,6 +7,7 @@ import {
   FaReddit,
   FaMedium,
   FaQuora,
+  FaPinterest,
 } from "react-icons/fa";
 
 export async function generateMetadata({ params }) {
@@ -69,6 +70,7 @@ export default async function AuthorPage({ params }) {
       author.reddit,
       author.medium,
       author.quora,
+      author.pinterest,
     ].filter(Boolean),
     worksFor: {
       "@type": "Organization",
@@ -113,6 +115,7 @@ export default async function AuthorPage({ params }) {
               <Link
                 href={author.reddit}
                 target="_blank"
+                title={`${author.name} Reddit`}
                 rel="noopener noreferrer"
                 aria-label={`${author.name} Reddit`}
                 className="text-gray-500 hover:text-black transition"
@@ -125,6 +128,7 @@ export default async function AuthorPage({ params }) {
               <Link
                 href={author.medium}
                 target="_blank"
+                title={`${author.name} Medium`}
                 rel="noopener noreferrer"
                 aria-label={`${author.name} Medium`}
                 className="text-gray-500 hover:text-black transition"
@@ -137,11 +141,25 @@ export default async function AuthorPage({ params }) {
               <Link
                 href={author.quora}
                 target="_blank"
+                title={`${author.name} Quora`}
                 rel="noopener noreferrer"
                 aria-label={`${author.name} Quora`}
                 className="text-gray-500 hover:text-black transition"
               >
                 <FaQuora className="w-5 h-5" />
+              </Link>
+            )}
+
+            {author.pinterest && (
+              <Link
+                href={author.pinterest}
+                target="_blank"
+                title={`${author.name} Pinterest`}
+                rel="noopener noreferrer"
+                aria-label={`${author.name} Pinterest`}
+                className="text-gray-500 hover:text-black transition"
+              >
+                <FaPinterest className="w-5 h-5" />
               </Link>
             )}
 
