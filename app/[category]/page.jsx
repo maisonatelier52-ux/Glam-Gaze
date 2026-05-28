@@ -17,6 +17,7 @@ export async function generateMetadata({ params }) {
     "style",
     "business",
     "actress",
+    "celebrity-wedding",
     "culture",
     "living",
   ];
@@ -25,8 +26,9 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  const title = `${category.toUpperCase()} News, Trends & Latest Updates`;
-  const description = `Explore the latest ${category} news, trends, and updates. Discover breaking stories, insights, and highlights in ${category}.`;
+  const categoryLabel = category.replace(/-/g, " ");
+  const title = `${categoryLabel.toUpperCase()} News, Trends & Latest Updates`;
+  const description = `Explore the latest ${categoryLabel} news, trends, and updates. Discover breaking stories, insights, and highlights in ${categoryLabel}.`;
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -85,6 +87,7 @@ export default async function Category({ params }) {
     "style",
     "business",
     "actress",
+    "celebrity-wedding",
     "culture",
     "living",
   ];
