@@ -11,6 +11,7 @@ const menuItems = [
   { name: "Style", link: "/style" },
   { name: "Business", link: "/business" },
   { name: "Actress", link: "/actress" },
+  { name: "Celebrity Wedding", link: "/celebrity-wedding" },
   { name: "Culture", link: "/culture" },
   { name: "Living", link: "/living" },
   { name: "About", link: "/about" },

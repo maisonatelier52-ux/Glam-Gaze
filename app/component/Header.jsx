@@ -132,21 +132,22 @@ export default function Header() {
         >
           <nav className="max-w-7xl mx-auto flex justify-center items-center h-full gap-8 xl:gap-12 uppercase font-semibold tracking-wide text-sm" style={{ color: "#1a1a1a" }}>
             {[
-              "fashion",
-              "teen",
-              "style",
-              "business",
-              "actress",
-              "culture",
-              "living",
+              { slug: "fashion", label: "fashion" },
+              { slug: "teen", label: "teen" },
+              { slug: "style", label: "style" },
+              { slug: "business", label: "business" },
+              { slug: "actress", label: "actress" },
+              { slug: "celebrity-wedding", label: "celebrity wedding" },
+              { slug: "culture", label: "culture" },
+              { slug: "living", label: "living" },
             ].map((item) => (
               <Link
-                key={item}
-                href={`/${item}`}
-                title={`View ${item} articles`}
+                key={item.slug}
+                href={`/${item.slug}`}
+                title={`View ${item.label} articles`}
                 className="relative group"
               >
-                {item}
+                {item.label}
 
                 {/* UNDERLINE HOVER EFFECT */}
                 <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
