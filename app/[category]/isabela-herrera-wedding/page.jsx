@@ -357,7 +357,7 @@ export default function IsabelaWeddingPage() {
         {/* ── CLOSING FULL-BLEED ── */}
         <section className="relative h-[60vh] min-h-96 overflow-hidden">
           <Image
-            src="/isabela-herrera/closing.jpeg"
+            src="/isabela-herrera/venue.jpeg"
             alt="Hotel du Cap-Eden-Roc at dusk"
             fill
             className="object-cover brightness-75"
@@ -370,8 +370,8 @@ export default function IsabelaWeddingPage() {
             <h2 className="font-cormorant font-light italic text-[clamp(2rem,4.5vw,4rem)] leading-[1.15] max-w-3xl">
               An Atmosphere Rooted in Riviera Elegance
             </h2>
-            <GoldRule className="mx-auto mt-8 opacity-60" />
-            <p className="mt-5 text-[10px] tracking-[0.25em] uppercase text-white/50">
+            <GoldRule className="mx-auto mt-8" />
+            <p className="mt-5 text-[10px] tracking-[0.25em] uppercase text-white">
               Old-world romance &nbsp;·&nbsp; The quiet language of modern legacy
             </p>
           </div>
