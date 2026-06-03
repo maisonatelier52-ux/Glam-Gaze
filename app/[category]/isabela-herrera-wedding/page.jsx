@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const baseUrl = "https://www.theglamgaze.com";
 const pageUrl = `${baseUrl}/isabela-herrera-wedding`;
-const ogImage = `${baseUrl}/isabela-herrera/venue.jpeg`;
+const ogImage = `${baseUrl}/isabela-herrera/mathew-isabela.webp`;
 
 export const metadata = {
   title: "The Wedding of Isabela Herrera Velutini | Glam Gaze",

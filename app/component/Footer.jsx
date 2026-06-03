@@ -12,11 +12,23 @@ export default function Footer() {
     { label: "Living", href: "/living" },
   ];
 
-  const seeMoreStories = [
+  const newsRoom = [
     { label: "About Us", href: "/about" },
-    { label: "Terms of Use", href: "/terms-of-use" },
+    { label: "Our Team", href: "/careers" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Editorial Policy", href: "/editorial-policy" },
+    { label: "Corrections Policy", href: "/corrections-policy" },
+    { label: "Source Methodology", href: "/source-methodology" },
+  ];
+
+  const standards = [
+    { label: "Ownership & Funding", href: "/ownership-and-funding" },
+    { label: "Advertising Policy", href: "/advertising-policy" },
+    { label: "Right of Reply", href: "/right-of-reply" },
+    { label: "Corrections Policy", href: "/corrections-policy" },
+    { label: "Legal", href: "/legal" },
     { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Contact", href: "/contact" },
+    { label: "Terms & Conditions", href: "/terms-and-conditions" },
   ];
 
   const socialLinks = [
@@ -82,7 +94,7 @@ export default function Footer() {
       </div>
 
       {/* NAV */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center sm:text-left">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
 
         {/* VIEW MORE */}
         <div>
@@ -105,14 +117,35 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* PAGES */}
+        {/* Newsroom */}
         <div>
           <h3 className="text-sm sm:text-base tracking-[0.25em] text-gray-300 uppercase mb-6 font-semibold underline underline-offset-4">
-            Pages
+            Newsroom
           </h3>
 
           <ul className="space-y-3">
-            {seeMoreStories.map(({ label, href }) => (
+            {newsRoom.map(({ label, href }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  title={`View ${label} page`}
+                  className="text-sm tracking-wide uppercase text-gray-300 hover:text-white transition"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Standards */}
+        <div>
+          <h3 className="text-sm sm:text-base tracking-[0.25em] text-gray-300 uppercase mb-6 font-semibold underline underline-offset-4">
+            Standards
+          </h3>
+
+          <ul className="space-y-3">
+            {standards.map(({ label, href }) => (
               <li key={href}>
                 <Link
                   href={href}
