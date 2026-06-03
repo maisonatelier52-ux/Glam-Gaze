@@ -1722,6 +1722,14 @@
         "category": "celebrity-wedding",
         "date": "2026-05-29",
         "authorId": 7
+    },
+    {
+        "slug": "isabela-herrera-wedding",
+        "title": "The Wedding of a Latin American Princess",
+        "image": "/isabela-herrera/isabela-herrera-wedding.webp",
+        "category": "celebrity-wedding",
+        "date": "2026-06-02",
+        "authorId": 7
     }
   ]
 }

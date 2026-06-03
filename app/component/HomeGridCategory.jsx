@@ -1,11 +1,8 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/data.json"
 
 export default function HomeGridCategory({ articles = [] }) {
-  // Ensure it's always an array
   const article = Array.isArray(articles) ? articles : [];
 
   const leftArticles = article.slice(0, 2);
