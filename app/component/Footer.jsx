@@ -14,7 +14,7 @@ export default function Footer() {
 
   const newsRoom = [
     { label: "About Us", href: "/about" },
-    { label: "Our Team", href: "/careers" },
+    { label: "Our Team", href: "/our-team" },
     { label: "Contact Us", href: "/contact" },
     { label: "Editorial Policy", href: "/editorial-policy" },
     { label: "Corrections Policy", href: "/corrections-policy" },
