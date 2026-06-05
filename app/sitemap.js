@@ -12,23 +12,85 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 1.0,
     },
+
+    // Core Pages
     {
       url: `${SITE_URL}/about`,
       lastModified: now,
       changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/our-team`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/contact`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+
+    // Editorial / Newsroom
+    {
+      url: `${SITE_URL}/editorial-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/corrections-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/source-methodology`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+
+    // Trust & Standards
+    {
+      url: `${SITE_URL}/ownership-and-funding`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/advertising-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/right-of-reply`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+
+    // Legal
+    {
+      url: `${SITE_URL}/legal-information`,
+      lastModified: now,
+      changeFrequency: "yearly",
       priority: 0.6,
     },
     {
       url: `${SITE_URL}/privacy-policy`,
       lastModified: now,
       changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.5,
     },
     {
-      url: `${SITE_URL}/terms-of-use`,
+      url: `${SITE_URL}/terms-and-conditions`,
       lastModified: now,
       changeFrequency: "yearly",
-      priority: 0.3,
+      priority: 0.5,
     },
   ];
 

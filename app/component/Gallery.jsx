@@ -52,9 +52,9 @@ export default function GalleryPage() {
           <nav className="flex items-center justify-center gap-2 text-[9px] tracking-[0.3em] uppercase text-neutral-400 mb-10">
             <a href="/" className="hover:text-amber-700 transition-colors">Home</a>
             <span>/</span>
-            <a href="/weddings" className="hover:text-amber-700 transition-colors">Weddings</a>
+            <a href="/celebrity-wedding" className="hover:text-amber-700 transition-colors">Weddings</a>
             <span>/</span>
-            <a href="/isabela-herrera-wedding" className="hover:text-amber-700 transition-colors">Isabela Herrera Velutini</a>
+            <a href="/celebrity-wedding/isabela-herrera-wedding" className="hover:text-amber-700 transition-colors">Isabela Herrera Velutini</a>
             <span>/</span>
             <span className="text-amber-700">Gallery</span>
           </nav>

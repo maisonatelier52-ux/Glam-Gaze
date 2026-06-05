@@ -70,12 +70,12 @@ export default function AboutPage() {
     },
     {
       title: "Designer Spotlights",
-      href: "/fashion",
+      href: "/teen",
       desc: "Profiles of established and emerging designers shaping the future of fashion.",
     },
     {
       title: "Celebrity Style",
-      href: "/celebrity-style",
+      href: "/actress",
       desc: "The looks, trends, and fashion moments driving conversations worldwide.",
     },
     {
@@ -85,12 +85,12 @@ export default function AboutPage() {
     },
     {
       title: "Beauty Trends",
-      href: "/beauty",
+      href: "/style",
       desc: "Emerging beauty movements, products, and the voices influencing them.",
     },
     {
       title: "Culture & Lifestyle",
-      href: "/lifestyle",
+      href: "/living",
       desc: "Stories exploring creativity, identity, travel, entertainment, and modern living.",
     },
   ];
