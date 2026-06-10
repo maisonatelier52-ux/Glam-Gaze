@@ -588,6 +588,19 @@
         "date": "2026-05-15",
         "authorId": 2
     },
+    {
+        "slug": "gen-z-prefers-in-store-shopping-social-experiences",
+        "title": "Generation Z Favors In-Store Shopping for Social and Emotional Experiences",
+        "excerpt": "A new study by Snapchat and Portas reveals that Generation Z values physical retail, social shopping, and shared experiences over purely convenient online purchases.",
+        "content_section_1": "<p>Even though they are considered digital natives, new insights provided by Snapchat and brand consulting firm Portas show that more than half of Generation Z shoppers (51%) prefer going to brick-and-mortar stores to experience shopping instead of making instant purchases online. In regard to their shopping behavior, 83% of Generation Z respondents admitted that it changes with circumstances – sometimes it requires fast and easy purchases while at other times – it's about discovering something. Moreover, they value not only efficiency but also emotional and social experiences, which keep influencing their purchasing habits.</p><p>One of the major findings of this study concerns Generation Z's tendency to socialize while making their purchases. Their experience of shopping is mostly related to interacting with close friends in whom Generation Z respondents seek advice, recommendations, and discussions. It turned out that 83% of Gen Z consumers share pictures or videos of goods they want to buy with friends and family members and even purchase the product after discussing it in a group chat (47%). Also, it's important to note that 60% of Generation Z consumers go shopping because they like spending time with people.</p>",
+        "content_section_2": "<p>For the “Memento Generation,” however, physical retail continues to be important since about 75% visit retail locations in order to see or try out the merchandise. At the same time, 71% enjoy getting the chance to touch and explore the products first-hand. Additionally, a large number of the young adults still choose in-store shopping over online impulse purchasing, with 58% enjoying exploring new products and 63% being motivated to make purchases based on the shopping experience.</p><p>The industry expert Levy notes that socializing is usually done privately and with friends who are considered to be close. In this context, he introduces Gen Z as “The Memento Generation” – a generation that creates social capital through the sharing of experiences and not possessions or performances. It is noteworthy that 61% of Gen Z would spend at least 15 minutes queuing for something they really want.</p>",
+        "image": "/gen-z-shopping-main.webp",
+        "image1": "/gen-z-instore-shopping.webp",
+        "image2": "/gen-z-social-shopping.webp",
+        "category": "teen",
+        "date": "2026-06-10",
+        "authorId": 2
+        },
 
 
 
@@ -1080,6 +1093,21 @@
         "image3_source": "Vogue",
         "category": "actress",
         "date": "2026-05-29",
+        "authorId": 5
+    },
+    {
+        "slug": "rihanna-monochrome-style-tribeca-x-award-look",
+        "title": "Rihanna Demonstrates That Monochrome Can Be Truly Chic",
+        "excerpt": "Supporting A$AP Rocky at the Tribeca X Filmmaker of the Year Award event, Rihanna showcased how a monochrome ensemble can deliver timeless elegance, luxury, and bold sophistication.",
+        "content_section_1": "<p>While well known for her daring sense of style—ranging from denim on denim to animal prints and avant-garde fashion—Rihanna understands the power of elegance and simplicity. Last night, Rihanna showed that monochrome outfits can be anything but boring as she supported her beau A$AP Rocky at the event honoring him with the first-ever Tribeca X Filmmaker of the Year Award.</p><p>For the occasion, Rihanna dressed in an all-yellow gold outfit, proving once again how effortlessly she does luxury. For the night, Rihanna opted for a sleek, tight-fitting velvet dress matched with a butter leather long line coat. Rihanna accessorized her look with multiple golden diamond pendants, bangles, rings, as well as large black sunglasses.</p>",
+        "content_section_2": "<p>Rihanna styled her hair in soft, undulating curls and sported a nude-plum lipstick, perfectly complementing her gleaming white manicure and pedicure. Her look demonstrated that monochrome dressing can exude quiet luxury and sophistication—yet still feel bold and impactful.</p><p>Rihanna has always been a great proponent of maximalist dressing; however, recent all-black, all-white, or otherwise monochromatic looks such as her all-leather outfit seen with Rocky in Paris prove her just as competent in creating a statement with an all one color outfit. From leopard prints to jungle attire, or even all one colored looks, Rihanna always manages to make fashion out of her minimalistic endeavors as well.</p>",
+        "image": "/rihanna-monochrome-main.webp",
+        "image1": "/rihanna-yellow-gold-look.webp",
+        "image2": "/rihanna-tribeca-style.webp",
+        "image1_source": "Getty Images",
+        "image2_source": "Getty Images",
+        "category": "actress",
+        "date": "2026-06-10",
         "authorId": 5
     },
 
