@@ -9,6 +9,7 @@ export default function MoreFromCategory({ currentArticle }) {
         a.category === currentArticle.category &&
         a.slug !== currentArticle.slug
     )
+    .sort((a,b) => new Date(b.date) - new Date(a.date))
     .slice(0, 5);
 
   if (related.length === 0) return null;

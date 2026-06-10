@@ -10,14 +10,14 @@ export default function ReadMoreSection({ currentArticle }) {
     return author ? author.name : "Unknown";
   };
 
-  // Filter same category & exclude current article
   const relatedArticles = data.articles
     .filter(
       (a) =>
         a.category === currentArticle.category &&
         a.slug !== currentArticle.slug
     )
-    .slice(0, 3); // only 3 articles
+    .sort((a,b) => new Date(b.date) - new Date(a.date))
+    .slice(5, 8);
 
   if (relatedArticles.length === 0) return null;
 
