@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
 import MenuSidebar from "./MenuSidebar";
 import Link from "next/link";
-import articlesData from "@/data/data.json"; // adjust path as needed
+import articlesData from "@/data/data.json";
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0);
@@ -204,7 +204,7 @@ export default function Header() {
                           key={article.slug}
                           href={`/${article.category}/${article.slug}`}
                           onClick={closeSearch}
-                          className="block py-3 no-underline group"
+                          className="block py-3 no-underline hover:bg-[#f5f5f5]"
                           style={{ borderBottom: "0.5px solid #e8d5c4" }}
                         >
                           <p className="text-xs uppercase tracking-widest mb-1" style={{ color: "#b08d6e", fontFamily: "sans-serif" }}>
