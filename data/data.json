@@ -81,6 +81,18 @@
       "medium": "https://medium.com/@lily.adam",
       "quora": "https://www.quora.com/profile/Lily-Adam-43",
       "pinterest": "https://pin.it/68FJyR7gs"
+    },
+    {
+        "id": 8,
+        "name": "Sophia Bennett",
+        "slug": "sophia-bennett",
+        "photo": "/author/Sophia-Bennett.webp",
+        "bio": "Sophia Bennett is the Celebrity Weddings Editor at GLAM GAZE, covering high-profile weddings, engagements, and relationship milestones from Hollywood, royalty, and global entertainment. She specializes in reporting on luxury ceremonies, designer bridal fashion, exclusive venues, celebrity guest lists, and unforgettable moments that shape pop culture. With a passion for storytelling and glamour, Sophia brings readers behind the scenes of the world's most talked-about weddings, delivering elegant and engaging coverage that celebrates love, style, and celebrity culture.",
+        "meta_description": "Sophia Bennett covers celebrity weddings, engagements, bridal fashion, luxury ceremonies, and exclusive relationship news from Hollywood and around the world.",
+        "reddit": "",
+        "medium": "https://medium.com/@sophia.bennett_21756",
+        "quora": "https://www.quora.com/profile/Sophia-Bennett-200",
+        "pinterest": "https://in.pinterest.com/sophiabennett1583/"
     }
   ],
   "articles": [
@@ -1692,7 +1704,7 @@
         "image2_source": "Instagram",
         "category": "celebrity-wedding",
         "date": "2026-05-27",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "aj-brown-kelsey-riley-laguna-beach-wedding",
@@ -1708,7 +1720,7 @@
         "image2_source": "PEOPLE",
         "category": "celebrity-wedding",
         "date": "2026-05-28",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "lainey-wilson-devlin-duck-hodges-waterfall-wedding-tennessee-2026",
@@ -1724,7 +1736,7 @@
         "image1_source": "Ceremony",
         "category": "celebrity-wedding",
         "date": "2026-05-28",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "dallas-cowboys-cheerleader-kennedy-hannan-marries-nolan-ruff-iowa-2026",
@@ -1737,7 +1749,7 @@
         "image2": "/kennedy-hannan-sparkler-sendoff.webp",
         "category": "celebrity-wedding",
         "date": "2026-05-28",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "ashton-gillotte-cara-cresse-surprise-wedding-2026",
@@ -1751,7 +1763,7 @@
         "image1_source": "Instagram",
         "category": "celebrity-wedding",
         "date": "2026-05-28",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "bettina-anderson-donald-trump-jr-wedding-rings-2026",
@@ -1764,7 +1776,7 @@
         "image1_source": "Instagram",
         "category": "celebrity-wedding",
         "date": "2026-05-29",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "dua-lipa-jack-turner-love-story-engagement",
@@ -1779,7 +1791,7 @@
         "image2_source": "Instagram",
         "category": "celebrity-wedding",
         "date": "2026-05-29",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "zac-brown-kendra-scott-greece-wedding-2026",
@@ -1794,7 +1806,7 @@
         "image2_source": "Instagram",
         "category": "celebrity-wedding",
         "date": "2026-05-29",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "maya-hawke-christian-lee-hutson-valentines-day-wedding",
@@ -1809,7 +1821,7 @@
         "image2_source": "Instagram",
         "category": "celebrity-wedding",
         "date": "2026-05-29",
-        "authorId": 7
+        "authorId": 8
     },
     {
         "slug": "isabela-herrera-wedding",
@@ -1817,7 +1829,7 @@
         "image": "/isabela-herrera/isabela-herrera-wedding.webp",
         "category": "celebrity-wedding",
         "date": "2026-06-02",
-        "authorId": 7
+        "authorId": 8
     }
   ]
 }
