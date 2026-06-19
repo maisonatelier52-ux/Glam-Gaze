@@ -612,7 +612,19 @@
         "category": "teen",
         "date": "2026-06-10",
         "authorId": 2
-        },
+    },
+    {
+        "slug": "malia-sasha-obama-business-casual-boho-style",
+        "title": "Malia and Sasha Obama Blend Business Casual With Boho Style",
+        "excerpt": "Malia and Sasha Obama showcased their signature fashion sense with modern business-casual looks accented by boho-inspired details, proving once again why they remain influential style icons.",
+        "content_section_1": "<p>As the daughters of President Obama continue growing up in public view, they remain sources of fashion inspiration. The outfits that they choose usually speak of their distinct characters, and the last time they showed off their sense of fashion was at the inauguration of their father’s Presidential Center in Chicago. They chose plunging blazers and boho accessories to combine a smart look in a business casual way with a touch of the past decade style.</p><p>Malia, who is 27 years old, wore a fashionable and stylish but still quite casual outfit which consisted of a big pale gray blazer with a charcoal gray mini skirt. She wore the blazer with a plunging neck line and only left one button on while all other buttons were left unbuttoned without any top. Her long hair dyed red was done in boho braids while she complemented the outfit with gray shoes.</p>",
+        "content_section_2": "<p>Sasha, 25, embraced a neutral palette with a flowy white off-the-shoulder top and a matching fishtail midi skirt. She cinched her waist with a distinctive Y2K-style brown leather boho belt with a silver buckle, giving her outfit a fashionable edge. Her accessories included chunky silver earrings, and she wore open-toed leather heels, balancing simplicity with statement details.</p><p>The Obama sisters have become style icons, often experimenting with different looks—from denim-on-denim Texas tuxedos to slip dresses paired with moto boots, and casual summer outfits featuring white tanks, denim minis, and flowing white pants. Their fashion choices show that with a few versatile staples, you can create a variety of stylish, effortless looks that feel just as cool as they appear.</p>",
+        "image": "/malia-sasha-obama-business-casual-style.webp",
+        "image1": "/malia-obama-gray-blazer-look.webp",
+        "category": "teen",
+        "date": "2026-06-19",
+        "authorId": 2
+    },
 
 
 
@@ -1520,6 +1532,29 @@
         "image_source": "Boots",
         "category": "business",
         "date": "2026-06-10",
+        "authorId": 4
+    },
+    {
+        "slug": "fashion-workers-act-one-year-model-protections-new-york",
+        "title": "Fashion Workers Act Reaches One-Year Milestone With Stronger Model Protections",
+        "excerpt": "One year after the Fashion Workers Act became law, New York is entering a new phase of enforcement with agency registration requirements and expanded protections for models across the industry.",
+        "content_section_1": "<p>NEW YORK – Exactly one year since the enactment of the Fashion Workers Act, New York’s groundbreaking fashion models protection legislation moves to the next stage where model management agencies will be required to register with the state’s Department of Labor and meet more stringent standards of working conditions.</p><p>Completion of one year of the legislation means that an important development for the fashion industry has been made, as a number of agencies already successfully registered under the new regulations. The registry will help future models determine legitimate agencies and avoid being tricked and cheated.</p><p>According to fashion industry lobbyists, this legislation is finally solving long-standing problems such as unfair contracts, hidden costs and abuse that have plagued models for decades. These regulations include greater transparency, provision of contracts before employment, limitation of commissions to 20 percent, duration of representation contracts to three years and approval for any deductions.</p>",
+        "content_section_2": "<p>In addition, the act provides protections regarding jobs with nudity or sexually explicit content as well as regulations on the usage of artificial intelligence. The model must give consent to be recreated using AI technology in order to be used in advertising campaigns or fashion shows.</p><p>Those models' management companies that do not abide by the new rules are subject to fines, and models can submit complaints if their rights are violated as well as compensation. The act does not allow retaliations against people who complain about the violation of their rights.</p><p>Besides agencies, those companies and brands that hire models should comply with certain responsibilities like giving overtime pay if needed, meal periods, liability insurance, anti-harassment policy in written form, and the ability for a model to bring an accompanying person to work.</p>",
+        "content_section_3": "<p>According to Model Alliance, the advocacy organization that pushed this legislation through, their main concern is to implement it and not just make the laws. Model Alliance is educating models about their rights and working on improving the situation together with the authorities.</p><p>Legal experts believe the Fashion Workers Act represents one of the most comprehensive labor reforms for the modeling industry in the United States, establishing new standards for transparency, workplace safety, and digital rights as fashion increasingly embraces artificial intelligence. While supporters view the law as a major step forward, they acknowledge that continued education and enforcement will be essential to ensuring its long-term impact.</p>",
+        "image": "/fashion-workers-act-new-york.webp",
+        "category": "business",
+        "date": "2026-06-19",
+        "authorId": 4
+    },
+    {
+        "slug": "joe-vernachio-appointed-president-sorel-2026",
+        "title": "Joe Vernachio Named President of Sorel to Lead Next Phase of Growth",
+        "excerpt": "Former Allbirds CEO Joe Vernachio has been appointed president of Sorel, bringing decades of experience in the outdoor and fashion industries as the brand looks to accelerate growth and innovation.",
+        "content_section_1": "<p>Joe Vernachio, former Allbirds’ chief executive officer, is the latest hire at Sorel, outdoor shoe and apparel brand, as the new president of Sorel. This is a step that will bring Vernachio back to Columbia Sportswear Company, which owns Sorel, having been the president of Mountain Hardwear at Columbia between 2017 and 2021.</p><p>Having extensive experience in the outdoor and fashion industries, Vernachio has worked in many high-end brands like The North Face, Spyder, Roots, Calvin Klein, and Nike. These roles include product development, licensing, and operations.</p><p>At Allbirds, he spent more than five years, two of which he was working as the CEO prior to being acquired by American Exchange Group in 2023. Vernachio's hiring at Sorel is considered strategic in growing the company and expanding in the outdoor market.</p>",
+        "content_section_2": "<p>According to Craig Zanon, executive vice-president of Europe, Direct, Asia, and Emerging Brands at Columbia Sportswear, “Joe is a consumer-focused, collaborative leader with a passion for product and brand storytelling. His energy, experience, and proven leadership skills will fuel scalable growth and brand expansion for Sorel.”</p><p>Vernachio is set to begin his new role on June 22, 2026, positioning him to lead Sorel into its next chapter of growth and innovation.</p>",
+        "image": "/joe-vernachio-sorel-president.webp",
+        "category": "business",
+        "date": "2026-06-18",
         "authorId": 4
     },
 
