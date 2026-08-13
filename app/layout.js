@@ -12,7 +12,8 @@ const bodoni = Bodoni_Moda({
 
 export const metadata = {
   title: "Glam Gaze | Fashion, Style, Business News",
-  description: "Glam Gaze covers fashion, culture, lifestyle, and global trends shaping modern style.",
+  description:
+    "Glam Gaze covers fashion, culture, lifestyle, and global trends shaping modern style.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -24,23 +25,33 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${bodoni.variable} antialiased`}>
 
-        {/* Google Tag (gtag.js) */}
+        {/* Google Analytics 4 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18148083881"
+          src="https://www.googletagmanager.com/gtag/js?id=G-N285JBS64G"
           strategy="afterInteractive"
         />
+
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+
+            function gtag(){
+              dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
-            gtag('config', 'AW-18148083881');
+            gtag('config', 'G-N285JBS64G');
           `}
         </Script>
 
         <Header />
-        <main className="pt-44">{children}</main>
+
+        <main className="pt-44">
+          {children}
+        </main>
+
         <Footer />
+
       </body>
     </html>
   );
