@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${bodoni.variable} antialiased`}>
 
-        {/* Google Analytics 4 */}
+        {/* Google tag (gtag.js) - loads once, used by both GA4 and Ads configs below */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-N285JBS64G"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18429866026"
           strategy="afterInteractive"
         />
 
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
             }
 
             gtag('js', new Date());
-            gtag('config', 'G-N285JBS64G');
+            gtag('config', 'AW-18429866026');
           `}
         </Script>
 
