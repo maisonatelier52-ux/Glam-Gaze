@@ -1746,8 +1746,21 @@
         ],
         "image": "/nordstrom-anniversary-sale-2026-fashion-jewelry-deals.webp",
         "image1": "/nordstrom-anniversary-sale-2026-designers.webp",
-        "category": "Business",
+        "category": "business",
         "date": "2026-07-23",
+        "authorId": 4
+    },
+    {
+        "slug": "acne-studios-30th-anniversary-denim-nan-goldin-2026",
+        "title": "Acne Studios Celebrates 30 Years With Nan Goldin Denim Campaign",
+        "excerpt": "Acne Studios marks its 30th anniversary with a denim-focused campaign photographed by Nan Goldin and a capsule collection revisiting iconic designs from the brand's history.",
+        "content_section_1": "<p>The 30th-anniversary celebration of Acne Studios involves a new campaign celebrating the roots of the company – denim. The campaign, involving an unprecedented collaboration between Acne Studios and renowned American photographer Nan Goldin, showcases various styles of current and archived denim, as well as re-edition items of denim from the past three decades.</p><p>Co-founder Jonny Johansson expressed his long-standing admiration for Goldin's work, stating, \"I wanted an icon, but I also wanted something very intimate and personal. She does that. And with Denim, which is close to you, gritty, real, it made sense.\" Johansson emphasized that the campaign features \"friends, not models\" – individuals who have shaped the brand through collaborations and exchanges over the years.</p><p>The campaign stars a diverse group of creatives, including musician Ellie Rowsell, model and photographer Guinevere Van Seenus, artist Jonathan Lyndon Chase, photographer Jordan Hemingway, actor and musician Juliette Lewis, and artist Peter Schlesinger. Jordan Hemingway, a former campaign photographer for Acne Studios, shared his personal connection to denim, describing it as representing \"history, childhood and freedom.\"</p>",
+        "content_section_2": "<h2>A 30-Year Denim Legacy</h2><p>The anniversary campaign is taking place concurrently with the launch of the 30-year anniversary capsule collection. The capsule collection consists of re-editions of denim pieces and includes the skinny, low-rise jeans of 1996, the boot-cut jeans of 2009, and the denim jacket.</p><p>Acne Studios was founded in 1996 in Stockholm, Sweden, under the name \"Acne\" (Ambition to Create Novel Expressions). The brand originated from the distribution of 100 pairs of raw denim jeans with unique red stitching to friends as a hobby.</p><p>The once-small business has grown to become a popular fashion house with 65 stores across the world. The anniversary campaign and capsule collection revisit the brand's beginnings while celebrating the role denim has played throughout its three-decade history.</p>",
+        "image": "/acne-studios-30-year-anniversary-denim-collection.webp",
+        "image1": "/acne-studios-nan-goldin-denim-campaign.webp",
+        "image2": "/acne-studios-30th-anniversary-denim-2026.webp",
+        "category": "business",
+        "date": "2026-09-04",
         "authorId": 4
     },
 
