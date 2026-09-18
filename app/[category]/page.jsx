@@ -102,9 +102,26 @@ export default async function Category({ params }) {
     )
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  const articles = filteredArticles.slice(0, 5);
-  const celebrity = filteredArticles.slice(5, 9);
-  const latest = filteredArticles.slice(9, 15);
+  let articles, celebrity, latest;
+
+  if (category.toLowerCase() === "celebrity-wedding") {
+    const PINNED_SLUG = "isabela-herrera-wedding";
+
+    const pinnedArticle = filteredArticles.find((a) => a.slug === PINNED_SLUG);
+    const remaining = filteredArticles.filter((a) => a.slug !== PINNED_SLUG);
+
+    // Take top 4 by date, then append the pinned article as the 5th (last) slot
+    articles = pinnedArticle
+      ? [...remaining.slice(0, 4), pinnedArticle]
+      : remaining.slice(0, 5);
+
+    celebrity = remaining.slice(4, 8);
+    latest = remaining.slice(8, 14);
+  } else {
+    articles = filteredArticles.slice(0, 5);
+    celebrity = filteredArticles.slice(5, 9);
+    latest = filteredArticles.slice(9, 15);
+  }
 
   // JSON-LD Structured Data (ItemList)
   const jsonLd = {

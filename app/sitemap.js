@@ -96,7 +96,7 @@ export default function sitemap() {
 
   const categoryPages = [...new Set(details.articles.map(a => a.category))]
     .map(category => ({
-      url: `${SITE_URL}/category/${category
+      url: `${SITE_URL}/${category
         .toLowerCase()
         .replace(/\s+/g, "-")}`,
       lastModified: now,

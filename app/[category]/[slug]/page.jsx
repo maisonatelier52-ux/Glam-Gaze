@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
     description: article.excerpt,
 
     alternates: {
-      canonical: `${SITE_URL}/news/${slug}`,
+      canonical: `${SITE_URL}/${article.category}/${slug}`,
     },
 
     keywords: [
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: article.title,
       description: article.excerpt,
-      url: `${SITE_URL}/news/${slug}`,
+      url: `${SITE_URL}/${article.category}/${slug}`,
       type: "article",
       siteName: "GLAM GAZE",
       locale: "en_US",
@@ -95,7 +95,7 @@ export default async function ArticlePage({ params }) {
 
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/news/${article.slug}`,
+      "@id": `${SITE_URL}/${article.category}/${article.slug}`,
     },
 
     headline: article.title,
@@ -144,7 +144,7 @@ export default async function ArticlePage({ params }) {
         "@type": "ListItem",
         position: 3,
         name: article.title,
-        item: `${SITE_URL}/news/${article.slug}`,
+        item: `${SITE_URL}/${article.category}/${article.slug}`,
       },
     ],
   };

@@ -1,20 +1,22 @@
 import Image from "next/image";
+import { permanentRedirect } from "next/navigation";
 
 // ─── SEO METADATA ─────────────────────────────────────────────────────────────
 
 const baseUrl = "https://www.theglamgaze.com";
-const pageUrl = `${baseUrl}/isabela-herrera-wedding`;
+const pageUrl = `${baseUrl}/celebrity-wedding/isabela-herrera-wedding`;
 const ogImage = `${baseUrl}/isabela-herrera/mathew-isabela.webp`;
 
 export const metadata = {
   title: "The Wedding of Isabela Herrera Velutini | Glam Gaze",
   description:
-    "An exclusive editorial feature on the Riviera wedding of Isabela Herrera Velutini von Uslar-Gleichen and Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc, Antibes, France.",
+    "An editorial feature on Isabela Herrera Velutini and her wedding at Hotel du Cap-Eden-Roc in Antibes, France.",
   alternates: { canonical: pageUrl },
   keywords: [
+    "Isabela Herrera",
+    "Isabela Herrera Carmona",
     "Isabela Herrera wedding",
     "Isabela Herrera Velutini",
-    "Julio Herrera Velutini daughter",
     "Hotel du Cap Eden Roc wedding",
     "Antibes luxury wedding",
     "Riviera society wedding",
@@ -29,12 +31,12 @@ export const metadata = {
     type: "article",
     url: pageUrl,
     siteName: "Glam Gaze",
-    title: "The Wedding of Isabela Herrera Velutini — A Latin American Princess on the French Riviera",
+    title: "Isabela Herrera Velutini Wedding — Glam Gaze",
     description:
       "Beneath the pale spring light of the French Riviera, Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez celebrated their marriage at Hotel du Cap-Eden-Roc — a weekend of Riviera elegance, Valentino couture, and old-world ceremony.",
     images: [
-      { url: ogImage, width: 1200, height: 630, alt: "Isabela Herrera Velutini wedding at Hotel du Cap-Eden-Roc, Antibes" },
-      { url: `${baseUrl}/isabela-herrera/isabela.jpeg`, width: 900, height: 1200, alt: "Isabela Herrera Velutini on her wedding day" },
+      { url: ogImage, width: 1080, height: 1440, alt: "Isabela Herrera Velutini wedding at Hotel du Cap-Eden-Roc, Antibes" },
+      { url: `${baseUrl}/isabela-herrera/isabela.jpeg`, width: 848, height: 1477, alt: "Isabela Herrera Velutini on her wedding day" },
     ],
     locale: "en_US",
     publishedTime: "2026-04-25T00:00:00Z",
@@ -73,8 +75,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": pageUrl,
       url: pageUrl,
-      name: "The Wedding of Isabela Herrera Velutini — Glam Gaze",
-      description: "An exclusive editorial feature on the Riviera wedding of Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc, Antibes.",
+      name: "The Wedding of Isabela Herrera Velutini | Glam Gaze",
+      description: "An editorial feature on Isabela Herrera Velutini and her wedding at Hotel du Cap-Eden-Roc in Antibes, France.",
       breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
       primaryImageOfPage: { "@id": `${pageUrl}#hero-image` },
       isPartOf: { "@id": `${baseUrl}#website` },
@@ -84,16 +86,16 @@ const jsonLd = {
     {
       "@type": "Article",
       "@id": `${pageUrl}#article`,
-      headline: "The Wedding of Isabela Herrera Velutini — A Celebration at Hotel du Cap-Eden-Roc, Antibes",
-      alternativeHeadline: "Inside the Wedding of a Latin American Princess on the French Riviera",
-      description: "An editorial feature on the wedding of Isabela Herrera Velutini von Uslar-Gleichen and Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc, Cap d'Antibes, France.",
-      keywords: ["Isabela Herrera wedding", "Isabela Herrera Velutini", "Julio Herrera Velutini daughter", "Hotel du Cap Eden Roc wedding", "Antibes luxury wedding", "Riviera society wedding"],
+      headline: "Isabela Herrera Velutini Wedding at Hotel du Cap-Eden-Roc, Antibes",
+      alternativeHeadline: "Inside the Wedding of Isabela Herrera Velutini on the French Riviera",
+      description: "An editorial feature on Isabela Herrera Velutini and her wedding at Hotel du Cap-Eden-Roc in Antibes, France.",
+      keywords: ["Isabela Herrera", "Isabela Herrera wedding", "Isabela Herrera Velutini", "Hotel du Cap Eden Roc wedding", "Antibes luxury wedding", "French Riviera wedding"],
       articleSection: "Feature Wedding",
       inLanguage: "en",
       url: pageUrl,
       mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
       image: { "@type": "ImageObject", "@id": `${pageUrl}#hero-image`, url: ogImage, caption: "Hotel du Cap-Eden-Roc, Cap d'Antibes — venue of the Isabela Herrera Velutini wedding" },
-      author: { "@type": "Organization", "@id": `${baseUrl}#organization`, name: "Glam Gaze", url: baseUrl },
+      author: { "@type": "Person", "@id": `${baseUrl}/author/sophia-bennett#person`, name: "Sophia Bennett", url: `${baseUrl}/author/sophia-bennett` },
       publisher: { "@type": "Organization", "@id": `${baseUrl}#organization`, name: "Glam Gaze", url: baseUrl, logo: { "@type": "ImageObject", url: `${baseUrl}/logo.png` } },
       datePublished: "2026-04-25T00:00:00Z",
       dateModified: "2026-04-25T00:00:00Z",
@@ -107,7 +109,7 @@ const jsonLd = {
       description: "A private wedding celebration at Hotel du Cap-Eden-Roc, Cap d'Antibes, France, uniting Isabela Herrera Velutini von Uslar-Gleichen and Matthew Jose Carmona-Gonzalez across a weekend of Riviera elegance and old-world ceremony.",
       startDate: "2026-04-17",
       endDate: "2026-04-20",
-      eventStatus: "https://schema.org/EventScheduled",
+      eventStatus: "https://schema.org/EventCompleted",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: {
         "@type": "Place",
@@ -129,7 +131,7 @@ const jsonLd = {
       "@id": `${pageUrl}#isabela`,
       name: "Isabela Herrera Velutini",
       alternateName: "Isabela Herrera Velutini von Uslar-Gleichen",
-      description: "Isabela Herrera Velutini, daughter of Julio Herrera Velutini, married Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc, Antibes, France in April 2026.",
+      description: "Isabela Herrera Velutini married Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc in Antibes, France in April 2026.",
       familyName: "Herrera Velutini",
       givenName: "Isabela",
       relatedTo: { "@id": `${pageUrl}#matthew` },
@@ -147,7 +149,7 @@ const jsonLd = {
       "@id": `${pageUrl}#breadcrumb`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
-        { "@type": "ListItem", position: 2, name: "Weddings", item: `${baseUrl}/weddings` },
+        { "@type": "ListItem", position: 2, name: "Celebrity Weddings", item: `${baseUrl}/celebrity-wedding` },
         { "@type": "ListItem", position: 3, name: "Isabela Herrera Velutini Wedding", item: pageUrl },
       ],
     },
@@ -237,6 +239,7 @@ function GalleryLink() {
               src={src}
               alt={alt}
               fill
+              sizes="(max-width: 768px) 100vw, 20vw"
               className="object-cover brightness-75 group-hover/thumb:brightness-100 group-hover/thumb:scale-105 transition-all duration-700"
             />
           </a>
@@ -252,7 +255,13 @@ function GalleryLink() {
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 
-export default function IsabelaWeddingPage() {
+export default async function IsabelaWeddingPage({ params }) {
+  const { category } = await params;
+
+  if (category !== "celebrity-wedding") {
+    permanentRedirect("/celebrity-wedding/isabela-herrera-wedding");
+  }
+
   return (
     <>
       {/* JSON-LD injected into <head> via Next.js script tag */}
@@ -283,7 +292,7 @@ export default function IsabelaWeddingPage() {
             <GoldEyebrow className="mb-6">Feature Wedding</GoldEyebrow>
             <h1 className="font-cormorant font-light text-[clamp(2.6rem,5.5vw,5rem)] leading-[1.08] text-neutral-900 max-w-4xl">
               The Wedding of a{" "}
-              <em className="italic text-amber-600 not-italic font-light">Latin American Princess</em>
+              <em className="italic text-amber-600 not-italic font-light">Latin American Princess : Isabela Herrera</em>
             </h1>
             <p className="mt-5 text-[10px] tracking-[0.3em] uppercase text-neutral-500 font-light">
               Isabela Herrera Velutini &nbsp;·&nbsp; Matthew Jose Carmona-Gonzalez &nbsp;·&nbsp; Antibes, France
@@ -331,7 +340,7 @@ export default function IsabelaWeddingPage() {
           </div>
           <div className="relative img-hover">
             <div className="relative aspect-[3/4] overflow-hidden">
-              <Image src="/isabela-herrera/mathew-isabela.webp" alt="Isabela Herrera Velutini at Hotel du Cap-Eden-Roc, Antibes" fill className="object-cover" priority />
+              <Image src="/isabela-herrera/mathew-isabela.webp" alt="Isabela Herrera Velutini at Hotel du Cap-Eden-Roc, Antibes" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" priority />
             </div>
             <div className="absolute -inset-3 border border-amber-600/20 pointer-events-none" />
             <p className="absolute -bottom-7 right-0 text-[9px] tracking-[0.2em] uppercase text-amber-700/60">Hotel du Cap-Eden-Roc · Cap d'Antibes</p>
@@ -357,7 +366,7 @@ export default function IsabelaWeddingPage() {
             { src: "/isabela-herrera/isabela1.jpeg", alt: "Isabela Herrera Velutini wedding celebration, Antibes", label: "Isabela" },
           ].map(({ src, alt, label }) => (
             <div key={src} className="relative aspect-[3/4] md:aspect-auto md:h-[95vh] overflow-hidden img-hover bg-white">
-              <Image src={src} alt={alt} fill className="object-cover brightness-90" />
+              <Image src={src} alt={alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover brightness-90" />
               <div className="absolute bottom-6 left-6">
                 <div className="w-5 h-px bg-amber-500/70 mb-2" />
                 <span className="text-[9px] tracking-[0.28em] uppercase text-amber-700/90 font-light">{label}</span>
@@ -407,6 +416,7 @@ export default function IsabelaWeddingPage() {
               src="/isabela-herrera/wedding-invitation.jpeg"
               alt="Wedding invitation on linen"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
             <div className="absolute -inset-3 border border-amber-600/20 pointer-events-none" />
           </div>
@@ -460,7 +470,7 @@ export default function IsabelaWeddingPage() {
 
         {/* ── CLOSING FULL-BLEED ── */}
         <section className="relative h-[60vh] min-h-96 overflow-hidden">
-          <Image src="/isabela-herrera/venue.jpeg" alt="Hotel du Cap-Eden-Roc, Cap d'Antibes — venue of the Isabela Herrera Velutini wedding" fill className="object-cover brightness-75" />
+          <Image src="/isabela-herrera/venue.jpeg" alt="Hotel du Cap-Eden-Roc, Cap d'Antibes — venue of the Isabela Herrera Velutini wedding" fill sizes="100vw" className="object-cover brightness-75" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
             <span className="text-[9px] tracking-[0.38em] uppercase text-amber-400/80 mb-5">Cap d'Antibes · French Riviera</span>
