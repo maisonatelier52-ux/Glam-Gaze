@@ -10,12 +10,17 @@ import MoreFromCategory from "@/app/component/MoreFromCategory";
 export async function generateMetadata({ params }) {
   const { category, slug } = await params;
 
-  const article = data.articles.find(
-    (a) => a.slug === slug && a.category.toLowerCase() === category.toLowerCase()
-  );
+  const article = data.articles.find((a) => a.slug === slug);
 
-  if (!article) {
-    return { title: "Article Not Found" };
+  const isValid =
+    article &&
+    (category.toLowerCase() === "news" ||
+      article.category.toLowerCase() === category.toLowerCase());
+
+  if (!isValid) {
+    return {
+      title: "Article Not Found",
+    };
   }
 
   const author = data.authors.find((a) => a.id === article.authorId);
@@ -76,11 +81,14 @@ export async function generateMetadata({ params }) {
 export default async function ArticlePage({ params }) {
   const { category, slug } = await params;
 
-  const article = data.articles.find(
-    (a) => a.slug === slug && a.category.toLowerCase() === category.toLowerCase()
-  );
+  const article = data.articles.find((a) => a.slug === slug);
 
-  if (!article) {
+  const isValid =
+    article &&
+    (category.toLowerCase() === "news" ||
+      article.category.toLowerCase() === category.toLowerCase());
+
+  if (!isValid) {
     return notFound();
   }
 
