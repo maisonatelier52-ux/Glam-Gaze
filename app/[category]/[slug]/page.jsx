@@ -8,14 +8,14 @@ import Link from "next/link";
 import MoreFromCategory from "@/app/component/MoreFromCategory";
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
+  const { category, slug } = await params;
 
-  const article = data.articles.find((a) => a.slug === slug);
+  const article = data.articles.find(
+    (a) => a.slug === slug && a.category.toLowerCase() === category.toLowerCase()
+  );
 
   if (!article) {
-    return {
-      title: "Article Not Found",
-    };
+    return { title: "Article Not Found" };
   }
 
   const author = data.authors.find((a) => a.id === article.authorId);
@@ -74,10 +74,11 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ArticlePage({ params }) {
-  const { slug } = await params;
+  const { category, slug } = await params;
 
-  // Find article first
-  const article = data.articles.find((a) => a.slug === slug);
+  const article = data.articles.find(
+    (a) => a.slug === slug && a.category.toLowerCase() === category.toLowerCase()
+  );
 
   if (!article) {
     return notFound();
