@@ -21,6 +21,10 @@ export async function generateMetadata() {
     description,
 
     keywords: [
+      "glam gaze",
+      "the glam gaze",
+      "fashion",
+      "style",
       "fashion news",
       "celebrity style",
       "business trends",

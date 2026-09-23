@@ -264,7 +264,7 @@ export default function OurTeam() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
             <TeamBio
               name="Ava Miller"
               role="Youth Culture Writer"
@@ -300,6 +300,12 @@ export default function OurTeam() {
               role="Culture Editor"
               image="/author/Isabella-Rossi.webp"
               description="Isabella explores where fashion intersects with art, entertainment, and society. She adds depth to trends that often move faster than the conversations surrounding them."
+            />
+            <TeamBio
+              name="Sophia Bennett"
+              role="Celebrity Wedding Writer"
+              image="/author/Sophia-Bennett.webp"
+              description="Sophia Bennett covers celebrity weddings, engagements, bridal fashion, luxury ceremonies, and exclusive relationship news from Hollywood and around the world."
             />
           </div>
         </section>
