@@ -19,7 +19,7 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
   verification: {
-    google: "wYKa3Z5fGP815GEx8IbSgCSYNFy5xDzbbDA1JNnZHCs",
+    google: "xeEYTc6Rr6qvDZZYgQnsGSh2_FB5flXrHN9y3sxwE7E",
   },
 };
 
