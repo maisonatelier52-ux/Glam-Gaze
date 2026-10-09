@@ -216,7 +216,7 @@ function GalleryLink() {
         Jose Villa Photography · Plus Two Films
       </span>
       <h2 className="font-cormorant font-light text-[clamp(1.8rem,3.5vw,3rem)] text-neutral-900 mb-4">
-        Isabela Herrera Velutini Wedding Photos and Film
+        Browse wedding gallery
       </h2>
       <p className="text-sm text-neutral-400 max-w-md mx-auto leading-7 mb-10">
         Browse the complete collection of photographs and films from the wedding weekend at Hotel du Cap-Eden-Roc.
@@ -507,6 +507,13 @@ export default async function IsabelaWeddingPage({ params }) {
             </div>
           </div>
         </section>
+
+        <footer className="max-w-2xl mx-auto px-6 py-12 text-center text-xs leading-6 text-neutral-400">
+          <p>
+            Reporting and credits were compiled from information supplied by the wedding’s creative partners.
+            Photography credited to Jose Villa Photography and film credited to Plus Two Films.
+          </p>
+        </footer>
 
         {/* ── CLOSING FULL-BLEED ── */}
         <section className="relative h-[60vh] min-h-96 overflow-hidden">

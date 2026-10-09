@@ -12,7 +12,12 @@ export default function sitemap() {
       changeFrequency: "daily",
       priority: 1.0,
     },
-
+    {
+      url: `${SITE_URL}/people/isabela-herrera-velutini`,
+      lastModified: new Date("2026-10-09"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // Core Pages
     {
       url: `${SITE_URL}/about`,
