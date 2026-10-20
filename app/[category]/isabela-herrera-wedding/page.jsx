@@ -1,14 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import { permanentRedirect } from "next/navigation";
 
-// ─── SEO METADATA ─────────────────────────────────────────────────────────────
+// SEO METADATA
 
 const baseUrl = "https://www.theglamgaze.com";
 const pageUrl = `${baseUrl}/celebrity-wedding/isabela-herrera-wedding`;
 const ogImage = `${baseUrl}/isabela-herrera/mathew-isabela.webp`;
 
-const seoTitle = "Isabela Herrera Velutini Wedding in Antibes | Glam Gaze";
-const ogTitle = "Isabela Herrera Velutini Wedding in Antibes";
+const seoTitle = "Isabela Herrera Velutini Wedding at Hotel du Cap-Eden-Roc";
+const ogTitle = "Isabela Herrera Velutini Wedding at Hotel du Cap-Eden-Roc";
 const seoDescription = "Inside Isabela Herrera Velutini’s wedding to Matthew Carmona-Gonzalez at Hotel du Cap-Eden-Roc in Antibes, featuring couture, photos and film.";
 
 const MODIFIED_ISO = "2026-10-06T00:00:00Z";
@@ -25,6 +26,8 @@ export const metadata = {
     "Isabela Herrera Carmona",
     "Isabela Herrera wedding",
     "Isabela Herrera Velutini",
+    "Isabela Herrera Matthew Jose",
+    "Isabela Herrera Matthew Jose Carmona-Gonzalez",
     "Hotel du Cap Eden Roc wedding",
     "Antibes luxury wedding",
     "Riviera society wedding",
@@ -73,7 +76,7 @@ export const metadata = {
   category: "Wedding",
 };
 
-// ─── JSON-LD ──────────────────────────────────────────────────────────────────
+// JSON-LD
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -113,7 +116,7 @@ const jsonLd = {
       "@type": "Event",
       "@id": `${pageUrl}#event`,
       name: "The Wedding of Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez",
-      description: "A private wedding celebration at Hotel du Cap-Eden-Roc, Cap d'Antibes, France, uniting Isabela Herrera Velutini von Uslar-Gleichen and Matthew Jose Carmona-Gonzalez across a weekend of Riviera elegance and old-world ceremony.",
+      description: "A private wedding celebration at Hotel du Cap-Eden-Roc, Cap d'Antibes, France, uniting Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez across a weekend of Riviera elegance and old-world ceremony.",
       startDate: "2026-04-17",
       endDate: "2026-04-20",
       eventStatus: "https://schema.org/EventCompleted",
@@ -137,7 +140,7 @@ const jsonLd = {
       "@type": "Person",
       "@id": `${pageUrl}#isabela`,
       name: "Isabela Herrera Velutini",
-      alternateName: "Isabela Herrera Velutini von Uslar-Gleichen",
+      alternateName: "Isabela Herrera Velutini",
       description: "Isabela Herrera Velutini married Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc in Antibes, France in April 2026.",
       familyName: "Herrera Velutini",
       givenName: "Isabela",
@@ -163,10 +166,7 @@ const jsonLd = {
   ],
 };
 
-// ─── DATA ─────────────────────────────────────────────────────────────────────
-
-// `url`: add each vendor's official / verified page (brief items 10). Left null
-// where not supplied; entries with a url render as links automatically.
+// DATA
 const credits = [
   { role: "Content Creation & Editorial Documentation", name: "Olivia & Living Event Content", url: null },
   { role: "Planning & Design", name: "Lavender & Rose", url: null },
@@ -193,7 +193,7 @@ const atAGlance = [
   { label: "Film", value: "Plus Two Films" },
 ];
 
-// ─── SUB-COMPONENTS ───────────────────────────────────────────────────────────
+// SUB-COMPONENTS
 
 function GoldEyebrow({ children, className = "" }) {
   return (
@@ -222,7 +222,7 @@ function GalleryLink() {
         Browse the complete collection of photographs and films from the wedding weekend at Hotel du Cap-Eden-Roc.
       </p>
 
-      <a
+      <Link
         href="/celebrity-wedding/isabela-herrera-wedding/gallery"
         className="group inline-flex items-center gap-4 border border-amber-600/30 px-10 py-4 text-[10px] tracking-[0.35em] uppercase text-amber-700 hover:bg-amber-700 hover:text-white hover:border-amber-700 transition-all duration-300"
       >
@@ -236,9 +236,9 @@ function GalleryLink() {
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
-      </a>
+      </Link>
 
-      {/* Thumbnail strip preview — below the fold, lazy-loaded by next/image */}
+      {/* Thumbnail strip preview below the fold, lazy-loaded by next/image */}
       <div className="mt-14 flex gap-1.5 justify-center overflow-hidden max-w-3xl mx-auto">
         {[
           { src: "/isabela-herrera/isabela.jpeg",           alt: "Bridal portrait of Isabela Herrera Velutini" },
@@ -247,7 +247,7 @@ function GalleryLink() {
           { src: "/isabela-herrera/mathew-isabela-1.webp",  alt: "Wedding celebration on the French Riviera" },
           { src: "/isabela-herrera/isabela4.jpg",           alt: "Wedding day portrait from the Antibes weekend" },
         ].map(({ src, alt }) => (
-          <a
+          <Link
             key={src}
             href="/celebrity-wedding/isabela-herrera-wedding/gallery"
             className="relative flex-1 overflow-hidden group/thumb"
@@ -260,7 +260,7 @@ function GalleryLink() {
               sizes="(max-width: 768px) 100vw, 20vw"
               className="object-cover brightness-75 group-hover/thumb:brightness-100 group-hover/thumb:scale-105 transition-all duration-700"
             />
-          </a>
+          </Link>
         ))}
       </div>
 
@@ -271,7 +271,7 @@ function GalleryLink() {
   );
 }
 
-// ─── PAGE ─────────────────────────────────────────────────────────────────────
+// PAGE
 
 export default async function IsabelaWeddingPage({ params }) {
   const { category } = await params;
@@ -303,7 +303,7 @@ export default async function IsabelaWeddingPage({ params }) {
 
       <main className="font-jost font-light bg-white text-neutral-900">
 
-        {/* ── HERO ── */}
+        {/* HERO */}
         <section className="relative w-full" style={{ height: "32vh", minHeight: 350 }}>
           <div className="hero-overlay absolute inset-0 z-10" />
           <div className="absolute bottom-0 left-0 right-0 z-20 pb-8 flex flex-col items-center text-center px-6">
@@ -316,14 +316,14 @@ export default async function IsabelaWeddingPage({ params }) {
               Isabela Herrera Velutini &nbsp;·&nbsp; Matthew Jose Carmona-Gonzalez &nbsp;·&nbsp; Antibes, France
             </p>
             <p className="mt-3 text-[10px] tracking-[0.2em] uppercase text-neutral-400 font-light">
-              By <a href={`${baseUrl}/author/sophia-bennett`} className="underline decoration-amber-600/30 text-amber-600 hover:decoration-amber-700">Sophia Bennett</a>
+              By <Link href={`${baseUrl}/author/sophia-bennett`} className="underline decoration-amber-600/30 text-amber-600 hover:decoration-amber-700">Sophia Bennett</Link>
               &nbsp;·&nbsp; Published <time dateTime={PUBLISHED_ISO}>{PUBLISHED_LABEL}</time>
               &nbsp;·&nbsp; Updated <time dateTime={MODIFIED_ISO}>{MODIFIED_LABEL}</time>
             </p>
           </div>
         </section>
 
-        {/* ── OPENING NARRATIVE ── */}
+        {/* OPENING NARRATIVE */}
         <section className="max-w-3xl mx-auto px-6 py-20 text-center">
           <p className="font-cormorant text-[clamp(1.15rem,2vw,1.4rem)] leading-relaxed text-neutral-700 font-light">
             The Isabela Herrera Velutini wedding took place at Hotel du Cap-Eden-Roc in Antibes, France, where she
@@ -342,7 +342,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </p>
         </section>
 
-        {/* ── GOLD DIVIDER ── */}
+        {/* GOLD DIVIDER */}
         <div className="flex items-center justify-center gap-3 py-2 px-8">
           <div className="flex-1 max-w-xs h-px bg-gradient-to-r from-transparent to-amber-600/40" />
           <div className="w-1.5 h-1.5 rotate-45 bg-amber-600/60" />
@@ -351,7 +351,7 @@ export default async function IsabelaWeddingPage({ params }) {
           <div className="flex-1 max-w-xs h-px bg-gradient-to-l from-transparent to-amber-600/40" />
         </div>
 
-        {/* ── TWO-COLUMN INTRO ── */}
+        {/* TWO-COLUMN INTRO */}
         <section className="max-w-7xl mx-auto px-6 md:px-12 py-24 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-[9px] tracking-[0.38em] uppercase text-amber-700 block mb-5">Côte d'Azur · Spring</span>
@@ -362,7 +362,6 @@ export default async function IsabelaWeddingPage({ params }) {
             </h2>
             <div className="space-y-5 text-sm leading-8 text-neutral-500">
               <p>Framed by the gardens and terraces of one of France's most storied grand hotels, the occasion carried the atmosphere of a royal house celebration: discreet, cinematic, and meticulously composed.</p>
-              {/* Kept the strongest occurrence of this passage; the duplicate further down now carries new venue detail */}
               <p>Their story unfolded among the same gardens and terraces of Hôtel du Cap-Eden-Roc that the couple had visited throughout their childhood — transforming a familiar Riviera sanctuary into the setting for a new family chapter.</p>
               <p>From candlelit receptions beneath the palms to meticulously layered floral installations and custom-designed wardrobes, every element reflected a world shaped by elegance, continuity, and private tradition.</p>
             </div>
@@ -376,7 +375,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </div>
         </section>
 
-        {/* ── AT A GLANCE (replaces repeated blockquote with factual content) ── */}
+        {/* AT A GLANCE (replaces repeated blockquote with factual content) */}
         <section className="bg-neutral-50 border-y border-amber-600/10 py-20 px-6">
           <dl className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-x-12 gap-y-6 text-left">
             {atAGlance.map(({ label, value }) => (
@@ -388,7 +387,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </dl>
         </section>
 
-        {/* ── VENUE IMAGE STRIP ── */}
+        {/* VENUE IMAGE STRIP */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-px bg-neutral-200" aria-label="Wedding photography of Isabela Herrera Velutini">
           {[
             { src: "/isabela-herrera/isabela.jpeg", alt: "Isabela Herrera Velutini wedding portrait in Antibes", label: "Isabela" },
@@ -406,7 +405,7 @@ export default async function IsabelaWeddingPage({ params }) {
           ))}
         </section>
 
-        {/* ── VENUE ── */}
+        {/* VENUE */}
         <section className="max-w-2xl mx-auto px-6 pt-24 pb-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-[9px] tracking-[0.38em] uppercase text-amber-700">Just Married on the French Riviera</span>
@@ -422,7 +421,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </div>
         </section>
 
-        {/* ── COUTURE / INVITATION SPOTLIGHT ── */}
+        {/* COUTURE / INVITATION SPOTLIGHT */}
         <section className="grid md:grid-cols-2 min-h-[70vh] border-y border-neutral-100">
           <figure className="relative bg-neutral-50" style={{ minHeight: 420 }}>
             <Image
@@ -454,7 +453,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </div>
         </section>
 
-        {/* ── DESIGN, FLOWERS, ENTERTAINMENT ── */}
+        {/* DESIGN, FLOWERS, ENTERTAINMENT */}
         <section className="max-w-2xl mx-auto px-6 py-24 space-y-5 text-sm leading-8 text-neutral-500">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-[9px] tracking-[0.38em] uppercase text-amber-700">Design & Experience</span>
@@ -471,7 +470,7 @@ export default async function IsabelaWeddingPage({ params }) {
           <p>Together, the collective behind the wedding did more than produce an event. They created an atmosphere — one rooted in Riviera elegance, old-world romance, and the quiet language of modern legacy.</p>
         </section>
 
-        {/* ── PHOTOS AND FILM ── */}
+        {/* PHOTOS AND FILM */}
         <section className="max-w-2xl mx-auto px-6 pb-24 border-t border-amber-600/10 pt-24">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-[9px] tracking-[0.38em] uppercase text-amber-700">The Creative Collective</span>
@@ -490,7 +489,7 @@ export default async function IsabelaWeddingPage({ params }) {
           <GalleryLink />
         </section>
 
-        {/* ── CREDITS ── */}
+        {/* CREDITS */}
         <section className="bg-neutral-50 border-t border-neutral-100 py-24 px-6 md:px-12">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -515,7 +514,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </p>
         </footer>
 
-        {/* ── CLOSING FULL-BLEED ── */}
+        {/* CLOSING FULL-BLEED */}
         <section className="relative h-[60vh] min-h-96 overflow-hidden">
           <Image src="/isabela-herrera/venue.jpeg" alt="Hotel du Cap-Eden-Roc terrace during the wedding reception" fill sizes="100vw" className="object-cover brightness-75" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import data from "@/data/data.json";
 
-// ─── Metadata ───────────────────────────────────────────────────────────────
+// Metadata
 export async function generateMetadata() {
   const url = "https://www.theglamgaze.com/our-team";
   const title = "Our Team - Glam Gaze";
@@ -46,7 +46,7 @@ export async function generateMetadata() {
   };
 }
 
-// ─── JSON-LD ─────────────────────────────────────────────────────────────────
+// JSON-LD
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -181,7 +181,7 @@ const jsonLd = {
   ],
 };
 
-// ─── Page ────────────────────────────────────────────────────────────────────
+// Page
 export default function OurTeam() {
   return (
     <>
@@ -343,7 +343,7 @@ export default function OurTeam() {
   );
 }
 
-// ─── Sub-components ───────────────────────────────────────────────────────────
+// Sub-components
 function AuthorCard({ author }) {
   return (
     <article className="group bg-white p-6 flex flex-col items-center text-center transition-all duration-300 hover:bg-neutral-50">

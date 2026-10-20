@@ -221,13 +221,13 @@ export default function TermsAndConditions() {
               please contact our editorial team.
             </p>
 
-            <a
+            <Link
               href="mailto:editorial@theglamgaze.com"
               className="mt-8 inline-flex items-center gap-3 border border-zinc-300 px-6 py-3 hover:bg-black hover:text-white transition-colors"
             >
               <FaEnvelope />
               editorial@theglamgaze.com
-            </a>
+            </Link>
 
             <div className="mt-6">
               <Link

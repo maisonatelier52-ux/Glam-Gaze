@@ -157,7 +157,7 @@ export default function SourceMethodology() {
 
   return (
     <>
-      {/* ─── JSON-LD Structured Data ─── */}
+      {/* JSON-LD Structured Data */}
       <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

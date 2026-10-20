@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 const SITE_URL = "https://www.theglamgaze.com";
@@ -112,7 +113,7 @@ export default function CorrectionsPolicy() {
 
   return (
     <>
-        {/* ── JSON-LD Structured Data ── */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -299,13 +300,13 @@ export default function CorrectionsPolicy() {
               team directly and we'll review it promptly.
             </p>
 
-            <a
+            <Link
               href="mailto:corrections@theglamgaze.com"
               className="inline-flex items-center gap-3 text-black border border-black px-6 py-4 text-sm tracking-[0.15em] uppercase font-medium hover:bg-black hover:text-white transition-colors duration-300"
             >
               <FaEnvelope className="text-[#b8972e] text-base flex-shrink-0" />
               corrections@theglamgaze.com
-            </a>
+            </Link>
           </div>
         </section>
       </main>

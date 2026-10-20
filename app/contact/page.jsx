@@ -127,12 +127,12 @@ export default function ContactPage() {
                 wellness, and culture.
               </p>
 
-              <a
+              <Link
                 href="mailto:editorial@theglamgaze.com"
                 className="inline-block mt-4 text-[#b8972e] hover:text-black transition-colors"
               >
                 editorial@theglamgaze.com
-              </a>
+              </Link>
             </div>
 
             {/* Corrections */}
@@ -150,12 +150,12 @@ export default function ContactPage() {
                 staff with supporting information.
               </p>
 
-              <a
+              <Link
                 href="mailto:corrections@theglamgaze.com"
                 className="inline-block mt-4 text-[#b8972e] hover:text-black transition-colors"
               >
                 corrections@theglamgaze.com
-              </a>
+              </Link>
             </div>
 
             {/* Advertising */}

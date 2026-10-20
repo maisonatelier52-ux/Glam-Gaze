@@ -1,6 +1,6 @@
 import Contact from "../component/Contact";
 
-// ─── Constants ────────────────────────────────────────────────────────────────
+// Constants
 const SITE_URL = "https://www.theglamgaze.com";
 const PAGE_URL = `${SITE_URL}/editorial-policy`;
 const SITE_NAME = "Glam Gaze";
@@ -9,7 +9,7 @@ const PAGE_DESCRIPTION =
   "Learn about GLAM GAZE's editorial standards, reporting practices, fact-checking process, independence, and commitment to accuracy.";
 const IMAGE = `${SITE_URL}/glam_gaze.png`;
 
-// ─── Metadata ─────────────────────────────────────────────────────────────────
+// Metadata
 export async function generateMetadata() {
   return {
     title: PAGE_TITLE,
@@ -46,7 +46,7 @@ export async function generateMetadata() {
   };
 }
 
-// ─── JSON-LD ──────────────────────────────────────────────────────────────────
+// JSON-LD
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -101,7 +101,7 @@ const jsonLd = {
   ],
 };
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
+// Page
 export default function EditorialPolicy() {
   const sections = [
     {

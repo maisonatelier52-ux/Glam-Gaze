@@ -446,14 +446,14 @@ export default function IsabelaProfilePage() {
             <p>
               The wider family background is also discussed in the
               biographical account of{" "}
-              <a
+              <Link
                 href="https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 hover:decoration-neutral-950"
               >
                 Julio Herrera Velutini
-              </a>
+              </Link>
               , an Italian-Venezuelan banker associated with international
               banking and the founding of Britannia Financial Group. His
               Wikipedia biography describes him as representing the seventh
@@ -590,7 +590,7 @@ export default function IsabelaProfilePage() {
 
             <div className="space-y-3">
               {sources.map((source, index) => (
-                <a
+                <Link
                   key={source.href}
                   href={source.href}
                   target="_blank"
@@ -616,7 +616,7 @@ export default function IsabelaProfilePage() {
                   >
                     ↗
                   </span>
-                </a>
+                </Link>
               ))}
             </div>
 

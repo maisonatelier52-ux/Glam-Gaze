@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import GridItem from "@/app/component/GridItem";
 import Lightbox from "@/app/component/LightBox";
 import FilterTabs from "@/app/component/Filter";
+import Link from "next/link";
 
 const items = [
   { id: 1,  type: "image", src: "/isabela-herrera/isabela.jpeg",             alt: "Isabela Herrera Velutini bridal portrait, Hotel du Cap-Eden-Roc",                          span: "col-span-1 row-span-2" },
@@ -46,15 +47,15 @@ export default function GalleryPage() {
 
       <main className="font-jost font-light bg-white text-neutral-900 min-h-screen">
 
-        {/* ── HEADER ── */}
+        {/* HEADER */}
         <section className="max-w-5xl mx-auto px-6 pt-20 pb-12 text-center">
           {/* Breadcrumb */}
           <nav className="flex items-center justify-center gap-2 text-[9px] tracking-[0.3em] uppercase text-neutral-400 mb-10">
-            <a href="/" className="hover:text-amber-700 transition-colors">Home</a>
+            <Link href="/" className="hover:text-amber-700 transition-colors">Home</Link>
             <span>/</span>
-            <a href="/celebrity-wedding" className="hover:text-amber-700 transition-colors">Weddings</a>
+            <Link href="/celebrity-wedding" className="hover:text-amber-700 transition-colors">Weddings</Link>
             <span>/</span>
-            <a href="/celebrity-wedding/isabela-herrera-wedding" className="hover:text-amber-700 transition-colors">Isabela Herrera Velutini</a>
+            <Link href="/celebrity-wedding/isabela-herrera-wedding" className="hover:text-amber-700 transition-colors">Isabela Herrera Velutini</Link>
             <span>/</span>
             <span className="text-amber-700">Gallery</span>
           </nav>
@@ -89,7 +90,7 @@ export default function GalleryPage() {
           </p>
         </section>
 
-        {/* ── MASONRY GRID ── */}
+        {/* MASONRY GRID */}
         <section className="px-4 md:px-6 pb-24">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[240px] gap-1.5">
             {filtered.map((item, i) => (
@@ -98,21 +99,21 @@ export default function GalleryPage() {
           </div>
         </section>
 
-        {/* ── BACK LINK ── */}
+        {/* BACK LINK */}
         <div className="text-center pb-16">
-          <a
+          <Link
             href="/celebrity-wedding/isabela-herrera-wedding"
             className="inline-flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase text-amber-700 hover:text-amber-900 transition-colors"
           >
             <span className="block w-8 h-px bg-current" />
             Back to Feature
             <span className="block w-8 h-px bg-current" />
-          </a>
+          </Link>
         </div>
 
       </main>
 
-      {/* ── LIGHTBOX ── */}
+      {/* LIGHTBOX */}
       {activeIndex !== null && (
         <Lightbox
           items={filtered}
