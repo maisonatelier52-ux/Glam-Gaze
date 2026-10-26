@@ -54,7 +54,7 @@ const categoryDescriptions = {
     "Explore lifestyle, luxury, travel, beauty, wellness and living trends from Glam Gaze.",
 };
 
-// Generate SEO Metadata
+// Metadata
 export async function generateMetadata({ params }) {
   const { category } = await params;
 
@@ -150,7 +150,7 @@ export default async function Category({ params }) {
       (article) => article.slug !== PINNED_SLUG
     );
 
-    // Take top 4 by date, then append the pinned article as the 5th slot.
+    // Take latest 4, then append the pinned article as the 5th slot.
     articles = pinnedArticle
       ? [...remaining.slice(0, 4), pinnedArticle]
       : remaining.slice(0, 5);
@@ -163,17 +163,12 @@ export default async function Category({ params }) {
     latest = filteredArticles.slice(9, 15);
   }
 
-  /*
-   * Use the articles actually displayed on the page
-   * so the ItemList reflects the visible article collection.
-   */
   const listedArticles = [
     ...articles,
     ...celebrity,
     ...latest,
   ].slice(0, 15);
 
-  // CollectionPage JSON-LD
   const collectionPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",

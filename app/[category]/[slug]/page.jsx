@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import data from "@/data/data.json";
 import AuthorBox from "@/app/component/AuthorBox";
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
     description: article.excerpt,
 
     alternates: {
-      canonical: `${SITE_URL}/${article.category}/${slug}`,
+      canonical: `${SITE_URL}/${article.category.toLowerCase().replace(/\s+/g, "-")}/${slug}`,
     },
 
     keywords: [
@@ -53,12 +53,13 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: article.title,
       description: article.excerpt,
-      url: `${SITE_URL}/${article.category}/${slug}`,
+      url: `${SITE_URL}/${article.category.toLowerCase().replace(/\s+/g, "-")}/${slug}`,
       type: "article",
       siteName: "GLAM GAZE",
       locale: "en_US",
       publishedTime: article.date,
       authors: [author?.name || "Unknown"],
+      dateModified: article.date,
       images: [
         {
           url: imageUrl,
@@ -92,6 +93,14 @@ export default async function ArticlePage({ params }) {
     return notFound();
   }
 
+  const normalizedCategory = article.category
+    .toLowerCase()
+    .replace(/\s+/g, "-");
+
+  if (category !== normalizedCategory) {
+    permanentRedirect(`/${normalizedCategory}/${slug}`);
+  }
+
   // Now safe to access author
   const author = data.authors.find((a) => a.id === article.authorId);
 
@@ -104,7 +113,7 @@ export default async function ArticlePage({ params }) {
 
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/${article.category}/${article.slug}`,
+      "@id": `${SITE_URL}/${article.category.toLowerCase().replace(/\s+/g, "-")}/${article.slug}`,
     },
 
     headline: article.title,
@@ -114,6 +123,8 @@ export default async function ArticlePage({ params }) {
 
     datePublished: article.date,
     dateModified: article.date,
+
+    inLanguage: "en",
 
     author: {
       "@type": "Person",
@@ -147,13 +158,13 @@ export default async function ArticlePage({ params }) {
         "@type": "ListItem",
         position: 2,
         name: article.category,
-        item: `${SITE_URL}/${article.category}`,
+        item: `${SITE_URL}/${article.category.toLowerCase().replace(/\s+/g, "-")}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: article.title,
-        item: `${SITE_URL}/${article.category}/${article.slug}`,
+        item: `${SITE_URL}/${article.category.toLowerCase().replace(/\s+/g, "-")}/${article.slug}`,
       },
     ],
   };

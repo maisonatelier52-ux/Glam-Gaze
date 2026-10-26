@@ -1,5 +1,5 @@
 export async function generateMetadata() {
-  const url = "https://www.theglamgaze.com/right-of-reply-policy";
+  const url = "https://www.theglamgaze.com/right-of-reply";
   const title = "Right of Reply Policy | GLAM GAZE";
   const description =
     "Learn about GLAM GAZE's Right of Reply Policy, including how individuals, brands, and organizations can respond to information published in our coverage.";
@@ -50,7 +50,7 @@ export default function RightOfReplyPolicyPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Right of Reply Policy",
-    url: "https://www.theglamgaze.com/right-of-reply-policy",
+    url: "https://www.theglamgaze.com/right-of-reply",
     description:
       "GLAM GAZE's Right of Reply Policy explaining how individuals, brands, companies, and organizations can respond to information published in our reporting.",
     publisher: {

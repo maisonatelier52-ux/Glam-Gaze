@@ -1,9 +1,8 @@
 // SEO Metadata
 export async function generateMetadata() {
-  const url = "https://www.theglamgaze.com/privacy";
+  const url = "https://www.theglamgaze.com/privacy-policy";
   const title = "Privacy Policy - Glam Gaze";
-  const description =
-    "Learn how we collect, use, and protect your personal information when using Glam Gaze.";
+  const description = "Learn how we collect, use, and protect your personal information when using Glam Gaze.";
   const image = "https://www.theglamgaze.com/glam_gaze.png";
 
   return {
@@ -37,7 +36,7 @@ export async function generateMetadata() {
 
     twitter: {
       card: "summary_large_image",
-      site: "@theglamgaze", // replace with actual handle
+      site: "@theglamgaze",
       title,
       description,
       images: [image],
@@ -50,9 +49,8 @@ export default function PrivacyPolicy() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Privacy Policy",
-    url: "https://www.theglamgaze.com/privacy",
-    description:
-      "Learn how Glam Gaze collects, uses, and protects your personal information.",
+    url: "https://www.theglamgaze.com/privacy-policy",
+    description: "Learn how Glam Gaze collects, uses, and protects your personal information.",
     publisher: {
       "@type": "Organization",
       name: "Glam Gaze",

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 const SITE_URL = "https://www.theglamgaze.com";
-const PAGE_URL = `${SITE_URL}/legal-information`;
+const PAGE_URL = `${SITE_URL}/legal`;
 const SITE_NAME = "Glam Gaze";
 const PAGE_TITLE = "Legal Information - Glam Gaze";
 const PAGE_DESCRIPTION =
@@ -49,9 +49,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   name: "Legal Information",
-  description:
-    "Learn about GLAM GAZE's legal information, content ownership, editorial content, affiliate disclosures, liability limitations, and website policies.",
-  url: "https://www.theglamgaze.com/legal-information",
+  description: "Learn about GLAM GAZE's legal information, content ownership, editorial content, affiliate disclosures, liability limitations, and website policies.",
+  url: "https://www.theglamgaze.com/legal",
   publisher: {
     "@type": "Organization",
     name: "GLAM GAZE",
@@ -64,38 +63,31 @@ export default function LegalInformation() {
   const sections = [
     {
       title: "Content Ownership",
-      content:
-        "Unless otherwise stated, all articles, images, graphics, logos, and other content published on GLAM GAZE are protected by copyright and intellectual property laws. Content may not be copied, republished, distributed, or reproduced without prior written permission, except where permitted by applicable law.",
+      content: "Unless otherwise stated, all articles, images, graphics, logos, and other content published on GLAM GAZE are protected by copyright and intellectual property laws. Content may not be copied, republished, distributed, or reproduced without prior written permission, except where permitted by applicable law.",
     },
     {
       title: "Editorial Content",
-      content:
-        "The information published on GLAM GAZE is provided for general informational and entertainment purposes. While we strive for accuracy, we cannot guarantee that all information will always be complete, current, or free from error. Readers should use their own judgment when relying on information published on the website.",
+      content: "The information published on GLAM GAZE is provided for general informational and entertainment purposes. While we strive for accuracy, we cannot guarantee that all information will always be complete, current, or free from error. Readers should use their own judgment when relying on information published on the website.",
     },
     {
       title: "External Links",
-      content:
-        "Some articles may include links to third-party websites for additional information or reference. GLAM GAZE does not control or endorse the content, policies, or practices of external websites and is not responsible for their content or availability.",
+      content: "Some articles may include links to third-party websites for additional information or reference. GLAM GAZE does not control or endorse the content, policies, or practices of external websites and is not responsible for their content or availability.",
     },
     {
       title: "Opinions and Views",
-      content:
-        "Opinions expressed in articles, interviews, or guest contributions belong to the respective authors and do not necessarily reflect the views of GLAM GAZE as a whole.",
+      content: "Opinions expressed in articles, interviews, or guest contributions belong to the respective authors and do not necessarily reflect the views of GLAM GAZE as a whole.",
     },
     {
       title: "Affiliate Disclosure",
-      content:
-        "Some content may contain affiliate links. If readers make purchases through these links, GLAM GAZE may earn a commission at no additional cost to the reader. These relationships do not influence our editorial decisions or coverage.",
+      content: "Some content may contain affiliate links. If readers make purchases through these links, GLAM GAZE may earn a commission at no additional cost to the reader. These relationships do not influence our editorial decisions or coverage.",
     },
     {
       title: "Limitation of Liability",
-      content:
-        "GLAM GAZE, its writers, editors, contributors, and affiliates shall not be held liable for any loss, damage, or inconvenience resulting from the use of information published on this website. Use of the website and its content is at the reader's own discretion.",
+      content: "GLAM GAZE, its writers, editors, contributors, and affiliates shall not be held liable for any loss, damage, or inconvenience resulting from the use of information published on this website. Use of the website and its content is at the reader's own discretion.",
     },
     {
       title: "Changes to Policies",
-      content:
-        "We may update our policies, guidelines, and legal information from time to time. Any updates will be reflected on this page. Continued use of the website after changes are published constitutes acceptance of those changes.",
+      content: "We may update our policies, guidelines, and legal information from time to time. Any updates will be reflected on this page. Continued use of the website after changes are published constitutes acceptance of those changes.",
     },
   ];
 

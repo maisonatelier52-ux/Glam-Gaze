@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export async function generateMetadata() {
-  const url = "https://www.theglamgaze.com/ownership-funding";
+  const url = "https://www.theglamgaze.com/ownership-and-funding";
   const title = "Ownership & Funding | GLAM GAZE";
   const description =
     "Learn about GLAM GAZE's ownership, editorial independence, funding sources, sponsored content policies, affiliate relationships, and commitment to transparency.";
@@ -52,7 +52,7 @@ export default function OwnershipFundingPage() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Ownership & Funding",
-    url: "https://www.theglamgaze.com/ownership-funding",
+    url: "https://www.theglamgaze.com/ownership-and-funding",
     description:
       "Information about GLAM GAZE's ownership, editorial independence, funding model, sponsored content policies, affiliate relationships, and transparency commitments.",
     publisher: {

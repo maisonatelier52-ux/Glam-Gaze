@@ -193,8 +193,6 @@ const atAGlance = [
   { label: "Film", value: "Plus Two Films" },
 ];
 
-// SUB-COMPONENTS
-
 function GoldEyebrow({ children, className = "" }) {
   return (
     <span className={`inline-flex items-center gap-3 text-[10px] tracking-[0.35em] uppercase text-amber-700 font-light ${className}`}>
@@ -238,7 +236,7 @@ function GalleryLink() {
         </svg>
       </Link>
 
-      {/* Thumbnail strip preview below the fold, lazy-loaded by next/image */}
+      {/* Images */}
       <div className="mt-14 flex gap-1.5 justify-center overflow-hidden max-w-3xl mx-auto">
         {[
           { src: "/isabela-herrera/isabela.jpeg",           alt: "Bridal portrait of Isabela Herrera Velutini" },
@@ -270,8 +268,6 @@ function GalleryLink() {
     </div>
   );
 }
-
-// PAGE
 
 export default async function IsabelaWeddingPage({ params }) {
   const { category } = await params;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
@@ -20,13 +21,13 @@ export default function Contact() {
               enquiries? Reach our editorial team directly.
             </p>
 
-            <a
+            <Link
               href="mailto:editorial@theglamgaze.com"
               className="inline-flex items-center gap-3 text-black border border-black px-6 py-4 text-sm tracking-[0.15em] uppercase font-medium hover:bg-black hover:text-white transition-colors duration-300"
             >
               <FaEnvelope className="text-[#b8972e] text-base flex-shrink-0" />
               editorial@theglamgaze.com
-            </a>
+            </Link>
           </div>
         </section>
     );

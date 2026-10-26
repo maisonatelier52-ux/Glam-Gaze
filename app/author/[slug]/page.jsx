@@ -59,23 +59,34 @@ export default async function AuthorPage({ params }) {
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
   // JSON-LD
+  const SITE_URL = "https://www.theglamgaze.com";
+  const authorUrl = `${SITE_URL}/author/${slug}`;
+  const confirmedSocialProfiles = [
+    author.reddit,
+    author.medium,
+    author.quora,
+    author.pinterest,
+    author.linkedin,
+    author.x,
+  ].filter(
+    (url) => typeof url === "string" && url.trim().length > 0
+  );
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `${authorUrl}#person`,
     name: author.name,
-    description: author.meta_description,
-    url: `https://www.theglamgaze.com/author/${slug}`,
-    image: `https://www.theglamgaze.com${author.photo || "/author.jpg"}`,
-    sameAs: [
-      author.reddit,
-      author.medium,
-      author.quora,
-      author.pinterest,
-    ].filter(Boolean),
+    description: author.meta_description || author.bio,
+    url: authorUrl,
+    image: `${SITE_URL}${author.photo || "/author.jpg"}`,
+    ...(confirmedSocialProfiles.length > 0 && {
+      sameAs: confirmedSocialProfiles,
+    }),
     worksFor: {
       "@type": "Organization",
       name: "GLAM GAZE",
-      url: "https://www.theglamgaze.com",
+      url: SITE_URL,
     },
   };
 
