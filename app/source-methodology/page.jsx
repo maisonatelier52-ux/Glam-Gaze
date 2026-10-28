@@ -2,8 +2,7 @@ const SITE_URL = "https://www.theglamgaze.com";
 const PAGE_URL = `${SITE_URL}/source-methodology`;
 const SITE_NAME = "Glam Gaze";
 const PAGE_TITLE = "Source Methodology - Glam Gaze";
-const PAGE_DESCRIPTION =
-  "Learn how GLAM GAZE researches, verifies, fact-checks and evaluates sources before publishing stories.";
+const PAGE_DESCRIPTION = "Learn how GLAM GAZE researches, verifies, fact-checks and evaluates sources before publishing stories.";
 const IMAGE = `${SITE_URL}/glam_gaze.png`;
 
 export async function generateMetadata() {
@@ -69,8 +68,7 @@ export default function SourceMethodology() {
         "@id": "https://glamgaze.com/source-methodology#webpage",
         "url": "https://glamgaze.com/source-methodology",
         "name": "Source Methodology — GLAM GAZE",
-        "description":
-          "Learn how GLAM GAZE researches, verifies, fact-checks and evaluates sources before publishing stories.",
+        "description": "Learn how GLAM GAZE researches, verifies, fact-checks and evaluates sources before publishing stories.",
         "isPartOf": {
           "@id": "https://glamgaze.com/#website",
         },
@@ -99,8 +97,7 @@ export default function SourceMethodology() {
         "@id": "https://glamgaze.com/#website",
         "url": "https://glamgaze.com",
         "name": "GLAM GAZE",
-        "description":
-          "Fashion journalism and reporting built on evidence, verification and accountability.",
+        "description": "Fashion journalism and reporting built on evidence, verification and accountability.",
         "publisher": {
           "@id": "https://glamgaze.com/#organization",
         },
@@ -121,7 +118,7 @@ export default function SourceMethodology() {
         "url": "https://glamgaze.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://glamgaze.com/logo.png",
+          "url": "https://glamgaze.com/glam_gaze.png",
           "width": 200,
           "height": 60,
         },
@@ -137,11 +134,9 @@ export default function SourceMethodology() {
         "name": "GLAM GAZE",
         "url": "https://glamgaze.com",
         "foundingDate": "2020",
-        "description":
-          "GLAM GAZE is a fashion journalism outlet committed to credible, fact-checked, and thoroughly sourced reporting.",
+        "description": "GLAM GAZE is a fashion journalism outlet committed to credible, fact-checked, and thoroughly sourced reporting.",
         "masthead": "https://glamgaze.com/about",
-        "verificationFactCheckingPolicy":
-          "https://glamgaze.com/source-methodology",
+        "verificationFactCheckingPolicy": "https://glamgaze.com/source-methodology",
         "actionableFeedbackPolicy": "https://glamgaze.com/contact",
         "correctionsPolicy": "https://glamgaze.com/corrections",
         "ethicsPolicy": "https://glamgaze.com/ethics",
@@ -149,7 +144,7 @@ export default function SourceMethodology() {
         "noBylinesPolicy": "https://glamgaze.com/about",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://glamgaze.com/logo.png",
+          "url": "https://glamgaze.com/glam_gaze.png",
         },
       },
     ],

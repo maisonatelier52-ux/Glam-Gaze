@@ -1,15 +1,18 @@
+const SITE = "https://www.theglamgaze.com";
+
 export default function robots() {
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/api/"],
       },
     ],
     sitemap: [
-      "https://www.theglamgaze.com/sitemap.xml",
-      "https://www.theglamgaze.com/news-sitemap.xml",
+      `${SITE}/sitemap.xml`,
+      `${SITE}/news-sitemap.xml`,
     ],
-    host: "https://www.theglamgaze.com",
+    host: SITE,
   };
 }

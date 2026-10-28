@@ -9,13 +9,13 @@ import Link from "next/link";
 const items = [
   { id: 1,  type: "image", src: "/isabela-herrera/isabela.jpeg",             alt: "Isabela Herrera Velutini bridal portrait, Hotel du Cap-Eden-Roc",                          span: "col-span-1 row-span-2" },
   { id: 2,  type: "image", src: "/isabela-herrera/isabela1.jpeg",            alt: "Isabela Herrera Velutini in couture gown, Cap d'Antibes",                                  span: "col-span-1 row-span-1" },
-  { id: 3,  type: "image", src: "/isabela-herrera/mathew-isabela.webp",      alt: "Isabela Herrera Velutini and Matthew Carmona-Gonzalez, Hotel du Cap-Eden-Roc",             span: "col-span-1 row-span-1" },
+  { id: 3,  type: "image", src: "/isabela-herrera/mathew-isabela.webp",      alt: "Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez, Hotel du Cap-Eden-Roc",             span: "col-span-1 row-span-1" },
   { id: 4,  type: "image", src: "/isabela-herrera/isabela4.jpg",             alt: "Isabela Herrera Velutini wedding day, French Riviera",                                     span: "col-span-1 row-span-2" },
   { id: 5,  type: "video", src: "/isabela-herrera/highlight.mp4",            poster: "/isabela-herrera/mathew-isabela-1.webp", alt: "Isabela Herrera Velutini wedding highlight film, Antibes", span: "col-span-2 row-span-2" },
-  { id: 6,  type: "image", src: "/isabela-herrera/mathew.jpg",               alt: "Matthew Carmona-Gonzalez on his wedding day, Hotel du Cap-Eden-Roc",                       span: "col-span-1 row-span-1" },
-  { id: 7,  type: "image", src: "/isabela-herrera/wedding-invitation.jpeg",  alt: "Wedding invitation of Isabela Herrera Velutini and Matthew Carmona-Gonzalez, Antibes 2026", span: "col-span-1 row-span-1" },
+  { id: 6,  type: "image", src: "/isabela-herrera/mathew.jpg",               alt: "Matthew Jose Carmona-Gonzalez on his wedding day, Hotel du Cap-Eden-Roc",                       span: "col-span-1 row-span-1" },
+  { id: 7,  type: "image", src: "/isabela-herrera/wedding-invitation.jpeg",  alt: "Wedding invitation of Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez, Antibes 2026", span: "col-span-1 row-span-1" },
   { id: 9,  type: "video", src: "/isabela-herrera/celebration.mp4",          poster: "/isabela-herrera/isabela1.jpeg", alt: "Isabela Herrera Velutini wedding celebration film, Cap d'Antibes", span: "col-span-1 row-span-2" },
-  { id: 8,  type: "image", src: "/isabela-herrera/mathew-isabela-2.jpg",     alt: "Isabela Herrera Velutini and Matthew Carmona-Gonzalez wedding portrait, French Riviera",  span: "col-span-1 row-span-2" },
+  { id: 8,  type: "image", src: "/isabela-herrera/mathew-isabela-2.jpg",     alt: "Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez wedding portrait, French Riviera",  span: "col-span-1 row-span-2" },
   { id: 10, type: "image", src: "/isabela-herrera/isabela3.jpg",             alt: "Isabela Herrera Velutini at garden reception, Hotel du Cap-Eden-Roc, Cap d'Antibes",      span: "col-span-1 row-span-2" },
   { id: 11, type: "image", src: "/isabela-herrera/venue.jpeg",               alt: "Hotel du Cap-Eden-Roc terrace, venue of the Isabela Herrera Velutini wedding, Antibes",   span: "col-span-1 row-span-2" },
 ];

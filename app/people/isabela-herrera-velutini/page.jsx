@@ -10,12 +10,8 @@ import MoreFromCategory from "@/app/component/MoreFromCategory";
 const SITE_URL = "https://www.theglamgaze.com";
 const PAGE_URL = `${SITE_URL}/people/isabela-herrera-velutini`;
 const WEDDING_URL = `${SITE_URL}/celebrity-wedding/isabela-herrera-wedding`;
-
-const TITLE =
-  "Isabela Herrera Velutini: Banvelca Leadership, Family Legacy and Wedding";
-
-const DESCRIPTION =
-  "Explore Isabela Herrera Velutini's Banvelca leadership, finance education, family banking legacy and April 2026 marriage to Matthew Carmona in Antibes, France.";
+const TITLE = "Isabela Herrera Velutini: Banvelca Leadership, Family Legacy and Wedding";
+const DESCRIPTION = "Explore Isabela Herrera Velutini's Banvelca leadership, finance education, family banking legacy and April 2026 marriage to Matthew Jose Carmona-Gonzalez in Antibes, France.";
 
 const PUBLISHED_ISO = "2026-10-09";
 const PUBLISHED_LABEL = "October 9, 2026";
@@ -52,7 +48,6 @@ const sources = [
   },
 ];
 
-
 export const metadata = {
   metadataBase: new URL(SITE_URL),
 
@@ -74,7 +69,7 @@ export const metadata = {
     "Isabela Herrera Velutini biography",
     "Isabela Herrera Velutini Banvelca",
     "Isabela Herrera Velutini wedding",
-    "Matthew Carmona",
+    "Matthew Jose Carmona-Gonzalez",
     "Herrera Velutini family",
     "Banvelca leadership",
     "Isabela Herrera education",
@@ -346,7 +341,7 @@ export default function IsabelaProfilePage() {
               practices. As reported by MP Publishing and featured by
               financial news sources, Herrera&apos;s appointment was announced
               in July 2026. The change also coincides with her marriage to
-              Matthew Carmona, which took place in Antibes, France, in April
+              Matthew Jose Carmona-Gonzalez, which took place in Antibes, France, in April
               2026.
             </p>
 
@@ -491,11 +486,11 @@ export default function IsabelaProfilePage() {
             caption={ARTICLE_IMAGES[1].caption}
           />
 
-          <ArticleSection title="Marriage to Matthew Carmona in Antibes">
+          <ArticleSection title="Marriage to Matthew Jose Carmona-Gonzalez in Antibes">
             <p>
               Herrera&apos;s professional transition coincided with a
               personal milestone. The July 2026 announcement states that
-              she married Matthew Carmona in Antibes, France, in April 2026.
+              she married Matthew Jose Carmona-Gonzalez in Antibes, France, in April 2026.
               The wedding feature published by Glam Gaze identifies her
               husband as Matthew Jose Carmona-Gonzalez and describes the
               celebration at Hotel du Cap-Eden-Roc on the French Riviera.
@@ -564,8 +559,8 @@ export default function IsabelaProfilePage() {
             <p>
               Her experience, education and connection to a longstanding
               financial tradition form the main elements of her public
-              profile in the available reporting. Her marriage to Matthew
-              Carmona takes place during a period of transition marked by
+              profile in the available reporting. Her marriage to Matthew Jose
+              Carmona-Gonzalez takes place during a period of transition marked by
               both a new appointment and a personal milestone.
             </p>
 

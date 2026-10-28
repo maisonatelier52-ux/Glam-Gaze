@@ -2,15 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { permanentRedirect } from "next/navigation";
 
-// SEO METADATA
-
 const baseUrl = "https://www.theglamgaze.com";
 const pageUrl = `${baseUrl}/celebrity-wedding/isabela-herrera-wedding`;
 const ogImage = `${baseUrl}/isabela-herrera/mathew-isabela.webp`;
 
 const seoTitle = "Isabela Herrera Velutini Wedding at Hotel du Cap-Eden-Roc";
 const ogTitle = "Isabela Herrera Velutini Wedding at Hotel du Cap-Eden-Roc";
-const seoDescription = "Inside Isabela Herrera Velutini’s wedding to Matthew Carmona-Gonzalez at Hotel du Cap-Eden-Roc in Antibes, featuring couture, photos and film.";
+const seoDescription = "Inside Isabela Herrera Velutini’s wedding to Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc in Antibes, featuring couture, photos and film.";
 
 const MODIFIED_ISO = "2026-10-06T00:00:00Z";
 const MODIFIED_LABEL = "October 6, 2026";
@@ -106,7 +104,7 @@ const jsonLd = {
       mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
       image: { "@type": "ImageObject", "@id": `${pageUrl}#hero-image`, url: ogImage, caption: "Hotel du Cap-Eden-Roc, Cap d'Antibes — venue of the Isabela Herrera Velutini wedding" },
       author: { "@type": "Person", "@id": `${baseUrl}/author/sophia-bennett#person`, name: "Sophia Bennett", url: `${baseUrl}/author/sophia-bennett` },
-      publisher: { "@type": "Organization", "@id": `${baseUrl}#organization`, name: "Glam Gaze", url: baseUrl, logo: { "@type": "ImageObject", url: `${baseUrl}/logo.png` } },
+      publisher: { "@type": "Organization", "@id": `${baseUrl}/#organization`, name: "Glam Gaze", url: baseUrl, logo: { "@type": "ImageObject", url: `${baseUrl}/glam_gaze.png` } },
       datePublished: PUBLISHED_ISO,
       dateModified: MODIFIED_ISO,
       about: { "@id": `${pageUrl}#event` },
@@ -240,7 +238,7 @@ function GalleryLink() {
       <div className="mt-14 flex gap-1.5 justify-center overflow-hidden max-w-3xl mx-auto">
         {[
           { src: "/isabela-herrera/isabela.jpeg",           alt: "Bridal portrait of Isabela Herrera Velutini" },
-          { src: "/isabela-herrera/mathew-isabela.webp",    alt: "Isabela and Matthew Carmona-Gonzalez on the hotel grounds" },
+          { src: "/isabela-herrera/mathew-isabela.webp",    alt: "Isabela and Matthew Jose Carmona-Gonzalez on the hotel grounds" },
           { src: "/isabela-herrera/isabela1.jpeg",          alt: "Isabela Herrera Velutini on Cap d'Antibes" },
           { src: "/isabela-herrera/mathew-isabela-1.webp",  alt: "Wedding celebration on the French Riviera" },
           { src: "/isabela-herrera/isabela4.jpg",           alt: "Wedding day portrait from the Antibes weekend" },
@@ -328,7 +326,7 @@ export default async function IsabelaWeddingPage({ params }) {
             photography by Jose Villa.
           </p>
           <p className="mt-6 text-sm leading-8 text-neutral-500">
-            Isabela Herrera Velutini and Matthew Carmona-Gonzalez celebrated from April 17–20, 2026, with events held
+            Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez celebrated from April 17–20, 2026, with events held
             across the hotel’s gardens and terraces overlooking the Mediterranean.
           </p>
           <p className="mt-6 text-sm leading-8 text-neutral-500">
@@ -364,7 +362,7 @@ export default async function IsabelaWeddingPage({ params }) {
           </div>
           <div className="relative img-hover">
             <div className="relative aspect-[3/4] overflow-hidden">
-              <Image src="/isabela-herrera/mathew-isabela.webp" alt="Isabela Herrera Velutini and Matthew Carmona-Gonzalez at Hotel du Cap-Eden-Roc" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" priority />
+              <Image src="/isabela-herrera/mathew-isabela.webp" alt="Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez at Hotel du Cap-Eden-Roc" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" priority />
             </div>
             <div className="absolute -inset-3 border border-amber-600/20 pointer-events-none" />
             <p className="absolute -bottom-7 right-0 text-[9px] tracking-[0.2em] uppercase text-amber-700/60">Hotel du Cap-Eden-Roc · Cap d'Antibes · Photo: Jose Villa Photography</p>
@@ -387,7 +385,7 @@ export default async function IsabelaWeddingPage({ params }) {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-px bg-neutral-200" aria-label="Wedding photography of Isabela Herrera Velutini">
           {[
             { src: "/isabela-herrera/isabela.jpeg", alt: "Isabela Herrera Velutini wedding portrait in Antibes", label: "Isabela" },
-            { src: "/isabela-herrera/mathew-isabela-1.webp", alt: "Isabela and Matthew Carmona-Gonzalez during the wedding weekend", label: "Isabela & Matthew" },
+            { src: "/isabela-herrera/mathew-isabela-1.webp", alt: "Isabela and Matthew Jose Carmona-Gonzalez during the wedding weekend", label: "Isabela & Matthew" },
             { src: "/isabela-herrera/isabela1.jpeg", alt: "Isabela Herrera Velutini during the wedding celebration on Cap d'Antibes", label: "Isabela" },
           ].map(({ src, alt, label }) => (
             <figure key={src} className="relative aspect-[3/4] md:aspect-auto md:h-[95vh] overflow-hidden img-hover bg-white">
@@ -422,7 +420,7 @@ export default async function IsabelaWeddingPage({ params }) {
           <figure className="relative bg-neutral-50" style={{ minHeight: 420 }}>
             <Image
               src="/isabela-herrera/wedding-invitation.jpeg"
-              alt="Wedding invitation for Isabela Herrera Velutini and Matthew Carmona-Gonzalez"
+              alt="Wedding invitation for Isabela Herrera Velutini and Matthew Jose Carmona-Gonzalez"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
             />
