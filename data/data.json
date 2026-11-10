@@ -528,7 +528,7 @@
         "image2": "/anya-taylor-joy-pierre-cardin-lacma-gala-2026.webp",
         "category": "fashion",
         "date": "2026-11-09",
-        "authorId": 5
+        "authorId": 1
     },
 
 
@@ -1467,6 +1467,18 @@
         "image1": "/kris-jenner-elizabeth-taylor-inspired-black-cape-rome.jpeg",
         "category": "actress",
         "date": "2026-10-26",
+        "authorId": 5
+    },
+    {
+        "slug": "rosie-huntington-whiteley-demna-spring-2027-fashion-collection",
+        "title": "Rosie Huntington-Whiteley Steals the Spotlight in Demna’s Spring 2027 Collection",
+        "excerpt": "Rosie Huntington-Whiteley joins Demna’s cast of striking characters for the spring 2027 collection, making a statement in an oversized faux-fur coat and sunglasses.",
+        "content_section_1": "<p>From time to time there comes a moment during fashion month where even the most tired of editors sits up and pays attention. This fashion month it was Demna, with his spring 2027 collection, putting together quite the ensemble of strong characters – sultry ladies in sequins, coiffed OAPs, rich-bitch horse riders.</p>",
+        "content_section_2": "<h2>Rosie Huntington-Whiteley’s Oversized Faux-Fur Look</h2><p>Amongst these were also Rosie Huntington-Whiteley, decked out in an equally oversized fake fur coat and shades, looking every inch like the kind of girl who knows how to do a pre-nup.</p>",
+        "image": "/rosie-huntington-whiteley-demna-spring-2027-collection.webp",
+        "image1": "/rosie-huntington-whiteley-oversized-faux-fur-coat.webp",
+        "category": "actress",
+        "date": "2026-11-10",
         "authorId": 5
     },
 
