@@ -3,8 +3,8 @@ import Link from "next/link";
 import data from "@/data/data.json";
 
 export default function HomeGrid({ articles = [] }) {
-  const leftArticles = articles.slice(0, 2);
-  const centerArticle = articles[2];
+  const leftArticles = articles.slice(1, 3);
+  const centerArticle = articles[0];
   const rightArticles = articles.slice(3, 7);
 
   const authors = data.authors;
